@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "package": "PREPRINT_PUBLIC_RELEASE_v1.2_20260917",
+  "required_files_present": true,
+  "python_compile": "PASS",
+  "json_parse": "PASS",
+  "linked_figures": "PASS",
+  "strengthening_receipt": "PASS",
+  "full_historical_rerun_during_packaging": "NOT_PERFORMED",
+  "notes": [
+    "The packaged v1.2 strengthening script was rerun successfully.",
+    "Frozen v1.1 census/factorial artifacts and source scripts are included."
+  ]
+}

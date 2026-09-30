@@ -1,0 +1,85 @@
+{
+  "factorization": "keep rho*U during t=0..23; after closure replace rho*U by U, which is the numerically stable gauge obtained by dividing final sink sensitivity by rho^(n-24), sink covariance by rho^(2(n-24)), and cross-covariance by rho^(n-24)",
+  "horizons": [
+    64,
+    256,
+    1024,
+    4096
+  ],
+  "model": "reviewed F5: non-normal chain, isolated rho=0.9 sink, write coupling closes after 24 steps",
+  "pre_registered_reading": "CONTRACTING_ISOLATED_SINK_FISHER_RETENTION_CONSTANT_NAIVE_ZERO_IS_PINV_ARTIFACT",
+  "provenance": {
+    "elapsed_seconds": 2.8395292500499636,
+    "float_dtype": "float64",
+    "l065_review_file": "<repo>/projects/NMH-RNN/prior_art/REVIEW_PREPRINT_RERUNS_ANGLE_AND_F5SF_20260903.md",
+    "numpy_version": "2.5.2",
+    "resource_scope": "local CPU only; no GPU, checkpoint, trained weight, network, controller, queue, or roadmap",
+    "reviewed_source_path": "<repo>/projects/NMH-RNN/scripts/preprint_replication_and_factorial_20260903.py",
+    "reviewed_source_sha256_expected": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "reviewed_source_sha256_observed": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "script_path": "<repo>/projects/NMH-RNN/scripts/preprint_reruns_angle_and_f5sf_20260903.py",
+    "script_sha256": "76fab286d9defe93ce718e0e18151efb589d02146b880e4065247603619f4ce3",
+    "source_of_source_hashes": {
+      "fourth_cell_cond_sweep_20260902.py": "6c0abe5ee99a683e4e099616116329117c400f4dde08d192491fa25abee3814e",
+      "verify_ganguli_pocket_capacity_20260823.py": "34ff3513574f28a887b1f915d2eee9f4be1a9065bd5c4cbc357db9a892068903"
+    }
+  },
+  "rho": 0.9,
+  "rows": {
+    "1024": {
+      "naive_pseudoinverse": {
+        "j_oldest": 0.0,
+        "j_total": 5.898106994535585,
+        "nonzero_j_count": 16
+      },
+      "post_closure_common_scale_exponent": 1000,
+      "scale_factored": {
+        "j_oldest": 0.30267667836339107,
+        "j_total": 9.091822739186274,
+        "nonzero_j_count": 39
+      }
+    },
+    "256": {
+      "naive_pseudoinverse": {
+        "j_oldest": 0.0,
+        "j_total": 5.898106994535585,
+        "nonzero_j_count": 16
+      },
+      "post_closure_common_scale_exponent": 232,
+      "scale_factored": {
+        "j_oldest": 0.30267667836337425,
+        "j_total": 9.091822739186814,
+        "nonzero_j_count": 39
+      }
+    },
+    "4096": {
+      "naive_pseudoinverse": {
+        "j_oldest": 0.0,
+        "j_total": 5.898106994535585,
+        "nonzero_j_count": 16
+      },
+      "post_closure_common_scale_exponent": 4072,
+      "scale_factored": {
+        "j_oldest": 0.3026766783633762,
+        "j_total": 9.091822739186656,
+        "nonzero_j_count": 39
+      }
+    },
+    "64": {
+      "naive_pseudoinverse": {
+        "j_oldest": 0.3026766783633771,
+        "j_total": 9.091822739186345,
+        "nonzero_j_count": 39
+      },
+      "post_closure_common_scale_exponent": 40,
+      "scale_factored": {
+        "j_oldest": 0.30267667836337403,
+        "j_total": 9.091822739186046,
+        "nonzero_j_count": 39
+      }
+    }
+  },
+  "run_status": "VALID_MEASUREMENT",
+  "schema": "preprint_addendum_f5_scale_factored_v1",
+  "write_window_steps": 24
+}

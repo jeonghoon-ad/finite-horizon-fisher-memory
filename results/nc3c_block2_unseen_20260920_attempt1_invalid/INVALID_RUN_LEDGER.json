@@ -1,0 +1,325 @@
+{
+  "count": 32,
+  "invalid_runs": [
+    {
+      "draw_index": 16,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 16,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 17,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 17,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 18,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 18,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 19,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 19,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 20,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 20,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 21,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 21,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 22,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 22,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 23,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 23,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 24,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 24,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 25,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 25,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 26,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 26,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 27,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 27,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 28,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 28,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 29,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 29,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 30,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 30,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 31,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 31,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    }
+  ]
+}

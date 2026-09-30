@@ -1,0 +1,481 @@
+{
+  "checks": [
+    {
+      "expected": 8,
+      "name": "ELL-c4-theta-1.1.draw_count",
+      "observed": 8,
+      "pass": true,
+      "tolerance": "exact"
+    },
+    {
+      "expected": 1.0,
+      "name": "ELL-c4-theta-1.1.draw0.trace_over_N",
+      "observed": 1.0000000000000004,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "ELL-c4-theta-1.1.draw0.oracle_self_consistency",
+      "observed": 6.661338147750939e-16,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0,
+      "name": "ELL-c4-theta-1.1.draw0.finite_window_theorem",
+      "observed": 0,
+      "pass": true,
+      "tolerance": "5e-10 relative numeric slack"
+    },
+    {
+      "expected": true,
+      "name": "ELL-c4-theta-1.1.draw0.power_bounds_finite",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "ELL-c4-theta-1.1.draw1.trace_over_N",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "ELL-c4-theta-1.1.draw1.oracle_self_consistency",
+      "observed": 4.440892098500626e-16,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0,
+      "name": "ELL-c4-theta-1.1.draw1.finite_window_theorem",
+      "observed": 0,
+      "pass": true,
+      "tolerance": "5e-10 relative numeric slack"
+    },
+    {
+      "expected": true,
+      "name": "ELL-c4-theta-1.1.draw1.power_bounds_finite",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "ELL-c4-theta-1.1.draw2.trace_over_N",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "ELL-c4-theta-1.1.draw2.oracle_self_consistency",
+      "observed": 1.3322676295501878e-15,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0,
+      "name": "ELL-c4-theta-1.1.draw2.finite_window_theorem",
+      "observed": 0,
+      "pass": true,
+      "tolerance": "5e-10 relative numeric slack"
+    },
+    {
+      "expected": true,
+      "name": "ELL-c4-theta-1.1.draw2.power_bounds_finite",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "ELL-c4-theta-1.1.draw3.trace_over_N",
+      "observed": 0.9999999999999994,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "ELL-c4-theta-1.1.draw3.oracle_self_consistency",
+      "observed": 1.9984014443252818e-15,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0,
+      "name": "ELL-c4-theta-1.1.draw3.finite_window_theorem",
+      "observed": 0,
+      "pass": true,
+      "tolerance": "5e-10 relative numeric slack"
+    },
+    {
+      "expected": true,
+      "name": "ELL-c4-theta-1.1.draw3.power_bounds_finite",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "ELL-c4-theta-1.1.draw4.trace_over_N",
+      "observed": 0.9999999999999998,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "ELL-c4-theta-1.1.draw4.oracle_self_consistency",
+      "observed": 8.881784197001252e-16,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0,
+      "name": "ELL-c4-theta-1.1.draw4.finite_window_theorem",
+      "observed": 0,
+      "pass": true,
+      "tolerance": "5e-10 relative numeric slack"
+    },
+    {
+      "expected": true,
+      "name": "ELL-c4-theta-1.1.draw4.power_bounds_finite",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "ELL-c4-theta-1.1.draw5.trace_over_N",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "ELL-c4-theta-1.1.draw5.oracle_self_consistency",
+      "observed": 1.1102230246251565e-15,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0,
+      "name": "ELL-c4-theta-1.1.draw5.finite_window_theorem",
+      "observed": 0,
+      "pass": true,
+      "tolerance": "5e-10 relative numeric slack"
+    },
+    {
+      "expected": true,
+      "name": "ELL-c4-theta-1.1.draw5.power_bounds_finite",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "ELL-c4-theta-1.1.draw6.trace_over_N",
+      "observed": 1.0000000000000009,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "ELL-c4-theta-1.1.draw6.oracle_self_consistency",
+      "observed": 2.220446049250313e-16,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0,
+      "name": "ELL-c4-theta-1.1.draw6.finite_window_theorem",
+      "observed": 0,
+      "pass": true,
+      "tolerance": "5e-10 relative numeric slack"
+    },
+    {
+      "expected": true,
+      "name": "ELL-c4-theta-1.1.draw6.power_bounds_finite",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "ELL-c4-theta-1.1.draw7.trace_over_N",
+      "observed": 0.9999999999999997,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "ELL-c4-theta-1.1.draw7.oracle_self_consistency",
+      "observed": 4.440892098500626e-16,
+      "pass": true,
+      "tolerance": 5e-09
+    },
+    {
+      "expected": 0,
+      "name": "ELL-c4-theta-1.1.draw7.finite_window_theorem",
+      "observed": 0,
+      "pass": true,
+      "tolerance": "5e-10 relative numeric slack"
+    },
+    {
+      "expected": true,
+      "name": "ELL-c4-theta-1.1.draw7.power_bounds_finite",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": "not in (0.7, 2.0, 2.0)",
+      "name": "A2.theta_is_distinct_at_c4",
+      "observed": 1.1,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": {
+        "lambda_max": 1.6,
+        "lambda_min": 0.4
+      },
+      "name": "A2.draw0.elliptic_closed_form_n2048",
+      "observed": {
+        "lambda_max": 1.5999999913145762,
+        "lambda_min": 0.4000000086854243
+      },
+      "pass": true,
+      "tolerance": 5e-06
+    },
+    {
+      "expected": {
+        "lambda_max": 1.6,
+        "lambda_min": 0.4
+      },
+      "name": "A2.draw1.elliptic_closed_form_n2048",
+      "observed": {
+        "lambda_max": 1.5999999913145744,
+        "lambda_min": 0.40000000868542607
+      },
+      "pass": true,
+      "tolerance": 5e-06
+    },
+    {
+      "expected": {
+        "lambda_max": 1.6,
+        "lambda_min": 0.4
+      },
+      "name": "A2.draw2.elliptic_closed_form_n2048",
+      "observed": {
+        "lambda_max": 1.5999999913145748,
+        "lambda_min": 0.40000000868542457
+      },
+      "pass": true,
+      "tolerance": 5e-06
+    },
+    {
+      "expected": {
+        "lambda_max": 1.6,
+        "lambda_min": 0.4
+      },
+      "name": "A2.draw3.elliptic_closed_form_n2048",
+      "observed": {
+        "lambda_max": 1.5999999913145753,
+        "lambda_min": 0.40000000868542607
+      },
+      "pass": true,
+      "tolerance": 5e-06
+    },
+    {
+      "expected": {
+        "lambda_max": 1.6,
+        "lambda_min": 0.4
+      },
+      "name": "A2.draw4.elliptic_closed_form_n2048",
+      "observed": {
+        "lambda_max": 1.5999999913145753,
+        "lambda_min": 0.4000000086854257
+      },
+      "pass": true,
+      "tolerance": 5e-06
+    },
+    {
+      "expected": {
+        "lambda_max": 1.6,
+        "lambda_min": 0.4
+      },
+      "name": "A2.draw5.elliptic_closed_form_n2048",
+      "observed": {
+        "lambda_max": 1.5999999913145766,
+        "lambda_min": 0.40000000868542335
+      },
+      "pass": true,
+      "tolerance": 5e-06
+    },
+    {
+      "expected": {
+        "lambda_max": 1.6,
+        "lambda_min": 0.4
+      },
+      "name": "A2.draw6.elliptic_closed_form_n2048",
+      "observed": {
+        "lambda_max": 1.599999991314578,
+        "lambda_min": 0.40000000868542496
+      },
+      "pass": true,
+      "tolerance": 5e-06
+    },
+    {
+      "expected": {
+        "lambda_max": 1.6,
+        "lambda_min": 0.4
+      },
+      "name": "A2.draw7.elliptic_closed_form_n2048",
+      "observed": {
+        "lambda_max": 1.5999999913145748,
+        "lambda_min": 0.4000000086854246
+      },
+      "pass": true,
+      "tolerance": 5e-06
+    },
+    {
+      "expected": {
+        "j_oldest": 0.3026766783633771,
+        "j_total": 9.091822739186345
+      },
+      "name": "F5-naive.reproduce_reviewed_anchor.n64",
+      "observed": {
+        "j_oldest": 0.3026766783633771,
+        "j_total": 9.091822739186345
+      },
+      "pass": true,
+      "tolerance": 5e-07
+    },
+    {
+      "expected": {
+        "j_oldest": 0.3026766783633771,
+        "j_total": 9.091822739186345
+      },
+      "name": "F5-sf.scale_factored_constant.n64",
+      "observed": {
+        "j_oldest": 0.30267667836337403,
+        "j_total": 9.091822739186046
+      },
+      "pass": true,
+      "tolerance": 5e-07
+    },
+    {
+      "expected": {
+        "j_oldest": 0.0,
+        "j_total": 5.898106994535585
+      },
+      "name": "F5-naive.reproduce_reviewed_anchor.n256",
+      "observed": {
+        "j_oldest": 0.0,
+        "j_total": 5.898106994535585
+      },
+      "pass": true,
+      "tolerance": 5e-07
+    },
+    {
+      "expected": {
+        "j_oldest": 0.3026766783633771,
+        "j_total": 9.091822739186345
+      },
+      "name": "F5-sf.scale_factored_constant.n256",
+      "observed": {
+        "j_oldest": 0.30267667836337425,
+        "j_total": 9.091822739186814
+      },
+      "pass": true,
+      "tolerance": 5e-07
+    },
+    {
+      "expected": {
+        "j_oldest": 0.0,
+        "j_total": 5.898106994535585
+      },
+      "name": "F5-naive.reproduce_reviewed_anchor.n1024",
+      "observed": {
+        "j_oldest": 0.0,
+        "j_total": 5.898106994535585
+      },
+      "pass": true,
+      "tolerance": 5e-07
+    },
+    {
+      "expected": {
+        "j_oldest": 0.3026766783633771,
+        "j_total": 9.091822739186345
+      },
+      "name": "F5-sf.scale_factored_constant.n1024",
+      "observed": {
+        "j_oldest": 0.30267667836339107,
+        "j_total": 9.091822739186274
+      },
+      "pass": true,
+      "tolerance": 5e-07
+    },
+    {
+      "expected": {
+        "j_oldest": 0.0,
+        "j_total": 5.898106994535585
+      },
+      "name": "F5-naive.reproduce_reviewed_anchor.n4096",
+      "observed": {
+        "j_oldest": 0.0,
+        "j_total": 5.898106994535585
+      },
+      "pass": true,
+      "tolerance": 5e-07
+    },
+    {
+      "expected": {
+        "j_oldest": 0.3026766783633771,
+        "j_total": 9.091822739186345
+      },
+      "name": "F5-sf.scale_factored_constant.n4096",
+      "observed": {
+        "j_oldest": 0.3026766783633762,
+        "j_total": 9.091822739186656
+      },
+      "pass": true,
+      "tolerance": 5e-07
+    },
+    {
+      "expected": "both ranges <= 5e-7 and oldest positive",
+      "name": "F5-sf.constant_across_horizons",
+      "observed": {
+        "j_oldest_range": 1.7041923427996153e-14,
+        "j_total_range": 7.673861546209082e-13,
+        "minimum_j_oldest": 0.30267667836337403
+      },
+      "pass": true,
+      "tolerance": 5e-07
+    }
+  ],
+  "failure_count": 0,
+  "invalid_run_rule": "any draw-count, trace, oracle-consistency, theorem, finite-power, distinct-angle, elliptic closed-form, naive-anchor, scale-factored-anchor, or cross-horizon-constancy failure invalidates the full run",
+  "provenance": {
+    "elapsed_seconds": 2.8395292500499636,
+    "float_dtype": "float64",
+    "l065_review_file": "<repo>/projects/NMH-RNN/prior_art/REVIEW_PREPRINT_RERUNS_ANGLE_AND_F5SF_20260903.md",
+    "numpy_version": "2.5.2",
+    "resource_scope": "local CPU only; no GPU, checkpoint, trained weight, network, controller, queue, or roadmap",
+    "reviewed_source_path": "<repo>/projects/NMH-RNN/scripts/preprint_replication_and_factorial_20260903.py",
+    "reviewed_source_sha256_expected": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "reviewed_source_sha256_observed": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "script_path": "<repo>/projects/NMH-RNN/scripts/preprint_reruns_angle_and_f5sf_20260903.py",
+    "script_sha256": "76fab286d9defe93ce718e0e18151efb589d02146b880e4065247603619f4ce3",
+    "source_of_source_hashes": {
+      "fourth_cell_cond_sweep_20260902.py": "6c0abe5ee99a683e4e099616116329117c400f4dde08d192491fa25abee3814e",
+      "verify_ganguli_pocket_capacity_20260823.py": "34ff3513574f28a887b1f915d2eee9f4be1a9065bd5c4cbc357db9a892068903"
+    }
+  },
+  "run_status": "PASS",
+  "schema": "preprint_addendum_angle_and_f5sf_positive_controls_v1"
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "alpha": 0.05,
+    "construction": "random_psd",
+    "J0": 0.2491012772477277,
+    "J": 0.24228311916582712,
+    "retained_fraction": 0.9726289718092451,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 0.020248019428292796,
+    "draw": 0
+  },
+  {
+    "alpha": 0.05,
+    "construction": "aligned_equality",
+    "J0": 0.2491012772477277,
+    "J": 0.23723931166450257,
+    "retained_fraction": 0.9523809523809523,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 0.0,
+    "draw": 0
+  },
+  {
+    "alpha": 0.25,
+    "construction": "random_psd",
+    "J0": 0.2491012772477277,
+    "J": 0.21864377410508898,
+    "retained_fraction": 0.8777304416936041,
+    "guaranteed_floor": 0.8,
+    "bound_margin": 0.0777304416936041,
+    "draw": 0
+  },
+  {
+    "alpha": 0.25,
+    "construction": "aligned_equality",
+    "J0": 0.2491012772477277,
+    "J": 0.19928102179818216,
+    "retained_fraction": 0.7999999999999999,
+    "guaranteed_floor": 0.8,
+    "bound_margin": -1.1102230246251565e-16,
+    "draw": 0
+  },
+  {
+    "alpha": 1.0,
+    "construction": "random_psd",
+    "J0": 0.2491012772477277,
+    "J": 0.16146482323614741,
+    "retained_fraction": 0.6481894634188203,
+    "guaranteed_floor": 0.5,
+    "bound_margin": 0.14818946341882033,
+    "draw": 0
+  },
+  {
+    "alpha": 1.0,
+    "construction": "aligned_equality",
+    "J0": 0.2491012772477277,
+    "J": 0.12455063862386384,
+    "retained_fraction": 0.49999999999999994,
+    "guaranteed_floor": 0.5,
+    "bound_margin": -5.551115123125783e-17,
+    "draw": 0
+  },
+  {
+    "alpha": 0.05,
+    "construction": "random_psd",
+    "J0": 0.2553521473817006,
+    "J": 0.24839131060760858,
+    "retained_fraction": 0.9727402457920711,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 0.02035929341111875,
+    "draw": 1
+  },
+  {
+    "alpha": 0.05,
+    "construction": "aligned_equality",
+    "J0": 0.2553521473817006,
+    "J": 0.24319252131590527,
+    "retained_fraction": 0.9523809523809522,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": -1.1102230246251565e-16,
+    "draw": 1
+  },
+  {
+    "alpha": 0.25,
+    "construction": "random_psd",
+    "J0": 0.2553521473817006,
+    "J": 0.2248694887004801,
+    "retained_fraction": 0.8806250153218607,
+    "guaranteed_floor": 0.8,
+    "bound_margin": 0.08062501532186062,
+    "draw": 1
+  },
+  {
+    "alpha": 0.25,
+    "construction": "aligned_equality",
+    "J0": 0.2553521473817006,
+    "J": 0.20428171790536043,
+    "retained_fraction": 0.7999999999999998,
+    "guaranteed_floor": 0.8,
+    "bound_margin": -2.220446049250313e-16,
+    "draw": 1
+  },
+  {
+    "alpha": 1.0,
+    "construction": "random_psd",
+    "J0": 0.2553521473817006,
+    "J": 0.17089749377032493,
+    "retained_fraction": 0.6692620192258153,
+    "guaranteed_floor": 0.5,
+    "bound_margin": 0.1692620192258153,
+    "draw": 1
+  },
+  {
+    "alpha": 1.0,
+    "construction": "aligned_equality",
+    "J0": 0.2553521473817006,
+    "J": 0.12767607369085027,
+    "retained_fraction": 0.4999999999999999,
+    "guaranteed_floor": 0.5,
+    "bound_margin": -1.1102230246251565e-16,
+    "draw": 1
+  },
+  {
+    "alpha": 0.05,
+    "construction": "random_psd",
+    "J0": 0.2978012073706988,
+    "J": 0.29091703806035585,
+    "retained_fraction": 0.9768833398255043,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 0.02450238744455202,
+    "draw": 2
+  },
+  {
+    "alpha": 0.05,
+    "construction": "aligned_equality",
+    "J0": 0.2978012073706988,
+    "J": 0.2836201974959036,
+    "retained_fraction": 0.9523809523809523,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 0.0,
+    "draw": 2
+  },
+  {
+    "alpha": 0.25,
+    "construction": "random_psd",
+    "J0": 0.2978012073706988,
+    "J": 0.2676008300113738,
+    "retained_fraction": 0.8985888014828227,
+    "guaranteed_floor": 0.8,
+    "bound_margin": 0.09858880148282267,
+    "draw": 2
+  },
+  {
+    "alpha": 0.25,
+    "construction": "aligned_equality",
+    "J0": 0.2978012073706988,
+    "J": 0.23824096589655908,
+    "retained_fraction": 0.8,
+    "guaranteed_floor": 0.8,
+    "bound_margin": 0.0,
+    "draw": 2
+  },
+  {
+    "alpha": 1.0,
+    "construction": "random_psd",
+    "J0": 0.2978012073706988,
+    "J": 0.21413750138568274,
+    "retained_fraction": 0.719061897956402,
+    "guaranteed_floor": 0.5,
+    "bound_margin": 0.21906189795640196,
+    "draw": 2
+  },
+  {
+    "alpha": 1.0,
+    "construction": "aligned_equality",
+    "J0": 0.2978012073706988,
+    "J": 0.1489006036853494,
+    "retained_fraction": 0.5,
+    "guaranteed_floor": 0.5,
+    "bound_margin": 0.0,
+    "draw": 2
+  },
+  {
+    "alpha": 0.05,
+    "construction": "random_psd",
+    "J0": 0.2241652911056702,
+    "J": 0.22108183741529575,
+    "retained_fraction": 0.9862447318442312,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 0.0338637794632789,
+    "draw": 3
+  },
+  {
+    "alpha": 0.05,
+    "construction": "aligned_equality",
+    "J0": 0.2241652911056702,
+    "J": 0.21349075343397161,
+    "retained_fraction": 0.9523809523809523,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 0.0,
+    "draw": 3
+  },
+  {
+    "alpha": 0.25,
+    "construction": "random_psd",
+    "J0": 0.2241652911056702,
+    "J": 0.2102488369581314,
+    "retained_fraction": 0.9379187827031675,
+    "guaranteed_floor": 0.8,
+    "bound_margin": 0.1379187827031675,
+    "draw": 3
+  },
+  {
+    "alpha": 0.25,
+    "construction": "aligned_equality",
+    "J0": 0.2241652911056702,
+    "J": 0.17933223288453615,
+    "retained_fraction": 0.7999999999999999,
+    "guaranteed_floor": 0.8,
+    "bound_margin": -1.1102230246251565e-16,
+    "draw": 3
+  },
+  {
+    "alpha": 1.0,
+    "construction": "random_psd",
+    "J0": 0.2241652911056702,
+    "J": 0.18294981128993348,
+    "retained_fraction": 0.8161379952603457,
+    "guaranteed_floor": 0.5,
+    "bound_margin": 0.3161379952603457,
+    "draw": 3
+  },
+  {
+    "alpha": 1.0,
+    "construction": "aligned_equality",
+    "J0": 0.2241652911056702,
+    "J": 0.11208264555283509,
+    "retained_fraction": 0.49999999999999994,
+    "guaranteed_floor": 0.5,
+    "bound_margin": -5.551115123125783e-17,
+    "draw": 3
+  },
+  {
+    "alpha": 0.05,
+    "construction": "random_psd",
+    "J0": 0.24378671440536728,
+    "J": 0.23651064349481013,
+    "retained_fraction": 0.9701539481825144,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 0.017772995801562108,
+    "draw": 4
+  },
+  {
+    "alpha": 0.05,
+    "construction": "aligned_equality",
+    "J0": 0.24378671440536728,
+    "J": 0.23217782324320696,
+    "retained_fraction": 0.9523809523809524,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 1.1102230246251565e-16,
+    "draw": 4
+  },
+  {
+    "alpha": 0.25,
+    "construction": "random_psd",
+    "J0": 0.24378671440536728,
+    "J": 0.21222764175815723,
+    "retained_fraction": 0.8705463801660094,
+    "guaranteed_floor": 0.8,
+    "bound_margin": 0.07054638016600934,
+    "draw": 4
+  },
+  {
+    "alpha": 0.25,
+    "construction": "aligned_equality",
+    "J0": 0.24378671440536728,
+    "J": 0.19502937152429378,
+    "retained_fraction": 0.7999999999999998,
+    "guaranteed_floor": 0.8,
+    "bound_margin": -2.220446049250313e-16,
+    "draw": 4
+  },
+  {
+    "alpha": 1.0,
+    "construction": "random_psd",
+    "J0": 0.24378671440536728,
+    "J": 0.15840081191665178,
+    "retained_fraction": 0.6497516171175093,
+    "guaranteed_floor": 0.5,
+    "bound_margin": 0.14975161711750928,
+    "draw": 4
+  },
+  {
+    "alpha": 1.0,
+    "construction": "aligned_equality",
+    "J0": 0.24378671440536728,
+    "J": 0.12189335720268363,
+    "retained_fraction": 0.49999999999999994,
+    "guaranteed_floor": 0.5,
+    "bound_margin": -5.551115123125783e-17,
+    "draw": 4
+  },
+  {
+    "alpha": 0.05,
+    "construction": "random_psd",
+    "J0": 0.18885177620044002,
+    "J": 0.18494316627030352,
+    "retained_fraction": 0.9793032927263122,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 0.026922340345359896,
+    "draw": 5
+  },
+  {
+    "alpha": 0.05,
+    "construction": "aligned_equality",
+    "J0": 0.18885177620044002,
+    "J": 0.17985883447660955,
+    "retained_fraction": 0.9523809523809524,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 1.1102230246251565e-16,
+    "draw": 5
+  },
+  {
+    "alpha": 0.25,
+    "construction": "random_psd",
+    "J0": 0.18885177620044002,
+    "J": 0.1710901977377301,
+    "retained_fraction": 0.9059496351050548,
+    "guaranteed_floor": 0.8,
+    "bound_margin": 0.10594963510505473,
+    "draw": 5
+  },
+  {
+    "alpha": 0.25,
+    "construction": "aligned_equality",
+    "J0": 0.18885177620044002,
+    "J": 0.15108142096035201,
+    "retained_fraction": 0.7999999999999999,
+    "guaranteed_floor": 0.8,
+    "bound_margin": -1.1102230246251565e-16,
+    "draw": 5
+  },
+  {
+    "alpha": 1.0,
+    "construction": "random_psd",
+    "J0": 0.18885177620044002,
+    "J": 0.13522873453131187,
+    "retained_fraction": 0.7160575200933524,
+    "guaranteed_floor": 0.5,
+    "bound_margin": 0.21605752009335244,
+    "draw": 5
+  },
+  {
+    "alpha": 1.0,
+    "construction": "aligned_equality",
+    "J0": 0.18885177620044002,
+    "J": 0.09442588810022001,
+    "retained_fraction": 0.5,
+    "guaranteed_floor": 0.5,
+    "bound_margin": 0.0,
+    "draw": 5
+  },
+  {
+    "alpha": 0.05,
+    "construction": "random_psd",
+    "J0": 0.1816331145663838,
+    "J": 0.17701643593962335,
+    "retained_fraction": 0.974582395738894,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 0.02220144335794172,
+    "draw": 6
+  },
+  {
+    "alpha": 0.05,
+    "construction": "aligned_equality",
+    "J0": 0.1816331145663838,
+    "J": 0.17298391863465126,
+    "retained_fraction": 0.9523809523809524,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 1.1102230246251565e-16,
+    "draw": 6
+  },
+  {
+    "alpha": 0.25,
+    "construction": "random_psd",
+    "J0": 0.1816331145663838,
+    "J": 0.16131481795343397,
+    "retained_fraction": 0.8881355051282576,
+    "guaranteed_floor": 0.8,
+    "bound_margin": 0.08813550512825752,
+    "draw": 6
+  },
+  {
+    "alpha": 0.25,
+    "construction": "aligned_equality",
+    "J0": 0.1816331145663838,
+    "J": 0.14530649165310705,
+    "retained_fraction": 0.8,
+    "guaranteed_floor": 0.8,
+    "bound_margin": 0.0,
+    "draw": 6
+  },
+  {
+    "alpha": 1.0,
+    "construction": "random_psd",
+    "J0": 0.1816331145663838,
+    "J": 0.12438472449312821,
+    "retained_fraction": 0.6848130352775936,
+    "guaranteed_floor": 0.5,
+    "bound_margin": 0.18481303527759363,
+    "draw": 6
+  },
+  {
+    "alpha": 1.0,
+    "construction": "aligned_equality",
+    "J0": 0.1816331145663838,
+    "J": 0.0908165572831919,
+    "retained_fraction": 0.5,
+    "guaranteed_floor": 0.5,
+    "bound_margin": 0.0,
+    "draw": 6
+  },
+  {
+    "alpha": 0.05,
+    "construction": "random_psd",
+    "J0": 0.2689235837778637,
+    "J": 0.26351914348387334,
+    "retained_fraction": 0.9799034349532746,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": 0.02752248257232226,
+    "draw": 7
+  },
+  {
+    "alpha": 0.05,
+    "construction": "aligned_equality",
+    "J0": 0.2689235837778637,
+    "J": 0.2561176988360605,
+    "retained_fraction": 0.9523809523809519,
+    "guaranteed_floor": 0.9523809523809523,
+    "bound_margin": -4.440892098500626e-16,
+    "draw": 7
+  },
+  {
+    "alpha": 0.25,
+    "construction": "random_psd",
+    "J0": 0.2689235837778637,
+    "J": 0.2449401426454668,
+    "retained_fraction": 0.9108168915664618,
+    "guaranteed_floor": 0.8,
+    "bound_margin": 0.1108168915664618,
+    "draw": 7
+  },
+  {
+    "alpha": 0.25,
+    "construction": "aligned_equality",
+    "J0": 0.2689235837778637,
+    "J": 0.2151388670222909,
+    "retained_fraction": 0.7999999999999998,
+    "guaranteed_floor": 0.8,
+    "bound_margin": -2.220446049250313e-16,
+    "draw": 7
+  },
+  {
+    "alpha": 1.0,
+    "construction": "random_psd",
+    "J0": 0.2689235837778637,
+    "J": 0.200196009297378,
+    "retained_fraction": 0.7444345582674666,
+    "guaranteed_floor": 0.5,
+    "bound_margin": 0.24443455826746663,
+    "draw": 7
+  },
+  {
+    "alpha": 1.0,
+    "construction": "aligned_equality",
+    "J0": 0.2689235837778637,
+    "J": 0.13446179188893181,
+    "retained_fraction": 0.4999999999999999,
+    "guaranteed_floor": 0.5,
+    "bound_margin": -1.1102230246251565e-16,
+    "draw": 7
+  }
+]

@@ -1,0 +1,198 @@
+{
+  "purpose": "Public source derivative identities; not a new scientific result or a new independent review. Original sources are archived outside the ZIP.",
+  "source_files": {
+    "fourth_cell_capacity_20260902.py": {
+      "original_sha256": "32d65f64bdeabf9f689b504c080e3e6e69246ed57b7891463acf90541b9c464f",
+      "current_sha256": "8f2bb0a0bed1597e142114920ea9d655e0b3892651df87854c4caeefcec5fc0e",
+      "identical_function_asts": [
+        "haar_orthogonal",
+        "fisher_memory",
+        "shape_stats",
+        "sha256_file",
+        "sha256_array",
+        "unit_vector",
+        "canonical_symplectic",
+        "haar_orthogonal_symplectic",
+        "symplectic_carrier",
+        "similarity_carrier",
+        "carrier_certificate",
+        "floor_behavior",
+        "memory_readouts",
+        "summarize_nulls",
+        "atomic_json"
+      ],
+      "metadata_or_gate_functions_changed": [
+        "provenance",
+        "main"
+      ],
+      "numerical_functions_exact_ast_identity": true,
+      "all_numeric_constants_identical": true,
+      "literal_replacements_only": true
+    },
+    "fourth_cell_cond_sweep_20260902.py": {
+      "original_sha256": "6c0abe5ee99a683e4e099616116329117c400f4dde08d192491fa25abee3814e",
+      "current_sha256": "c6c4d8d4be53df512f60d0d62a2180969d5767dd6e721b278f9e364fff6f04e9",
+      "identical_function_asts": [
+        "haar_orthogonal",
+        "fisher_memory",
+        "shape_stats",
+        "sha256_file",
+        "sha256_array",
+        "unit_vector",
+        "canonical_symplectic",
+        "haar_orthogonal_symplectic",
+        "symplectic_carrier",
+        "similarity_carrier",
+        "carrier_certificate",
+        "floor_behavior",
+        "memory_readouts",
+        "atomic_json",
+        "canonicalize_eigenvector_signs",
+        "fisher_memory_matrix",
+        "fisher_matrix_readout",
+        "hamiltonian_exponential",
+        "higher_block_symplectic_carrier",
+        "base_vector_totals",
+        "measure_arm",
+        "control_record",
+        "positive_control_checks",
+        "preregistered_readings"
+      ],
+      "metadata_or_gate_functions_changed": [
+        "provenance",
+        "main"
+      ],
+      "numerical_functions_exact_ast_identity": true,
+      "all_numeric_constants_identical": true,
+      "literal_replacements_only": true
+    },
+    "preprint_replication_and_factorial_20260903.py": {
+      "original_sha256": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+      "current_sha256": "f8c0884d41cf7a112468013dee6ad70702a7a7be4b6ee700d2100d128aaa2ad4",
+      "identical_function_asts": [
+        "haar_orthogonal",
+        "fisher_memory",
+        "sha256_file",
+        "sha256_array",
+        "canonical_symplectic",
+        "haar_orthogonal_symplectic",
+        "atomic_json",
+        "canonicalize_eigenvector_signs",
+        "fisher_memory_matrix",
+        "hamiltonian_exponential",
+        "build_chain",
+        "build_hybrid",
+        "fisher_memory_tv",
+        "gated_run",
+        "seed_for",
+        "make_similarity",
+        "make_a0",
+        "elliptic_theta_values",
+        "make_elliptic",
+        "make_hamiltonian8",
+        "configuration_specs",
+        "matrix_readout",
+        "finite_power_certificate",
+        "oracle_curve_and_theorem",
+        "measure_draw",
+        "summary_stats",
+        "summarize_configuration",
+        "exploratory_log_gain_fit",
+        "replay_20260823_hybrid",
+        "fisher_memory_tv_varying",
+        "normal_direct_run",
+        "factorial_measurement",
+        "control",
+        "census_controls",
+        "atomic_csv",
+        "write_plot_ready_tables",
+        "main"
+      ],
+      "metadata_or_gate_functions_changed": [
+        "validate_execution_gate",
+        "provenance"
+      ],
+      "numerical_functions_exact_ast_identity": true,
+      "all_numeric_constants_identical": true,
+      "literal_replacements_only": true
+    },
+    "isolation_factorial_v2_bounded_20260903.py": {
+      "original_sha256": "69acea303c4c14e1ce094a3b5c0acbf78fdab62d06cefcca5f1f2cbb07a7887e",
+      "current_sha256": "5aa11fa435d85883f9b9f16521abc1ec58fc2514e8022ffbc6d3294c435a2ccb",
+      "identical_function_asts": [
+        "sha256_file",
+        "sha256_array",
+        "load_reviewed_source",
+        "control",
+        "iso_seed",
+        "paired_write_carriers",
+        "paired_draw_objects",
+        "top_oracle",
+        "empty_state",
+        "clone_state",
+        "reverse_step",
+        "read_state",
+        "route_snapshots",
+        "build_full_carriers",
+        "source_route_parity",
+        "json_readout",
+        "maximum_readout_difference",
+        "summary_stats",
+        "measurement",
+        "derive_readings"
+      ],
+      "metadata_or_gate_functions_changed": [
+        "validate_execution_gate",
+        "provenance",
+        "main"
+      ],
+      "numerical_functions_exact_ast_identity": true,
+      "all_numeric_constants_identical": true,
+      "literal_replacements_only": true
+    },
+    "preprint_reruns_angle_and_f5sf_20260903.py": {
+      "original_sha256": "76fab286d9defe93ce718e0e18151efb589d02146b880e4065247603619f4ce3",
+      "current_sha256": "b634bf2ef7fa47eb5fa8262c0ae560a84ecf30e219805f65d55984b12938a364",
+      "identical_function_asts": [
+        "sha256_file",
+        "load_reviewed_source",
+        "control",
+        "measure_a2",
+        "write_a2_plot_ready_tables",
+        "scale_factored_f5",
+        "measure_f5sf"
+      ],
+      "metadata_or_gate_functions_changed": [
+        "validate_execution_gate",
+        "provenance",
+        "main"
+      ],
+      "numerical_functions_exact_ast_identity": true,
+      "all_numeric_constants_identical": true,
+      "literal_replacements_only": true
+    }
+  },
+  "dependent_pin_updates": [
+    {
+      "path": "code/nc_geometry.py",
+      "old_sha256": "7971ad842b0917d3419b1bbd69d137a2cb68e584ce6ce8d75cba4c81eff14175",
+      "new_sha256": "c00bfa85a8d53d4d95e74fe478d34a1880427f3c2ad0dad70f960cf792040afd"
+    }
+  ],
+  "total_exact_function_ast_matches": 103,
+  "gate_tests": {
+    "status": "PASS",
+    "cases": 23
+  },
+  "numerical_parity": {
+    "status": "PASS",
+    "draws": [
+      0,
+      15,
+      16,
+      31
+    ],
+    "arrays_and_numeric_leaves": 44,
+    "max_absolute_difference": 0.0
+  }
+}

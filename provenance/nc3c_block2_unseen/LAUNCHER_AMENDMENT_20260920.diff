@@ -1,0 +1,220 @@
+--- /private/tmp/independent reviewer-501/-Users-jeonghoon-Documents-<repo-name>/eed541e4-be9a-40ed-8087-dab1ad277af8/scratchpad/run_nc3c.py.orig	2026-09-20 07:53:30
++++ code/run_nc3c.py	2026-09-20 08:09:17
+@@ -25,6 +25,15 @@
+ 
+ RESULTS = R.LANE / "results" / "nc3c"
+ 
++# Launcher amendment, 2026-09-20 (AGENT_HANDOFF_APPROVED_FINAL_RUN_AND_AD023_FILING §4.3).
++# The author approved one further confirmation on NC-3C-V1 draws 16..31. The block and the
++# output directory were hard-coded here; they are now selectable, and the freshness audit
++# additionally compares the requested block against every NC-3C draw this lane has already
++# instantiated. No scientific module is touched: the carrier construction, the seeds, the
++# validity battery, the budget and the decision rules are the frozen ones.
++PRIOR_NC3C_DRAWS = tuple(X.CARRIER_DRAWS)          # the 2026-09-18 full-budget block
++BURNED_NC3C_DRAWS = (9900,)                         # timing probe, docs/nc3c/BURNED_DRAWS_20260919.md
++
+ FROZEN = {
+     "amplitude": 1.5,
+     "train_horizon": 128,
+@@ -100,14 +109,25 @@
+                "random_directions|normal", "random_directions|nonnormal"]
+     reserved = list(G.CONFIRMATORY_DRAWS) + list(G.PILOT_DRAWS) + list(G.EXPLORATORY_DRAWS)
+ 
++    # Repair, 2026-09-20. The negative control used to seed the completed lane's namespace
++    # at THIS draw index, which collides only when the index is one the completed lane
++    # actually reserved. That holds for draws 0..15 and fails for any later block, so on
++    # draws 16..31 the instrument could not fail and every cell was marked invalid. The
++    # corrupt branch is now mapped onto a reserved index, so the collision it must show is
++    # guaranteed by construction for any block. The positive branch is unchanged.
++    probe = G.CONFIRMATORY_DRAWS[draw_index % len(G.CONFIRMATORY_DRAWS)]
++
+     def run(corrupt: bool) -> dict[str, Any]:
+-        seeder = G.nc_seed if corrupt else X.nc3c_seed
+-        mine = {seeder(draw_index, s) for s in streams}
++        if corrupt:
++            mine = {G.nc_seed(probe, s) for s in streams}
++        else:
++            mine = {X.nc3c_seed(draw_index, s) for s in streams}
+         theirs = {G.nc_seed(d, s) for d in reserved for s in streams}
+         overlap = mine & theirs
+         return V._record("31_seed_freshness", float(len(overlap)), 0.0, not overlap,
+                          {"draw_index": draw_index, "streams": len(streams),
+                           "completed_lane_seeds_compared": len(theirs),
++                          "negative_control_probe_draw": probe if corrupt else None,
+                           "namespace": G.SEED_NAMESPACE if corrupt else X.SEED_NAMESPACE})
+     return V._with_negative_control(run)
+ 
+@@ -170,37 +190,67 @@
+     return names
+ 
+ 
+-def frozen_seed_list(config: dict[str, Any]) -> dict[str, Any]:
++def frozen_seed_list(config: dict[str, Any],
++                     draws: tuple[int, ...] | None = None) -> dict[str, Any]:
+     """The complete seed list the protocol says is frozen before any outcome is seen."""
++    draws = tuple(X.CARRIER_DRAWS) if draws is None else tuple(draws)
+     names = run_stream_names(config)
+-    seeds = {str(d): {n: X.nc3c_seed(d, n) for n in names} for d in X.CARRIER_DRAWS}
++    seeds = {str(d): {n: X.nc3c_seed(d, n) for n in names} for d in draws}
+     flat = [v for row in seeds.values() for v in row.values()]
+-    return {"namespace": X.SEED_NAMESPACE, "carrier_draws": list(X.CARRIER_DRAWS),
++    return {"namespace": X.SEED_NAMESPACE, "carrier_draws": list(draws),
+             "streams_per_draw": len(names), "total_seeds": len(flat),
+             "distinct_seeds": len(set(flat)), "stream_names": names, "seeds": seeds}
+ 
+ 
+-def freshness_audit(config: dict[str, Any]) -> dict[str, Any]:
+-    """Prove, before training, that no NC-3C seed or carrier was seen before."""
++def freshness_audit(config: dict[str, Any],
++                    draws: tuple[int, ...] | None = None) -> dict[str, Any]:
++    """Prove, before training, that no seed or carrier of `draws` was seen before.
++
++    Three questions, not one. Is any requested draw already on the exercised list? Does any
++    of its seeds collide with the completed NC-TM-V1 lane, or with an NC-3C-V1 draw this lane
++    already instantiated? Does any carrier digest collide with either population? The
++    exercised list is the 2026-09-18 full-budget block and the draw burned by the 2026-09-19
++    timing probe. Nothing here trains, classifies or scores a carrier.
++
++    Re-auditing the 2026-09-18 block therefore reports `fresh: false`, which is the true
++    state of the world after that block was run; it is not a regression.
++    """
++    draws = tuple(X.CARRIER_DRAWS) if draws is None else tuple(draws)
+     streams = run_stream_names(config)
+     reserved = list(G.CONFIRMATORY_DRAWS) + list(G.PILOT_DRAWS) + list(G.EXPLORATORY_DRAWS)
++    prior_nc3c = [d for d in tuple(PRIOR_NC3C_DRAWS) + tuple(BURNED_NC3C_DRAWS)
++                  if d not in draws]
++
+     theirs = {G.nc_seed(d, s) for d in reserved for s in streams}
+-    mine = {X.nc3c_seed(d, s) for d in X.CARRIER_DRAWS for s in streams}
+-    their_carriers = set()
+-    for d in reserved:
+-        their_carriers.add(G.build_carrier_draw(d)["hashes"]["W_nonnormal"])
+-    my_carriers = {}
+-    for d in X.CARRIER_DRAWS:
+-        my_carriers[d] = X.build_carrier_draw(d)["hashes"]["W_nonnormal"]
++    prior_own = {X.nc3c_seed(d, s) for d in prior_nc3c for s in streams}
++    mine = {X.nc3c_seed(d, s) for d in draws for s in streams}
++
++    their_carriers = {G.build_carrier_draw(d)["hashes"]["W_nonnormal"] for d in reserved}
++    prior_own_carriers = {X.build_carrier_draw(d)["hashes"]["W_nonnormal"] for d in prior_nc3c}
++    my_carriers = {d: X.build_carrier_draw(d)["hashes"]["W_nonnormal"] for d in draws}
++    mine_digests = set(my_carriers.values())
++
++    already_exercised = sorted(set(draws) & (set(PRIOR_NC3C_DRAWS) | set(BURNED_NC3C_DRAWS)))
++    collisions = {
++        "requested_draws_already_exercised": already_exercised,
++        "seed_collisions": sorted(mine & theirs),
++        "seed_collisions_with_prior_nc3c": sorted(mine & prior_own),
++        "carrier_digest_collisions": sorted(mine_digests & their_carriers),
++        "carrier_digest_collisions_with_prior_nc3c": sorted(mine_digests & prior_own_carriers),
++    }
+     return {
+         "nc3c_namespace": X.SEED_NAMESPACE,
++        "audited_draws": list(draws),
+         "streams_enumerated": len(streams),
+         "completed_lane_namespace": G.SEED_NAMESPACE,
++        "prior_nc3c_draws_compared": prior_nc3c,
++        "prior_nc3c_draws_on_record": sorted(set(PRIOR_NC3C_DRAWS) | set(BURNED_NC3C_DRAWS)),
+         "nc3c_seeds": len(mine), "completed_lane_seeds": len(theirs),
+-        "seed_collisions": sorted(mine & theirs),
+-        "carrier_digest_collisions": sorted(set(my_carriers.values()) & their_carriers),
++        "prior_nc3c_seeds": len(prior_own),
++        **collisions,
+         "nc3c_carrier_digests": my_carriers,
+-        "fresh": bool(not (mine & theirs) and not (set(my_carriers.values()) & their_carriers)),
++        "distinct_carrier_digests": len(mine_digests),
++        "fresh": not any(collisions.values()),
+     }
+ 
+ 
+@@ -211,16 +261,35 @@
+     parser.add_argument("--episodes", type=int, default=0)
+     parser.add_argument("--draws", type=int, default=0)
+     parser.add_argument("--audit-only", action="store_true")
++    parser.add_argument("--block", default="",
++                        help="inclusive carrier-draw range, e.g. 16-31. Default: the frozen block.")
++    parser.add_argument("--results-dir", default="",
++                        help="output directory. Required when --block selects a different block, "
++                             "so a new run cannot overwrite a frozen one.")
+     args = parser.parse_args()
+ 
++    if args.block:
++        lo, _, hi = args.block.partition("-")
++        block = tuple(range(int(lo), int(hi) + 1)) if hi else (int(lo),)
++    else:
++        block = tuple(X.CARRIER_DRAWS)
++
++    results = Path(args.results_dir).expanduser().resolve() if args.results_dir else RESULTS
++    if block != tuple(X.CARRIER_DRAWS) and results == RESULTS:
++        raise SystemExit("a non-default --block must be given its own --results-dir; refusing to "
++                         "write a new block into the frozen output directory")
++
+     started = time.time()
+-    RESULTS.mkdir(parents=True, exist_ok=True)
+-    audit = freshness_audit(dict(FROZEN))
+-    R.write_json(RESULTS / "FRESHNESS_AUDIT.json", audit)
+-    R.write_json(RESULTS / "FROZEN_SEED_LIST.json", frozen_seed_list(dict(FROZEN)))
++    results.mkdir(parents=True, exist_ok=True)
++    audit = freshness_audit(dict(FROZEN), block)
++    R.write_json(results / "FRESHNESS_AUDIT.json", audit)
++    R.write_json(results / "FROZEN_SEED_LIST.json", frozen_seed_list(dict(FROZEN), block))
+     print(json.dumps({k: audit[k] for k in (
+-        "nc3c_namespace", "nc3c_seeds", "completed_lane_seeds",
+-        "seed_collisions", "carrier_digest_collisions", "fresh")}, indent=2))
++        "nc3c_namespace", "audited_draws", "requested_draws_already_exercised",
++        "nc3c_seeds", "completed_lane_seeds",
++        "prior_nc3c_seeds", "seed_collisions", "seed_collisions_with_prior_nc3c",
++        "carrier_digest_collisions", "carrier_digest_collisions_with_prior_nc3c",
++        "fresh")}, indent=2))
+     if not audit["fresh"]:
+         raise RuntimeError("NC-3C seeds or carriers are not fresh; the protocol forbids the run")
+     if args.audit_only:
+@@ -233,18 +302,18 @@
+     if args.episodes:
+         config["test_episodes"] = args.episodes
+         config["calibration_episodes"] = args.episodes
+-    draws = X.CARRIER_DRAWS[:args.draws] if args.draws else X.CARRIER_DRAWS
++    draws = block[:args.draws] if args.draws else block
+ 
+     for stale in ("CELL_LEVEL.csv", "CROSS_EVALUATION_ROWS.csv", "REFERENCE_ROWS.csv",
+                   "VERDICT.json", "RUN_RECEIPT.json", "INVALID_RUN_LEDGER.json"):
+-        (RESULTS / stale).unlink(missing_ok=True)
++        (results / stale).unlink(missing_ok=True)
+ 
+     work = [(d, w, config) for d in draws for w in G.WRITER_TYPES]
+     with ProcessPoolExecutor(max_workers=args.workers) as pool:
+         cells = list(pool.map(_cell, work))
+ 
+     invalid, cross_rows, reference_rows, cell_rows = [], [], [], []
+-    per_cell = RESULTS / "cells"
++    per_cell = results / "cells"
+     per_cell.mkdir(parents=True, exist_ok=True)
+     for cell in cells:
+         if cell["validity"]["verdict"] != "VALID":
+@@ -259,11 +328,12 @@
+         R.write_json(per_cell / f"CELL_draw{cell['draw_index']:03d}_{cell['writer_type']}.json",
+                      {k: v for k, v in cell.items() if k not in ("rows", "reference_rows")})
+ 
+-    R.write_csv(RESULTS / "CELL_LEVEL.csv", cell_rows)
+-    R.write_csv(RESULTS / "CROSS_EVALUATION_ROWS.csv", cross_rows)
+-    R.write_csv(RESULTS / "REFERENCE_ROWS.csv", reference_rows)
++    R.write_csv(results / "CELL_LEVEL.csv", cell_rows)
++    R.write_csv(results / "CROSS_EVALUATION_ROWS.csv", cross_rows)
++    R.write_csv(results / "REFERENCE_ROWS.csv", reference_rows)
+     receipt = {
+         "stage": "nc3c_rehearsal" if overridden else "nc3c_confirmatory",
++        "carrier_block": list(block), "results_dir": str(results),
+         "budget_is_frozen": not overridden,
+         "overrides_passed": {"steps": args.steps, "episodes": args.episodes, "draws": args.draws},
+         "config": config,
+@@ -280,8 +350,8 @@
+         "code_manifest": R.code_manifest(), "vendor_digests": G.vendor_digests(),
+         "environment": R.environment(),
+     }
+-    R.write_json(RESULTS / "RUN_RECEIPT.json", receipt)
+-    R.write_json(RESULTS / "INVALID_RUN_LEDGER.json",
++    R.write_json(results / "RUN_RECEIPT.json", receipt)
++    R.write_json(results / "INVALID_RUN_LEDGER.json",
+                  {"invalid_runs": invalid, "count": len(invalid)})
+     print(json.dumps({"cells": len(cells), "valid_cells": receipt["valid_cells"],
+                       "invalid_runs": len(invalid), "trained_models": receipt["trained_models"],

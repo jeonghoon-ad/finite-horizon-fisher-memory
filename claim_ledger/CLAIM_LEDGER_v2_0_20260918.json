@@ -1,0 +1,1293 @@
+{
+  "generated_utc": "2026-09-23T08:35:06+00:00",
+  "purpose": "handoff section 8 raw-to-manuscript claim ledger",
+  "rule": "every value recomputed from the frozen CSVs by this script; no value copied from a report; aggregation named on every row",
+  "sources": {
+    "direction": {
+      "path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a"
+    },
+    "retention": {
+      "path": "results/confirmatory/RETENTION_ROWS.csv",
+      "sha256": "59157c1712d8f42377c09bec47d5117dca7d8945b0a06f972d181902d551b2b4"
+    },
+    "cell_nc1": {
+      "path": "results/confirmatory/CELL_LEVEL.csv",
+      "sha256": "1162d2015483cd3ae1c075457d79dd2e40a5b7d7f6c5c5bab15a21382d57119a"
+    },
+    "verdict_nc1": {
+      "path": "results/confirmatory/VERDICT.json",
+      "sha256": "3e180680767021983da8253374e9b5ebe014a67f5f7cedede674551b9422d9b4"
+    },
+    "receipt_nc1": {
+      "path": "results/confirmatory/RUN_RECEIPT.json",
+      "sha256": "31f774bc196ca8cc6e73f025c4d411548d2d2d8c68505cc81922c88cdc3ae526"
+    },
+    "cell_nc3c": {
+      "path": "results/nc3c/CELL_LEVEL.csv",
+      "sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e"
+    },
+    "cross_nc3c": {
+      "path": "results/nc3c/CROSS_EVALUATION_ROWS.csv",
+      "sha256": "4baa55600f6203eb213d6438b68062d62110ab52cc377a71820b482ce8288184"
+    },
+    "reference_nc3c": {
+      "path": "results/nc3c/REFERENCE_ROWS.csv",
+      "sha256": "6097c03fed17899456f2f676e3a94e0a7207e3db8d6c4d1da6741cfa7b517ac5"
+    },
+    "verdict_nc3c": {
+      "path": "results/nc3c/VERDICT.json",
+      "sha256": "e80524f9776c48f64e4f3698148ce5d6912bc1a0234e342e3cf336194551095d"
+    },
+    "receipt_nc3c": {
+      "path": "results/nc3c/RUN_RECEIPT.json",
+      "sha256": "31566c5ebabeaf28ec03b3e6c90cbed1925f6749e1acc108821c1e3dbc981872"
+    },
+    "transport": {
+      "path": "results/parity/DECODER_TRANSPORT_PARITY.json",
+      "sha256": "9891249db0d0b805331fbcd1cd2f65f0da2a4ea10f2a32dd1e23c341ff63348b"
+    },
+    "scan": {
+      "path": "results/parity/SCAN_PARITY.json",
+      "sha256": "4e8fb0a15c253e30da45fca7fff61669fb14223ee880a2c0ef30b8f3c7acce3c"
+    },
+    "cpu_cuda": {
+      "path": "results/parity/CROSS_IMPLEMENTATION_PARITY.json",
+      "sha256": "8b7869120a07bfbaeffa7c3de030ce167340a57825de2c433977e1f72e70d2af"
+    },
+    "cell_nc3c_b2": {
+      "path": "results/nc3c_block2_20260920/CELL_LEVEL.csv",
+      "sha256": "5b732137b47218ec2bc33f69a574998b9a291dbcafcf8801181ad5a7f9f38504"
+    },
+    "verdict_nc3c_b2": {
+      "path": "results/nc3c_block2_20260920/VERDICT.json",
+      "sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8"
+    },
+    "receipt_nc3c_b2": {
+      "path": "results/nc3c_block2_20260920/RUN_RECEIPT.json",
+      "sha256": "6ddf03a8e14a95832bc1df9250aae3df4258d006ab5d4ee69b8a8e821ca7c2ff"
+    },
+    "freshness_nc3c_b2": {
+      "path": "results/nc3c_block2_20260920/FRESHNESS_AUDIT.json",
+      "sha256": "9029ee19085cf96b0cc3ae0dc814f3becf025ee45aed15ee53c4e38a9ee235a1"
+    }
+  },
+  "entries": [
+    {
+      "claim_id": "nc1.R_J.median.nonnormal",
+      "value": 0.9993635240837242,
+      "source_path": "results/confirmatory/CELL_LEVEL.csv",
+      "source_sha256": "1162d2015483cd3ae1c075457d79dd2e40a5b7d7f6c5c5bab15a21382d57119a",
+      "raw_field": "rayleigh_efficiency",
+      "formula": "median over carriers of (median over 5 seeds)",
+      "subset": "writer_type=nonnormal, isolated, horizon=H_train=128, direction=v_learn",
+      "aggregation": "median of per-carrier medians; carrier draw is the independent unit; 16 carriers",
+      "units": "dimensionless, Fisher/Rayleigh efficiency in [0,1], NOT accuracy",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.2",
+        "Abstract"
+      ],
+      "note": "R_J near 0.999 must never be described as 99.9% accuracy"
+    },
+    {
+      "claim_id": "nc1.A_sub.median.nonnormal",
+      "value": 0.9986084138883538,
+      "source_path": "results/confirmatory/CELL_LEVEL.csv",
+      "source_sha256": "1162d2015483cd3ae1c075457d79dd2e40a5b7d7f6c5c5bab15a21382d57119a",
+      "raw_field": "subspace_alignment",
+      "formula": "median over carriers of (median over 5 seeds) of ||P_E0.99 v||^2",
+      "subset": "writer_type=nonnormal, isolated, horizon=128, direction=v_learn",
+      "aggregation": "median of per-carrier medians, 16 carriers",
+      "units": "dimensionless in [0,1]",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.2"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc1.calibration_mae.nonnormal",
+      "value": 0.0019598664053422123,
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "predicted_accuracy, recalibrated_accuracy",
+      "formula": "mean |predicted - empirical|",
+      "subset": "writer_type=nonnormal, ALL directions, both storage conditions, all evaluated horizons",
+      "aggregation": "pooled mean over 22080 rows, NOT a carrier-level statistic",
+      "units": "accuracy difference",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3",
+        "Abstract"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc1.calibration_slope.nonnormal",
+      "value": 1.0068205977967382,
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "predicted_accuracy, recalibrated_accuracy",
+      "formula": "least-squares slope of empirical on predicted",
+      "subset": "writer_type=nonnormal, same population as the MAE row",
+      "aggregation": "pooled OLS over 22080 rows",
+      "units": "dimensionless",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc1.random_baseline_R_J.median.nonnormal",
+      "value": 0.1443675973141586,
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "rayleigh_efficiency_M_old",
+      "formula": "median over carriers of (median over 128 random directions)",
+      "subset": "writer_type=nonnormal, isolated, horizon=128, direction=v_random_*",
+      "aggregation": "median of per-carrier medians, 16 carriers",
+      "units": "dimensionless",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.2"
+      ],
+      "note": "the comparator that makes R_J ~ 0.999 non-trivial"
+    },
+    {
+      "claim_id": "nc1.R_J.median.normal",
+      "value": 0.9989059840551345,
+      "source_path": "results/confirmatory/CELL_LEVEL.csv",
+      "source_sha256": "1162d2015483cd3ae1c075457d79dd2e40a5b7d7f6c5c5bab15a21382d57119a",
+      "raw_field": "rayleigh_efficiency",
+      "formula": "median over carriers of (median over 5 seeds)",
+      "subset": "writer_type=normal, isolated, horizon=H_train=128, direction=v_learn",
+      "aggregation": "median of per-carrier medians; carrier draw is the independent unit; 16 carriers",
+      "units": "dimensionless, Fisher/Rayleigh efficiency in [0,1], NOT accuracy",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.2",
+        "Abstract"
+      ],
+      "note": "R_J near 0.999 must never be described as 99.9% accuracy"
+    },
+    {
+      "claim_id": "nc1.A_sub.median.normal",
+      "value": 0.9961406476323488,
+      "source_path": "results/confirmatory/CELL_LEVEL.csv",
+      "source_sha256": "1162d2015483cd3ae1c075457d79dd2e40a5b7d7f6c5c5bab15a21382d57119a",
+      "raw_field": "subspace_alignment",
+      "formula": "median over carriers of (median over 5 seeds) of ||P_E0.99 v||^2",
+      "subset": "writer_type=normal, isolated, horizon=128, direction=v_learn",
+      "aggregation": "median of per-carrier medians, 16 carriers",
+      "units": "dimensionless in [0,1]",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.2"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc1.calibration_mae.normal",
+      "value": 0.001894967177104048,
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "predicted_accuracy, recalibrated_accuracy",
+      "formula": "mean |predicted - empirical|",
+      "subset": "writer_type=normal, ALL directions, both storage conditions, all evaluated horizons",
+      "aggregation": "pooled mean over 22080 rows, NOT a carrier-level statistic",
+      "units": "accuracy difference",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3",
+        "Abstract"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc1.calibration_slope.normal",
+      "value": 1.0091667690457682,
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "predicted_accuracy, recalibrated_accuracy",
+      "formula": "least-squares slope of empirical on predicted",
+      "subset": "writer_type=normal, same population as the MAE row",
+      "aggregation": "pooled OLS over 22080 rows",
+      "units": "dimensionless",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc1.random_baseline_R_J.median.normal",
+      "value": 0.2620547103933188,
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "rayleigh_efficiency_M_old",
+      "formula": "median over carriers of (median over 128 random directions)",
+      "subset": "writer_type=normal, isolated, horizon=128, direction=v_random_*",
+      "aggregation": "median of per-carrier medians, 16 carriers",
+      "units": "dimensionless",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.2"
+      ],
+      "note": "the comparator that makes R_J ~ 0.999 non-trivial"
+    },
+    {
+      "claim_id": "nc1.J_range.all_rows_orders",
+      "value": 31.950131073747322,
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "J",
+      "formula": "log10(max J / min J)",
+      "subset": "ALL 44160 direction rows including v_bottom",
+      "aggregation": "pooled min and max",
+      "units": "orders of magnitude",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "NOT FOR USE"
+      ],
+      "note": "MEANINGLESS as a range: it pools the null-direction rows with the rest. Those rows are round-off residuals under isolation and small leaked values under open coupling (see nc1.v_bottom.J.*). Recorded so the number cannot be quoted innocently."
+    },
+    {
+      "claim_id": "nc1.J_range.nonnull_orders",
+      "value": 4.226746280715374,
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "J",
+      "formula": "log10(max J / min J)",
+      "subset": "all direction rows EXCLUDING v_bottom, J > 0",
+      "aggregation": "pooled min 1.8813e-05 and max 3.1710e-01 over 43840 rows",
+      "units": "orders of magnitude",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3",
+        "Abstract"
+      ],
+      "note": "THE figure to quote. Supersedes the 'twelve orders of magnitude' in the first issue of RESULTS_20260918_EN.md, which was read off a figure axis."
+    },
+    {
+      "claim_id": "nc1.v_bottom.J",
+      "value": 4.171447123878251e-06,
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "J",
+      "formula": "median J of the null-direction control",
+      "subset": "direction=v_bottom, all conditions and horizons",
+      "aggregation": "pooled median",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "NOT FOR USE"
+      ],
+      "note": "NOT FOR USE, corrected 2026-09-23: a median pooled over the isolated and open populations, which do not overlap, so it falls between them and describes neither. v2.0 and v2.1 described the null direction as J = 0 in every row; that holds only under isolation. Use nc1.v_bottom.J.isolated.* and nc1.v_bottom.J.open.*."
+    },
+    {
+      "claim_id": "nc1.v_bottom.J.isolated.median",
+      "value": 1.859762241974572e-32,
+      "formula": "median J",
+      "subset": "direction=v_bottom, condition=isolated, all horizons, 160 rows",
+      "aggregation": "median over rows",
+      "note": "round-off residual in the exact kernel; reported as analytically zero",
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "J",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3 null control"
+      ]
+    },
+    {
+      "claim_id": "nc1.v_bottom.J.isolated.max",
+      "value": 1.5258942213067757e-30,
+      "formula": "max J",
+      "subset": "direction=v_bottom, condition=isolated, all horizons, 160 rows",
+      "aggregation": "maximum over rows",
+      "note": "round-off residual in the exact kernel",
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "J",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3 null control"
+      ]
+    },
+    {
+      "claim_id": "nc1.v_bottom.J.open.min",
+      "value": 8.342894247756501e-06,
+      "formula": "min J",
+      "subset": "direction=v_bottom, condition=open, all horizons, 160 rows",
+      "aggregation": "minimum over rows",
+      "note": "leaked information under open coupling, not kernel information of the isolated operator",
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "J",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3 null control"
+      ]
+    },
+    {
+      "claim_id": "nc1.v_bottom.J.open.max",
+      "value": 0.007132921458438037,
+      "formula": "max J",
+      "subset": "direction=v_bottom, condition=open, all horizons, 160 rows",
+      "aggregation": "maximum over rows",
+      "note": "leaked information under open coupling",
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "source_sha256": "36a051f84f4148cd6119453740e4294538587f65ceeb03c1821a871d63c2548a",
+      "raw_field": "J",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3 null control"
+      ]
+    },
+    {
+      "claim_id": "nc1.decay.along_horizon.paired_median.nonnormal",
+      "value": 118.34517455382324,
+      "source_path": "results/confirmatory/RETENTION_ROWS.csv",
+      "source_sha256": "59157c1712d8f42377c09bec47d5117dca7d8945b0a06f972d181902d551b2b4",
+      "raw_field": "J",
+      "formula": "median over carriers of [ J(open, H=64) / J(open, H=4096) ], ratio formed WITHIN each carrier",
+      "subset": "writer_type=nonnormal, condition=open, direction=v_learn, H=64 vs H=4096",
+      "aggregation": "median of PAIRED per-carrier ratios, 16 carriers; IQR [85.4, 160.2]",
+      "units": "dimensionless ratio",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.5"
+      ],
+      "note": "THE along-horizon figure. Never write that continued coupling caused a 580-fold decline from H=64 to H=4096."
+    },
+    {
+      "claim_id": "nc1.decay.along_horizon.ratio_of_medians.nonnormal",
+      "value": 130.53461181152306,
+      "source_path": "results/confirmatory/RETENTION_ROWS.csv",
+      "source_sha256": "59157c1712d8f42377c09bec47d5117dca7d8945b0a06f972d181902d551b2b4",
+      "raw_field": "J",
+      "formula": "[median J(open,64)] / [median J(open,4096)]",
+      "subset": "writer_type=nonnormal, condition=open",
+      "aggregation": "RATIO OF POOLED MEDIANS, not a paired statistic",
+      "units": "dimensionless ratio",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Supplement only"
+      ],
+      "note": "differs from the paired median; recorded so the two cannot be conflated"
+    },
+    {
+      "claim_id": "nc1.contrast.isolated_over_open_at_4096.paired_median.nonnormal",
+      "value": 520.3980041677177,
+      "source_path": "results/confirmatory/RETENTION_ROWS.csv",
+      "source_sha256": "59157c1712d8f42377c09bec47d5117dca7d8945b0a06f972d181902d551b2b4",
+      "raw_field": "J",
+      "formula": "median over carriers of [ J(isolated, H=4096) / J(open, H=4096) ]",
+      "subset": "writer_type=nonnormal, direction=v_learn, both arms at H=4096",
+      "aggregation": "median of PAIRED per-carrier ratios, 16 carriers; IQR [367.1, 666.4]",
+      "units": "dimensionless ratio",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.5"
+      ],
+      "note": "THIS is the quantity the '580' figure belongs to. Per writer type; never pooled."
+    },
+    {
+      "claim_id": "nc1.contrast.isolated_over_open_at_4096.ratio_of_medians.nonnormal",
+      "value": 580.7141376742453,
+      "source_path": "results/confirmatory/RETENTION_ROWS.csv",
+      "source_sha256": "59157c1712d8f42377c09bec47d5117dca7d8945b0a06f972d181902d551b2b4",
+      "raw_field": "J",
+      "formula": "[median J(isolated,4096)] / [median J(open,4096)]",
+      "subset": "writer_type=nonnormal",
+      "aggregation": "RATIO OF POOLED MEDIANS",
+      "units": "dimensionless ratio",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Supplement only"
+      ],
+      "note": "COLLISION HAZARD: the normal writer's value here equals the non-normal writer's paired median to one decimal. Always print writer type and aggregation together."
+    },
+    {
+      "claim_id": "nc1.isolated_J.pooled_median.nonnormal",
+      "value": 0.25525904777924,
+      "source_path": "results/confirmatory/RETENTION_ROWS.csv",
+      "source_sha256": "59157c1712d8f42377c09bec47d5117dca7d8945b0a06f972d181902d551b2b4",
+      "raw_field": "J",
+      "formula": "median of J under exact isolation",
+      "subset": "writer_type=nonnormal, condition=isolated, direction=v_learn, any H (J is horizon-invariant)",
+      "aggregation": "pooled median over 16 carriers x 5 seeds = 80 rows",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.5"
+      ],
+      "note": "supersedes the values 0.2205 / 0.1466 quoted in VERIFICATION_OF_COMPLETED_RUN as medians: those were single arbitrary rows produced by a dict keyed on horizon"
+    },
+    {
+      "claim_id": "nc1.decay.along_horizon.paired_median.normal",
+      "value": 119.31343245496596,
+      "source_path": "results/confirmatory/RETENTION_ROWS.csv",
+      "source_sha256": "59157c1712d8f42377c09bec47d5117dca7d8945b0a06f972d181902d551b2b4",
+      "raw_field": "J",
+      "formula": "median over carriers of [ J(open, H=64) / J(open, H=4096) ], ratio formed WITHIN each carrier",
+      "subset": "writer_type=normal, condition=open, direction=v_learn, H=64 vs H=4096",
+      "aggregation": "median of PAIRED per-carrier ratios, 16 carriers; IQR [83.4, 199.7]",
+      "units": "dimensionless ratio",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.5"
+      ],
+      "note": "THE along-horizon figure. Never write that continued coupling caused a 580-fold decline from H=64 to H=4096."
+    },
+    {
+      "claim_id": "nc1.decay.along_horizon.ratio_of_medians.normal",
+      "value": 133.61582589131513,
+      "source_path": "results/confirmatory/RETENTION_ROWS.csv",
+      "source_sha256": "59157c1712d8f42377c09bec47d5117dca7d8945b0a06f972d181902d551b2b4",
+      "raw_field": "J",
+      "formula": "[median J(open,64)] / [median J(open,4096)]",
+      "subset": "writer_type=normal, condition=open",
+      "aggregation": "RATIO OF POOLED MEDIANS, not a paired statistic",
+      "units": "dimensionless ratio",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Supplement only"
+      ],
+      "note": "differs from the paired median; recorded so the two cannot be conflated"
+    },
+    {
+      "claim_id": "nc1.contrast.isolated_over_open_at_4096.paired_median.normal",
+      "value": 486.8847399618736,
+      "source_path": "results/confirmatory/RETENTION_ROWS.csv",
+      "source_sha256": "59157c1712d8f42377c09bec47d5117dca7d8945b0a06f972d181902d551b2b4",
+      "raw_field": "J",
+      "formula": "median over carriers of [ J(isolated, H=4096) / J(open, H=4096) ]",
+      "subset": "writer_type=normal, direction=v_learn, both arms at H=4096",
+      "aggregation": "median of PAIRED per-carrier ratios, 16 carriers; IQR [324.3, 877.2]",
+      "units": "dimensionless ratio",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.5"
+      ],
+      "note": "THIS is the quantity the '580' figure belongs to. Per writer type; never pooled."
+    },
+    {
+      "claim_id": "nc1.contrast.isolated_over_open_at_4096.ratio_of_medians.normal",
+      "value": 520.3598525038805,
+      "source_path": "results/confirmatory/RETENTION_ROWS.csv",
+      "source_sha256": "59157c1712d8f42377c09bec47d5117dca7d8945b0a06f972d181902d551b2b4",
+      "raw_field": "J",
+      "formula": "[median J(isolated,4096)] / [median J(open,4096)]",
+      "subset": "writer_type=normal",
+      "aggregation": "RATIO OF POOLED MEDIANS",
+      "units": "dimensionless ratio",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Supplement only"
+      ],
+      "note": "COLLISION HAZARD: the normal writer's value here equals the non-normal writer's paired median to one decimal. Always print writer type and aggregation together."
+    },
+    {
+      "claim_id": "nc1.isolated_J.pooled_median.normal",
+      "value": 0.14056162764734287,
+      "source_path": "results/confirmatory/RETENTION_ROWS.csv",
+      "source_sha256": "59157c1712d8f42377c09bec47d5117dca7d8945b0a06f972d181902d551b2b4",
+      "raw_field": "J",
+      "formula": "median of J under exact isolation",
+      "subset": "writer_type=normal, condition=isolated, direction=v_learn, any H (J is horizon-invariant)",
+      "aggregation": "pooled median over 16 carriers x 5 seeds = 80 rows",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.5"
+      ],
+      "note": "supersedes the values 0.2205 / 0.1466 quoted in VERIFICATION_OF_COMPLETED_RUN as medians: those were single arbitrary rows produced by a dict keyed on horizon"
+    },
+    {
+      "claim_id": "nc1.decoder.fixed_at_train.nonnormal",
+      "value": 0.77179,
+      "source_path": "results/confirmatory/VERDICT.json",
+      "source_sha256": "3e180680767021983da8253374e9b5ebe014a67f5f7cedede674551b9422d9b4",
+      "raw_field": "readout_mismatch.fixed_median_at_train_horizon",
+      "formula": "median over all matching rows",
+      "subset": "writer_type=nonnormal, isolated, H = H_train = 128, learned direction, its own trained readout",
+      "aggregation": "pooled median over 16 carriers x 5 seeds (x 4 horizons for the 'away' rows)",
+      "units": "accuracy",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.6"
+      ],
+      "note": "FINAL run values. The figures 0.7728 and 0.5067 quoted earlier came from an intermediate rehearsal and must not appear."
+    },
+    {
+      "claim_id": "nc1.decoder.recal_at_train.nonnormal",
+      "value": 0.77596,
+      "source_path": "results/confirmatory/VERDICT.json",
+      "source_sha256": "3e180680767021983da8253374e9b5ebe014a67f5f7cedede674551b9422d9b4",
+      "raw_field": "readout_mismatch.recalibrated_median_at_train_horizon",
+      "formula": "median over all matching rows",
+      "subset": "writer_type=nonnormal, isolated, H = 128, learned direction, readout refit on an independent calibration sample",
+      "aggregation": "pooled median over 16 carriers x 5 seeds (x 4 horizons for the 'away' rows)",
+      "units": "accuracy",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.6"
+      ],
+      "note": "FINAL run values. The figures 0.7728 and 0.5067 quoted earlier came from an intermediate rehearsal and must not appear."
+    },
+    {
+      "claim_id": "nc1.decoder.fixed_away.nonnormal",
+      "value": 0.50293,
+      "source_path": "results/confirmatory/VERDICT.json",
+      "source_sha256": "3e180680767021983da8253374e9b5ebe014a67f5f7cedede674551b9422d9b4",
+      "raw_field": "readout_mismatch.fixed_median_away",
+      "formula": "median over all matching rows",
+      "subset": "writer_type=nonnormal, isolated, H in {64,256,1024,4096}, learned direction, readout frozen at H=128",
+      "aggregation": "pooled median over 16 carriers x 5 seeds (x 4 horizons for the 'away' rows)",
+      "units": "accuracy",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.6"
+      ],
+      "note": "FINAL run values. The figures 0.7728 and 0.5067 quoted earlier came from an intermediate rehearsal and must not appear."
+    },
+    {
+      "claim_id": "nc1.decoder.recal_away.nonnormal",
+      "value": 0.77463,
+      "source_path": "results/confirmatory/VERDICT.json",
+      "source_sha256": "3e180680767021983da8253374e9b5ebe014a67f5f7cedede674551b9422d9b4",
+      "raw_field": "readout_mismatch.recalibrated_median_away",
+      "formula": "median over all matching rows",
+      "subset": "writer_type=nonnormal, isolated, H in {64,256,1024,4096}, learned direction, readout refit at each horizon",
+      "aggregation": "pooled median over 16 carriers x 5 seeds (x 4 horizons for the 'away' rows)",
+      "units": "accuracy",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.6"
+      ],
+      "note": "FINAL run values. The figures 0.7728 and 0.5067 quoted earlier came from an intermediate rehearsal and must not appear."
+    },
+    {
+      "claim_id": "nc1.decoder.fixed_at_train.normal",
+      "value": 0.71139,
+      "source_path": "results/confirmatory/VERDICT.json",
+      "source_sha256": "3e180680767021983da8253374e9b5ebe014a67f5f7cedede674551b9422d9b4",
+      "raw_field": "readout_mismatch.fixed_median_at_train_horizon",
+      "formula": "median over all matching rows",
+      "subset": "writer_type=normal, isolated, H = H_train = 128, learned direction, its own trained readout",
+      "aggregation": "pooled median over 16 carriers x 5 seeds (x 4 horizons for the 'away' rows)",
+      "units": "accuracy",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.6"
+      ],
+      "note": "FINAL run values. The figures 0.7728 and 0.5067 quoted earlier came from an intermediate rehearsal and must not appear."
+    },
+    {
+      "claim_id": "nc1.decoder.recal_at_train.normal",
+      "value": 0.71362,
+      "source_path": "results/confirmatory/VERDICT.json",
+      "source_sha256": "3e180680767021983da8253374e9b5ebe014a67f5f7cedede674551b9422d9b4",
+      "raw_field": "readout_mismatch.recalibrated_median_at_train_horizon",
+      "formula": "median over all matching rows",
+      "subset": "writer_type=normal, isolated, H = 128, learned direction, readout refit on an independent calibration sample",
+      "aggregation": "pooled median over 16 carriers x 5 seeds (x 4 horizons for the 'away' rows)",
+      "units": "accuracy",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.6"
+      ],
+      "note": "FINAL run values. The figures 0.7728 and 0.5067 quoted earlier came from an intermediate rehearsal and must not appear."
+    },
+    {
+      "claim_id": "nc1.decoder.fixed_away.normal",
+      "value": 0.51364,
+      "source_path": "results/confirmatory/VERDICT.json",
+      "source_sha256": "3e180680767021983da8253374e9b5ebe014a67f5f7cedede674551b9422d9b4",
+      "raw_field": "readout_mismatch.fixed_median_away",
+      "formula": "median over all matching rows",
+      "subset": "writer_type=normal, isolated, H in {64,256,1024,4096}, learned direction, readout frozen at H=128",
+      "aggregation": "pooled median over 16 carriers x 5 seeds (x 4 horizons for the 'away' rows)",
+      "units": "accuracy",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.6"
+      ],
+      "note": "FINAL run values. The figures 0.7728 and 0.5067 quoted earlier came from an intermediate rehearsal and must not appear."
+    },
+    {
+      "claim_id": "nc1.decoder.recal_away.normal",
+      "value": 0.7128300000000001,
+      "source_path": "results/confirmatory/VERDICT.json",
+      "source_sha256": "3e180680767021983da8253374e9b5ebe014a67f5f7cedede674551b9422d9b4",
+      "raw_field": "readout_mismatch.recalibrated_median_away",
+      "formula": "median over all matching rows",
+      "subset": "writer_type=normal, isolated, H in {64,256,1024,4096}, learned direction, readout refit at each horizon",
+      "aggregation": "pooled median over 16 carriers x 5 seeds (x 4 horizons for the 'away' rows)",
+      "units": "accuracy",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.6"
+      ],
+      "note": "FINAL run values. The figures 0.7728 and 0.5067 quoted earlier came from an intermediate rehearsal and must not appear."
+    },
+    {
+      "claim_id": "nc3c.R_own.median.t0.nonnormal",
+      "value": 0.9994479664281655,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "R_own_t0",
+      "formula": "median over carriers of (median over 5 seeds)",
+      "subset": "writer_type=nonnormal, objective t_0=0, direction trained on that objective",
+      "aggregation": "median of per-carrier medians, 16 carriers",
+      "units": "dimensionless efficiency",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4",
+        "Abstract"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.C.median.t0.nonnormal",
+      "value": 0.9990330239845915,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "C_t0",
+      "formula": "median over carriers of (R_own - R_cross) / G*, ratio formed WITHIN each carrier",
+      "subset": "writer_type=nonnormal, objective t_0=0, carriers with G* > 0.02",
+      "aggregation": "median of PAIRED per-carrier ratios over 16 usable carriers",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.G_star.median.t0.nonnormal",
+      "value": 0.239323975837754,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "G_star_t0",
+      "formula": "1 - (other oracle)^T M_j (other oracle) / lambda_max(M_j)",
+      "subset": "writer_type=nonnormal, objective t_0=0",
+      "aggregation": "median over 16 carriers, pre-training quantity",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": "CONFIRMATORY geometry. The preliminary 0.41/0.35 and minimum 0.117 were EXPLORATORY draws 800-807 and belong only to the feasibility statement."
+    },
+    {
+      "claim_id": "nc3c.R_own.median.t12.nonnormal",
+      "value": 0.9994481251611345,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "R_own_t12",
+      "formula": "median over carriers of (median over 5 seeds)",
+      "subset": "writer_type=nonnormal, objective t_0=12, direction trained on that objective",
+      "aggregation": "median of per-carrier medians, 16 carriers",
+      "units": "dimensionless efficiency",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4",
+        "Abstract"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.C.median.t12.nonnormal",
+      "value": 1.0009822275575795,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "C_t12",
+      "formula": "median over carriers of (R_own - R_cross) / G*, ratio formed WITHIN each carrier",
+      "subset": "writer_type=nonnormal, objective t_0=12, carriers with G* > 0.02",
+      "aggregation": "median of PAIRED per-carrier ratios over 16 usable carriers",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.G_star.median.t12.nonnormal",
+      "value": 0.2089687454026538,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "G_star_t12",
+      "formula": "1 - (other oracle)^T M_j (other oracle) / lambda_max(M_j)",
+      "subset": "writer_type=nonnormal, objective t_0=12",
+      "aggregation": "median over 16 carriers, pre-training quantity",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": "CONFIRMATORY geometry. The preliminary 0.41/0.35 and minimum 0.117 were EXPLORATORY draws 800-807 and belong only to the feasibility statement."
+    },
+    {
+      "claim_id": "nc3c.diag_diff.median.t0.nonnormal",
+      "value": 0.23529897394538268,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "R_own_t0 - R_cross_t0",
+      "formula": "median over carriers of the WITHIN-carrier difference",
+      "subset": "writer_type=nonnormal, objective t_0=0",
+      "aggregation": "median of paired per-carrier differences, 16 carriers; paired 95% bootstrap CI [0.1367, 0.4068]",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.diag_diff.median.t12.nonnormal",
+      "value": 0.21256812533321257,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "R_own_t12 - R_cross_t12",
+      "formula": "median over carriers of the WITHIN-carrier difference",
+      "subset": "writer_type=nonnormal, objective t_0=12",
+      "aggregation": "median of paired per-carrier differences, 16 carriers; paired 95% bootstrap CI [0.1789, 0.3635]",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.R_own.median.t0.normal",
+      "value": 0.9988472848727353,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "R_own_t0",
+      "formula": "median over carriers of (median over 5 seeds)",
+      "subset": "writer_type=normal, objective t_0=0, direction trained on that objective",
+      "aggregation": "median of per-carrier medians, 16 carriers",
+      "units": "dimensionless efficiency",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4",
+        "Abstract"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.C.median.t0.normal",
+      "value": 0.9996841072163651,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "C_t0",
+      "formula": "median over carriers of (R_own - R_cross) / G*, ratio formed WITHIN each carrier",
+      "subset": "writer_type=normal, objective t_0=0, carriers with G* > 0.02",
+      "aggregation": "median of PAIRED per-carrier ratios over 16 usable carriers",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.G_star.median.t0.normal",
+      "value": 0.5095350946630175,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "G_star_t0",
+      "formula": "1 - (other oracle)^T M_j (other oracle) / lambda_max(M_j)",
+      "subset": "writer_type=normal, objective t_0=0",
+      "aggregation": "median over 16 carriers, pre-training quantity",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": "CONFIRMATORY geometry. The preliminary 0.41/0.35 and minimum 0.117 were EXPLORATORY draws 800-807 and belong only to the feasibility statement."
+    },
+    {
+      "claim_id": "nc3c.R_own.median.t12.normal",
+      "value": 0.9987433162477355,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "R_own_t12",
+      "formula": "median over carriers of (median over 5 seeds)",
+      "subset": "writer_type=normal, objective t_0=12, direction trained on that objective",
+      "aggregation": "median of per-carrier medians, 16 carriers",
+      "units": "dimensionless efficiency",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4",
+        "Abstract"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.C.median.t12.normal",
+      "value": 0.9986517030925747,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "C_t12",
+      "formula": "median over carriers of (R_own - R_cross) / G*, ratio formed WITHIN each carrier",
+      "subset": "writer_type=normal, objective t_0=12, carriers with G* > 0.02",
+      "aggregation": "median of PAIRED per-carrier ratios over 16 usable carriers",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.G_star.median.t12.normal",
+      "value": 0.44554057518239076,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "G_star_t12",
+      "formula": "1 - (other oracle)^T M_j (other oracle) / lambda_max(M_j)",
+      "subset": "writer_type=normal, objective t_0=12",
+      "aggregation": "median over 16 carriers, pre-training quantity",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": "CONFIRMATORY geometry. The preliminary 0.41/0.35 and minimum 0.117 were EXPLORATORY draws 800-807 and belong only to the feasibility statement."
+    },
+    {
+      "claim_id": "nc3c.diag_diff.median.t0.normal",
+      "value": 0.5114401813172595,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "R_own_t0 - R_cross_t0",
+      "formula": "median over carriers of the WITHIN-carrier difference",
+      "subset": "writer_type=normal, objective t_0=0",
+      "aggregation": "median of paired per-carrier differences, 16 carriers; paired 95% bootstrap CI [0.4511, 0.6243]",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.diag_diff.median.t12.normal",
+      "value": 0.44117686796342515,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "R_own_t12 - R_cross_t12",
+      "formula": "median over carriers of the WITHIN-carrier difference",
+      "subset": "writer_type=normal, objective t_0=12",
+      "aggregation": "median of paired per-carrier differences, 16 carriers; paired 95% bootstrap CI [0.3957, 0.5027]",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c.G_star.min_across_all_cells",
+      "value": 0.06025888770013066,
+      "source_path": "results/nc3c/CELL_LEVEL.csv",
+      "source_sha256": "ad5b83b84827a397930f96c8c43662ee451961dab4292e92ef637ee5aef6695e",
+      "raw_field": "G_star_t0, G_star_t12",
+      "formula": "minimum over every cell and objective",
+      "subset": "both writer types, both objectives, 16 carriers",
+      "aggregation": "pooled minimum of 64 values",
+      "units": "dimensionless",
+      "experiment_phase": "NC-3C confirmatory",
+      "manuscript_locations": [
+        "Results 7.4"
+      ],
+      "note": "no cell fell below the frozen 0.02 negligibility threshold"
+    },
+    {
+      "claim_id": "nc3c_b2.R_own.median.t0.nonnormal",
+      "value": 0.9994399449326963,
+      "source_path": "results/nc3c_block2_20260920/CELL_LEVEL.csv",
+      "source_sha256": "5b732137b47218ec2bc33f69a574998b9a291dbcafcf8801181ad5a7f9f38504",
+      "raw_field": "R_own_t0",
+      "formula": "median over carriers of (median over 5 seeds)",
+      "subset": "block 16..31, writer nonnormal, objective t0=0",
+      "aggregation": "median of per-carrier medians",
+      "units": "dimensionless Rayleigh efficiency",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.G_star.median.t0.nonnormal",
+      "value": 0.2583999420873395,
+      "source_path": "results/nc3c_block2_20260920/VERDICT.json",
+      "source_sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8",
+      "raw_field": "G_star_t0",
+      "formula": "1 - r_j(v*_other)",
+      "subset": "block 16..31, writer nonnormal, objective t0=0",
+      "aggregation": "median over carriers",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.G_learn.median.t0.nonnormal",
+      "value": 0.2596891675095007,
+      "source_path": "results/nc3c_block2_20260920/VERDICT.json",
+      "source_sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8",
+      "raw_field": "G_learn_t0",
+      "formula": "paired percentile bootstrap point estimate over carrier draws",
+      "subset": "block 16..31, writer nonnormal, objective t0=0",
+      "aggregation": "bootstrap point over carriers",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.C.median.t0.nonnormal",
+      "value": 1.0005029706101096,
+      "source_path": "results/nc3c_block2_20260920/CELL_LEVEL.csv",
+      "source_sha256": "5b732137b47218ec2bc33f69a574998b9a291dbcafcf8801181ad5a7f9f38504",
+      "raw_field": "C_t0",
+      "formula": "G_learn_j / G*_j",
+      "subset": "block 16..31, writer nonnormal, objective t0=0, 16 usable carriers",
+      "aggregation": "median of per-carrier values",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.R_own.median.t12.nonnormal",
+      "value": 0.999474284801209,
+      "source_path": "results/nc3c_block2_20260920/CELL_LEVEL.csv",
+      "source_sha256": "5b732137b47218ec2bc33f69a574998b9a291dbcafcf8801181ad5a7f9f38504",
+      "raw_field": "R_own_t12",
+      "formula": "median over carriers of (median over 5 seeds)",
+      "subset": "block 16..31, writer nonnormal, objective t0=12",
+      "aggregation": "median of per-carrier medians",
+      "units": "dimensionless Rayleigh efficiency",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.G_star.median.t12.nonnormal",
+      "value": 0.2921999653904703,
+      "source_path": "results/nc3c_block2_20260920/VERDICT.json",
+      "source_sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8",
+      "raw_field": "G_star_t12",
+      "formula": "1 - r_j(v*_other)",
+      "subset": "block 16..31, writer nonnormal, objective t0=12",
+      "aggregation": "median over carriers",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.G_learn.median.t12.nonnormal",
+      "value": 0.2904380656558922,
+      "source_path": "results/nc3c_block2_20260920/VERDICT.json",
+      "source_sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8",
+      "raw_field": "G_learn_t12",
+      "formula": "paired percentile bootstrap point estimate over carrier draws",
+      "subset": "block 16..31, writer nonnormal, objective t0=12",
+      "aggregation": "bootstrap point over carriers",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.C.median.t12.nonnormal",
+      "value": 0.9983965152799621,
+      "source_path": "results/nc3c_block2_20260920/CELL_LEVEL.csv",
+      "source_sha256": "5b732137b47218ec2bc33f69a574998b9a291dbcafcf8801181ad5a7f9f38504",
+      "raw_field": "C_t12",
+      "formula": "G_learn_j / G*_j",
+      "subset": "block 16..31, writer nonnormal, objective t0=12, 16 usable carriers",
+      "aggregation": "median of per-carrier values",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.diagonal_dominance.both_strict_draws.nonnormal",
+      "value": 16,
+      "source_path": "results/nc3c_block2_20260920/VERDICT.json",
+      "source_sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8",
+      "raw_field": "both_strict_draws",
+      "formula": "count of carriers with G_learn > 0 on both objectives",
+      "subset": "block 16..31, writer nonnormal",
+      "aggregation": "count over 16 carriers",
+      "units": "carriers",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.R_own.median.t0.normal",
+      "value": 0.9988909560267274,
+      "source_path": "results/nc3c_block2_20260920/CELL_LEVEL.csv",
+      "source_sha256": "5b732137b47218ec2bc33f69a574998b9a291dbcafcf8801181ad5a7f9f38504",
+      "raw_field": "R_own_t0",
+      "formula": "median over carriers of (median over 5 seeds)",
+      "subset": "block 16..31, writer normal, objective t0=0",
+      "aggregation": "median of per-carrier medians",
+      "units": "dimensionless Rayleigh efficiency",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.G_star.median.t0.normal",
+      "value": 0.44108088492611824,
+      "source_path": "results/nc3c_block2_20260920/VERDICT.json",
+      "source_sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8",
+      "raw_field": "G_star_t0",
+      "formula": "1 - r_j(v*_other)",
+      "subset": "block 16..31, writer normal, objective t0=0",
+      "aggregation": "median over carriers",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.G_learn.median.t0.normal",
+      "value": 0.45085526411740634,
+      "source_path": "results/nc3c_block2_20260920/VERDICT.json",
+      "source_sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8",
+      "raw_field": "G_learn_t0",
+      "formula": "paired percentile bootstrap point estimate over carrier draws",
+      "subset": "block 16..31, writer normal, objective t0=0",
+      "aggregation": "bootstrap point over carriers",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.C.median.t0.normal",
+      "value": 0.9974908661557202,
+      "source_path": "results/nc3c_block2_20260920/CELL_LEVEL.csv",
+      "source_sha256": "5b732137b47218ec2bc33f69a574998b9a291dbcafcf8801181ad5a7f9f38504",
+      "raw_field": "C_t0",
+      "formula": "G_learn_j / G*_j",
+      "subset": "block 16..31, writer normal, objective t0=0, 16 usable carriers",
+      "aggregation": "median of per-carrier values",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.R_own.median.t12.normal",
+      "value": 0.9986631529963166,
+      "source_path": "results/nc3c_block2_20260920/CELL_LEVEL.csv",
+      "source_sha256": "5b732137b47218ec2bc33f69a574998b9a291dbcafcf8801181ad5a7f9f38504",
+      "raw_field": "R_own_t12",
+      "formula": "median over carriers of (median over 5 seeds)",
+      "subset": "block 16..31, writer normal, objective t0=12",
+      "aggregation": "median of per-carrier medians",
+      "units": "dimensionless Rayleigh efficiency",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.G_star.median.t12.normal",
+      "value": 0.45806061549326055,
+      "source_path": "results/nc3c_block2_20260920/VERDICT.json",
+      "source_sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8",
+      "raw_field": "G_star_t12",
+      "formula": "1 - r_j(v*_other)",
+      "subset": "block 16..31, writer normal, objective t0=12",
+      "aggregation": "median over carriers",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.G_learn.median.t12.normal",
+      "value": 0.46129240253384207,
+      "source_path": "results/nc3c_block2_20260920/VERDICT.json",
+      "source_sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8",
+      "raw_field": "G_learn_t12",
+      "formula": "paired percentile bootstrap point estimate over carrier draws",
+      "subset": "block 16..31, writer normal, objective t0=12",
+      "aggregation": "bootstrap point over carriers",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.C.median.t12.normal",
+      "value": 0.9968589924308698,
+      "source_path": "results/nc3c_block2_20260920/CELL_LEVEL.csv",
+      "source_sha256": "5b732137b47218ec2bc33f69a574998b9a291dbcafcf8801181ad5a7f9f38504",
+      "raw_field": "C_t12",
+      "formula": "G_learn_j / G*_j",
+      "subset": "block 16..31, writer normal, objective t0=12, 16 usable carriers",
+      "aggregation": "median of per-carrier values",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.diagonal_dominance.both_strict_draws.normal",
+      "value": 16,
+      "source_path": "results/nc3c_block2_20260920/VERDICT.json",
+      "source_sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8",
+      "raw_field": "both_strict_draws",
+      "formula": "count of carriers with G_learn > 0 on both objectives",
+      "subset": "block 16..31, writer normal",
+      "aggregation": "count over 16 carriers",
+      "units": "carriers",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.G_star.min_across_all_cells",
+      "value": 0.08027489623627126,
+      "source_path": "results/nc3c_block2_20260920/CELL_LEVEL.csv",
+      "source_sha256": "5b732137b47218ec2bc33f69a574998b9a291dbcafcf8801181ad5a7f9f38504",
+      "raw_field": "G_star_t0 and G_star_t12",
+      "formula": "minimum over all cells",
+      "subset": "block 16..31, both writer types, both objectives",
+      "aggregation": "minimum",
+      "units": "dimensionless",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.verdict.overall",
+      "value": "FULL_PASS",
+      "source_path": "results/nc3c_block2_20260920/VERDICT.json",
+      "source_sha256": "b6ca4af9132e4d3875ea7a38cdbd83e7c5951d3726d8f1b1ebd02cc675abfdf8",
+      "raw_field": "overall",
+      "formula": "frozen gate table applied by nc3c_verdict.py",
+      "subset": "block 16..31",
+      "aggregation": "not an aggregation",
+      "units": "verdict string",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "nc3c_b2.valid_cells",
+      "value": 32,
+      "source_path": "results/nc3c_block2_20260920/RUN_RECEIPT.json",
+      "source_sha256": "6ddf03a8e14a95832bc1df9250aae3df4258d006ab5d4ee69b8a8e821ca7c2ff",
+      "raw_field": "valid_cells",
+      "formula": "cells whose 33-control battery returned VALID",
+      "subset": "block 16..31",
+      "aggregation": "count over 32 cells",
+      "units": "cells",
+      "experiment_phase": "nc3c_block2_confirmatory",
+      "manuscript_locations": "section 7.4.1",
+      "note": "the first execution of this block returned 0 of 32 valid on an instrument that could not fail, and persisted no data row; it was repaired and rerun once"
+    },
+    {
+      "claim_id": "nc3c_b2.freshness.fresh",
+      "value": true,
+      "source_path": "results/nc3c_block2_20260920/FRESHNESS_AUDIT.json",
+      "source_sha256": "9029ee19085cf96b0cc3ae0dc814f3becf025ee45aed15ee53c4e38a9ee235a1",
+      "raw_field": "fresh",
+      "formula": "no requested draw exercised, and four empty collision sets",
+      "subset": "block 16..31 against the completed lane and every prior NC-3C draw",
+      "aggregation": "not an aggregation",
+      "units": "boolean",
+      "experiment_phase": "nc3c_block2_preflight",
+      "manuscript_locations": "section 7.4.1",
+      "note": ""
+    },
+    {
+      "claim_id": "parity.cpu_cuda.worst_R_J_difference",
+      "value": 6.962357357309656e-10,
+      "source_path": "results/parity/CROSS_IMPLEMENTATION_PARITY.json",
+      "source_sha256": "8b7869120a07bfbaeffa7c3de030ce167340a57825de2c433977e1f72e70d2af",
+      "raw_field": "endpoint_criterion.worst_absolute_difference",
+      "formula": "max |R_J(numpy CPU float64) - R_J(torch CUDA float64)|",
+      "subset": "4 PILOT cells (draws 900, 901 x 2 writer types), 2000 training steps",
+      "aggregation": "maximum over 4 cells",
+      "units": "dimensionless",
+      "experiment_phase": "implementation parity",
+      "manuscript_locations": [
+        "Supplement S1"
+      ],
+      "note": "NOT a full-matrix independent reproduction. The medians 0.999376 / 0.999328 belong to a throughput benchmark on a pilot draw and stay out of the confirmatory paragraph."
+    },
+    {
+      "claim_id": "parity.scan.worst_relative_transfer_residual",
+      "value": 4.570413139611107e-13,
+      "source_path": "results/parity/SCAN_PARITY.json",
+      "source_sha256": "4e8fb0a15c253e30da45fca7fff61669fb14223ee880a2c0ef30b8f3c7acce3c",
+      "raw_field": "worst_relative_transfer_error",
+      "formula": "max relative difference, Blelloch scan vs the frozen sequential closure_transfers",
+      "subset": "32 cells: 4 carrier draws x 2 writer types x 4 horizons",
+      "aggregation": "maximum over 32 cells",
+      "units": "relative error",
+      "experiment_phase": "implementation parity",
+      "manuscript_locations": [
+        "Supplement S1"
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "parity.transport.worst_logit_difference",
+      "value": 7.993605777301127e-15,
+      "source_path": "results/parity/DECODER_TRANSPORT_PARITY.json",
+      "source_sha256": "9891249db0d0b805331fbcd1cd2f65f0da2a4ea10f2a32dd1e23c341ff63348b",
+      "raw_field": "worst_logit_difference",
+      "formula": "max |logit(transported decoder at H) - logit(fitted decoder at H_train)| over episodes",
+      "subset": "32 rows: 4 carrier draws x 2 writer types x 4 horizons, 50000 shared episodes each",
+      "aggregation": "maximum over all rows and episodes",
+      "units": "logit units",
+      "experiment_phase": "implementation parity",
+      "manuscript_locations": [
+        "Results 7.6",
+        "Abstract"
+      ],
+      "note": "Uses the SAME sampled training-horizon episodes transported by the known hold and the inverse-adjoint decoder. Verifies a pointwise coordinate identity. It is not an independent discovery about biological or general neural forgetting."
+    },
+    {
+      "claim_id": "parity.transport.worst_accuracy_restoration_error",
+      "value": 0.0,
+      "source_path": "results/parity/DECODER_TRANSPORT_PARITY.json",
+      "source_sha256": "9891249db0d0b805331fbcd1cd2f65f0da2a4ea10f2a32dd1e23c341ff63348b",
+      "raw_field": "worst_restoration_error_accuracy",
+      "formula": "max |accuracy(transported at H) - accuracy(fitted at H_train)|",
+      "subset": "same 32 rows",
+      "aggregation": "maximum over rows",
+      "units": "accuracy",
+      "experiment_phase": "implementation parity",
+      "manuscript_locations": [
+        "Results 7.6"
+      ],
+      "note": ""
+    }
+  ],
+  "entry_count": 78,
+  "correction_20260923": "nc1.v_bottom.J marked NOT FOR USE and four per-population entries added; nc1.J_range.all_rows_orders note corrected. Recomputed from the frozen CSV; no other entry changed."
+}

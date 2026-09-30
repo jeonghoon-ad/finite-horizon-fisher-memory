@@ -1,0 +1,29 @@
+{
+  "artifacts": [
+    "ISOLATION_FACTORIAL_V2.json",
+    "CELL_READOUTS.csv",
+    "PREREGISTERED_READINGS.json",
+    "POSITIVE_CONTROLS.json",
+    "RUN_RECEIPT.json"
+  ],
+  "attempt_index": 1,
+  "authority_scope": "approval for the frozen Isolation Factorial v2 handoff only",
+  "controls_failed": 0,
+  "controls_total": 296,
+  "execution_gate": "named review, exact script SHA-256, and RUN decision bound",
+  "gate_11": "instrument result only; no track or manuscript verdict",
+  "provenance": {
+    "elapsed_s": 7.781852166051976,
+    "float_dtype": "float64",
+    "l065_review_file": "<repo>/projects/NMH-RNN/prior_art/REVIEW_ISOLATION_FACTORIAL_V2_BOUNDED_20260903.md",
+    "numpy_version": "2.5.2",
+    "resource_scope": "local CPU only; no GPU, checkpoint, trained weight, network, Controller, queue, roadmap, or manuscript",
+    "reviewed_source_path": "<repo>/projects/NMH-RNN/scripts/preprint_replication_and_factorial_20260903.py",
+    "reviewed_source_sha256_expected": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "reviewed_source_sha256_observed": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "script_path": "<repo>/projects/NMH-RNN/scripts/isolation_factorial_v2_bounded_20260903.py",
+    "script_sha256": "69acea303c4c14e1ce094a3b5c0acbf78fdab62d06cefcca5f1f2cbb07a7887e"
+  },
+  "run_status": "VALID_MEASUREMENT",
+  "schema": "isolation_factorial_v2_bounded_receipt_v1"
+}

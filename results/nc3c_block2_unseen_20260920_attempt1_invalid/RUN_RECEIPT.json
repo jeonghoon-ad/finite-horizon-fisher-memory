@@ -1,0 +1,572 @@
+{
+  "budget_is_frozen": true,
+  "carrier_block": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "carrier_draws": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "cells": 32,
+  "code_manifest": {
+    "._build_packages.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._finalize.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._make_claim_ledger.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._make_nc_figures.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._make_parity_artifacts.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._make_section7_figures.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc3c_experiment.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc3c_verdict.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_experiment.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_geometry.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_model.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_scan.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_stats.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_validity.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_verdict.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._run_exploratory.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._run_nc3c.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._run_stage.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "build_packages.py": "5afa454b89b61ffe1e488037ac5de332135d0fa2629d5e3c167c27c95d130d0e",
+    "finalize.py": "5418ab55f007c136fbfa32cdb20f9a38ddd2dceb66e5255bcc61dcec2f4b71d8",
+    "make_claim_ledger.py": "f188cf79c4a862469a96af118cd913b0a95a35bf80ac537333169846680fd392",
+    "make_nc_figures.py": "a4fdb6b4319729ff4adb29ccea4193e5667df3a21b737e2445f7c2ddc090c745",
+    "make_parity_artifacts.py": "d6d2ea462fe339b2ea29747e60e049971bce7eed353f2233747f7c68efcdde09",
+    "make_section7_figures.py": "fa21db921e9be2e477eb3b3b2d2284265b1bd3524b4e613e1b028b140979571f",
+    "nc3c_experiment.py": "3ac0fca68c980f33addf375fc79656f3b454f71876f839f50319631bb7bfe7a9",
+    "nc3c_verdict.py": "b86ee71f5e8f5b6ec6edd3cef4d378a2a80958109ac9a12fea7a30d0211b1067",
+    "nc_experiment.py": "51bd64ef6bccb76a85675b413f0c3a0832ecebd70c91db0a576f7bbe5755e00b",
+    "nc_geometry.py": "7971ad842b0917d3419b1bbd69d137a2cb68e584ce6ce8d75cba4c81eff14175",
+    "nc_model.py": "c5667bf0586b0ddb5963776cba83b028a4f89c1fd676bd86821f1a38f6ed23fd",
+    "nc_scan.py": "322757baf4e3e18399259b4532d8c46add985470f59a33fdae1e1da5486aa6a3",
+    "nc_stats.py": "112219d55bb756cb10b415ba38676402e9088c9d778a159c20a164ded4074a84",
+    "nc_validity.py": "70d611f786c2661f09b3c0a0fbe422816de6ce5c9ea920a863f99b3efaa3d9aa",
+    "nc_verdict.py": "af553b56804635057e7a9ac9d3977ceb7a22c3b13185f40bb152585c7b0e21be",
+    "run_exploratory.py": "e8980412963fd0a2afbae9f54618584c02dfc9cf75240279c1e694b6e8f27684",
+    "run_nc3c.py": "0ce30d04069d0ef0dfa3b144650caf3b4230a92c4040ab7d662e50513bd3709b",
+    "run_stage.py": "7eac4adce75a5ed4d7292f85ca659941644b88e63fbea1ab3463e3bc76359dff"
+  },
+  "config": {
+    "amplitude": 1.5,
+    "batch_size": 512,
+    "calibration_episodes": 50000,
+    "gradient_clip": 1.0,
+    "learning_rate": 0.003,
+    "loss_every": 50,
+    "negligible_separation_threshold": 0.02,
+    "objectives": [
+      0,
+      12
+    ],
+    "optimizer": "Adam",
+    "optimizer_seeds": 5,
+    "test_episodes": 50000,
+    "train_horizon": 128,
+    "training_steps": 12000,
+    "weight_decay": 0.0
+  },
+  "cross_evaluation_rows": 0,
+  "elapsed_seconds": 181.96184158325195,
+  "environment": {
+    "blas": {
+      "available": true,
+      "blas": {
+        "detection method": "pkgconfig",
+        "found": true,
+        "include directory": "/opt/_internal/cpython-3.11.14/lib/python3.11/site-packages/scipy_openblas64/include",
+        "lib directory": "/opt/_internal/cpython-3.11.14/lib/python3.11/site-packages/scipy_openblas64/lib",
+        "name": "scipy-openblas",
+        "openblas configuration": "OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+        "pc file directory": "/project/.openblas",
+        "version": "0.3.30"
+      },
+      "lapack": {
+        "detection method": "pkgconfig",
+        "found": true,
+        "include directory": "/opt/_internal/cpython-3.11.14/lib/python3.11/site-packages/scipy_openblas64/include",
+        "lib directory": "/opt/_internal/cpython-3.11.14/lib/python3.11/site-packages/scipy_openblas64/lib",
+        "name": "scipy-openblas",
+        "openblas configuration": "OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+        "pc file directory": "/project/.openblas",
+        "version": "0.3.30"
+      }
+    },
+    "cpu_count": 64,
+    "machine": "x86_64",
+    "numpy": "2.3.4",
+    "numpy_threads": {
+      "MKL_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null
+    },
+    "platform": "Linux-6.8.0-52-generic-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "python": "3.11.9 (main, Apr 19 2024, 16:48:06) [GCC 11.2.0]"
+  },
+  "freshness_audit": {
+    "audited_draws": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "carrier_digest_collisions": [],
+    "carrier_digest_collisions_with_prior_nc3c": [],
+    "completed_lane_namespace": "NC-TM-V1",
+    "completed_lane_seeds": 910,
+    "distinct_carrier_digests": 16,
+    "fresh": true,
+    "nc3c_carrier_digests": {
+      "16": "7e7e063f6f02e3533757f7ad3a8a24d719268d5f6fabc5fb3f2b00f0e015bea6",
+      "17": "e4839375e332a82ef091f22184c04abb047af427465802fc9b6760b0b22a6eff",
+      "18": "b20c642700e9511e5fa59526ffe38fb26695aa513504d71ae276c0fc09bf57f9",
+      "19": "74fe3b4041def4af6ac969a6621547c21956fc2dc681713e39eef0ef6f728d15",
+      "20": "25f9ad75a724699b520f112e69d90d925307b923139e0326939757a0e30f9061",
+      "21": "949346c1b6bf3fd5b0d16d685fa4456d6f3f79f199a95afcea59e4690c1981e1",
+      "22": "9395d40697d842120e8d85352d2ede205eb6ade1866ef82ede3ca44aee790986",
+      "23": "d08cc01d2012e67964648f9fa6473de7af18f20dc8dd29549e2126840cefef81",
+      "24": "220bf9a581049dc20e75d26bae7fa1b4234df7fb0b4b99ac45663f5dd19cdb41",
+      "25": "c95dec22bcb7c99bd779faf54549a10dfb61aeb1991b407b0c38d9046a997c58",
+      "26": "c06022d110a252ceeb97f701d7c3f9c9a1cf8cc99460ebdecef4a178c83a8ced",
+      "27": "df76f52843c2a868a9eed6d2209dd3a64725f2427c3a6c2a5c5ecb7225924a4c",
+      "28": "8116fc179bb7cd745f852813788d616f038b441e82556ec8bb01bfdc232b2824",
+      "29": "24f8b9034f35cf93d8d4d1f574b086f073abb91357fe9b36ec6dcd73a20ba899",
+      "30": "709e61b338ef721a0ef85cee16592e1efd775ddd97271666166d109fba5254db",
+      "31": "20e2f05b4c057c9b68fa28aca80e3295f346a89ddadd74204ab66b0c3d969522"
+    },
+    "nc3c_namespace": "NC-3C-V1",
+    "nc3c_seeds": 560,
+    "prior_nc3c_draws_compared": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      9900
+    ],
+    "prior_nc3c_draws_on_record": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      9900
+    ],
+    "prior_nc3c_seeds": 595,
+    "requested_draws_already_exercised": [],
+    "seed_collisions": [],
+    "seed_collisions_with_prior_nc3c": [],
+    "streams_enumerated": 35
+  },
+  "invalid_runs": [
+    {
+      "draw_index": 16,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 16,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 17,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 17,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 18,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 18,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 19,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 19,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 20,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 20,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 21,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 21,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 22,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 22,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 23,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 23,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 24,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 24,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 25,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 25,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 26,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 26,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 27,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 27,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 28,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 28,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 29,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 29,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 30,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 30,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 31,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 31,
+      "exception": null,
+      "failed": [],
+      "instruments_that_cannot_fail": [
+        "31_seed_freshness"
+      ],
+      "verdict": "INVALID",
+      "writer_type": "nonnormal"
+    }
+  ],
+  "objectives": [
+    0,
+    12
+  ],
+  "overrides_passed": {
+    "draws": 0,
+    "episodes": 0,
+    "steps": 0
+  },
+  "peak_rss_bytes": 44380160,
+  "reference_rows": 0,
+  "results_dir": "/root/lane/results/nc3c_block2_20260920",
+  "run_valid": false,
+  "stage": "nc3c_confirmatory",
+  "trained_models": 320,
+  "valid_cells": 0,
+  "validity_controls_per_cell": 33,
+  "vendor_digests": {
+    "isolation_factorial_v2_bounded_20260903.py": "69acea303c4c14e1ce094a3b5c0acbf78fdab62d06cefcca5f1f2cbb07a7887e",
+    "preprint_replication_and_factorial_20260903.py": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "preprint_v1_2_strengthening_20260917.py": "c1fd328db9cea8677f74611d96d1cce9a09b673a096da7098aaba249ab7fa7bc"
+  },
+  "writer_types": [
+    "normal",
+    "nonnormal"
+  ]
+}

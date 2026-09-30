@@ -1,0 +1,35 @@
+{
+  "a2_configuration": "ELL-c4-theta-1.1, 8 draws",
+  "artifacts": [
+    "ANGLE_C4_THETA_1P1.json",
+    "ANGLE_C4_THETA_1P1_SUMMARY.csv",
+    "ANGLE_C4_THETA_1P1_NJ.csv",
+    "F5_SCALE_FACTORED.json",
+    "POSITIVE_CONTROLS.json",
+    "RUN_RECEIPT.json"
+  ],
+  "authority_scope": "approval for handoff Addendum A2 and F5-sf only",
+  "execution_gate": "named review, exact script SHA-256, and RUN decision bound",
+  "f5sf_routes": [
+    "reviewed naive pseudoinverse",
+    "scale-factored post-closure gauge"
+  ],
+  "provenance": {
+    "elapsed_seconds": 2.8395292500499636,
+    "float_dtype": "float64",
+    "l065_review_file": "<repo>/projects/NMH-RNN/prior_art/REVIEW_PREPRINT_RERUNS_ANGLE_AND_F5SF_20260903.md",
+    "numpy_version": "2.5.2",
+    "resource_scope": "local CPU only; no GPU, checkpoint, trained weight, network, controller, queue, or roadmap",
+    "reviewed_source_path": "<repo>/projects/NMH-RNN/scripts/preprint_replication_and_factorial_20260903.py",
+    "reviewed_source_sha256_expected": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "reviewed_source_sha256_observed": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "script_path": "<repo>/projects/NMH-RNN/scripts/preprint_reruns_angle_and_f5sf_20260903.py",
+    "script_sha256": "76fab286d9defe93ce718e0e18151efb589d02146b880e4065247603619f4ce3",
+    "source_of_source_hashes": {
+      "fourth_cell_cond_sweep_20260902.py": "6c0abe5ee99a683e4e099616116329117c400f4dde08d192491fa25abee3814e",
+      "verify_ganguli_pocket_capacity_20260823.py": "34ff3513574f28a887b1f915d2eee9f4be1a9065bd5c4cbc357db9a892068903"
+    }
+  },
+  "run_status": "VALID_MEASUREMENT",
+  "schema": "preprint_addendum_angle_and_f5sf_receipt_v1"
+}

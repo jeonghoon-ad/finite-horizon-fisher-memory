@@ -1,0 +1,274 @@
+[
+  {
+    "J0": 0.2491012772477277,
+    "theoretical_error_variance": 4.014431443502853,
+    "sample_error_variance": 4.143732997392996,
+    "sample_to_theory_variance_ratio": 1.0322091822241504,
+    "bias_in_standard_errors": 0.1734061751741154,
+    "holds": {
+      "rho=1.0,H=200": {
+        "inverse_adjoint_max_abs_diff": 7.105427357601002e-15,
+        "state_unwarp_max_abs_diff": 4.884981308350689e-15,
+        "propagated_gls_max_abs_diff": 7.216449660063518e-15,
+        "common_scale": 1.0
+      },
+      "rho=1.0,H=700": {
+        "inverse_adjoint_max_abs_diff": 3.9968028886505635e-15,
+        "state_unwarp_max_abs_diff": 6.217248937900877e-15,
+        "propagated_gls_max_abs_diff": 7.993605777301127e-15,
+        "common_scale": 1.0
+      },
+      "rho=0.9,H=200": {
+        "inverse_adjoint_max_abs_diff": 6.217248937900877e-15,
+        "state_unwarp_max_abs_diff": 6.217248937900877e-15,
+        "propagated_gls_max_abs_diff": 7.993605777301127e-15,
+        "common_scale": 7.055079108655367e-10
+      },
+      "rho=0.9,H=700": {
+        "inverse_adjoint_max_abs_diff": 3.552713678800501e-15,
+        "state_unwarp_max_abs_diff": 5.995204332975845e-15,
+        "propagated_gls_max_abs_diff": 7.993605777301127e-15,
+        "common_scale": 9.327314218682035e-33
+      }
+    },
+    "draw": 0
+  },
+  {
+    "J0": 0.2553521473817006,
+    "theoretical_error_variance": 3.916160526761497,
+    "sample_error_variance": 3.9942915324672335,
+    "sample_to_theory_variance_ratio": 1.0199509200840517,
+    "bias_in_standard_errors": -0.20238617096878658,
+    "holds": {
+      "rho=1.0,H=200": {
+        "inverse_adjoint_max_abs_diff": 3.552713678800501e-15,
+        "state_unwarp_max_abs_diff": 3.9968028886505635e-15,
+        "propagated_gls_max_abs_diff": 3.774758283725532e-15,
+        "common_scale": 1.0
+      },
+      "rho=1.0,H=700": {
+        "inverse_adjoint_max_abs_diff": 4.440892098500626e-15,
+        "state_unwarp_max_abs_diff": 5.10702591327572e-15,
+        "propagated_gls_max_abs_diff": 5.329070518200751e-15,
+        "common_scale": 1.0
+      },
+      "rho=0.9,H=200": {
+        "inverse_adjoint_max_abs_diff": 3.1086244689504383e-15,
+        "state_unwarp_max_abs_diff": 4.884981308350689e-15,
+        "propagated_gls_max_abs_diff": 5.329070518200751e-15,
+        "common_scale": 7.055079108655367e-10
+      },
+      "rho=0.9,H=700": {
+        "inverse_adjoint_max_abs_diff": 2.6645352591003757e-15,
+        "state_unwarp_max_abs_diff": 4.440892098500626e-15,
+        "propagated_gls_max_abs_diff": 4.884981308350689e-15,
+        "common_scale": 9.327314218682035e-33
+      }
+    },
+    "draw": 1
+  },
+  {
+    "J0": 0.2978012073706988,
+    "theoretical_error_variance": 3.35794474719914,
+    "sample_error_variance": 3.4131962192222542,
+    "sample_to_theory_variance_ratio": 1.0164539550774918,
+    "bias_in_standard_errors": -1.0163946573638092,
+    "holds": {
+      "rho=1.0,H=200": {
+        "inverse_adjoint_max_abs_diff": 2.6645352591003757e-15,
+        "state_unwarp_max_abs_diff": 3.552713678800501e-15,
+        "propagated_gls_max_abs_diff": 2.9976021664879227e-15,
+        "common_scale": 1.0
+      },
+      "rho=1.0,H=700": {
+        "inverse_adjoint_max_abs_diff": 3.9968028886505635e-15,
+        "state_unwarp_max_abs_diff": 4.440892098500626e-15,
+        "propagated_gls_max_abs_diff": 3.6637359812630166e-15,
+        "common_scale": 1.0
+      },
+      "rho=0.9,H=200": {
+        "inverse_adjoint_max_abs_diff": 4.440892098500626e-15,
+        "state_unwarp_max_abs_diff": 4.440892098500626e-15,
+        "propagated_gls_max_abs_diff": 3.2751579226442118e-15,
+        "common_scale": 7.055079108655367e-10
+      },
+      "rho=0.9,H=700": {
+        "inverse_adjoint_max_abs_diff": 3.552713678800501e-15,
+        "state_unwarp_max_abs_diff": 3.9968028886505635e-15,
+        "propagated_gls_max_abs_diff": 7.993605777301127e-15,
+        "common_scale": 9.327314218682035e-33
+      }
+    },
+    "draw": 2
+  },
+  {
+    "J0": 0.2241652911056702,
+    "theoretical_error_variance": 4.460993916888792,
+    "sample_error_variance": 4.536813266438199,
+    "sample_to_theory_variance_ratio": 1.0169960665631854,
+    "bias_in_standard_errors": 1.044675728990439,
+    "holds": {
+      "rho=1.0,H=200": {
+        "inverse_adjoint_max_abs_diff": 3.552713678800501e-15,
+        "state_unwarp_max_abs_diff": 3.552713678800501e-15,
+        "propagated_gls_max_abs_diff": 4.440892098500626e-15,
+        "common_scale": 1.0
+      },
+      "rho=1.0,H=700": {
+        "inverse_adjoint_max_abs_diff": 5.995204332975845e-15,
+        "state_unwarp_max_abs_diff": 4.440892098500626e-15,
+        "propagated_gls_max_abs_diff": 3.552713678800501e-15,
+        "common_scale": 1.0
+      },
+      "rho=0.9,H=200": {
+        "inverse_adjoint_max_abs_diff": 3.1086244689504383e-15,
+        "state_unwarp_max_abs_diff": 3.552713678800501e-15,
+        "propagated_gls_max_abs_diff": 4.218847493575595e-15,
+        "common_scale": 7.055079108655367e-10
+      },
+      "rho=0.9,H=700": {
+        "inverse_adjoint_max_abs_diff": 3.552713678800501e-15,
+        "state_unwarp_max_abs_diff": 4.440892098500626e-15,
+        "propagated_gls_max_abs_diff": 4.440892098500626e-15,
+        "common_scale": 9.327314218682035e-33
+      }
+    },
+    "draw": 3
+  },
+  {
+    "J0": 0.24378671440536728,
+    "theoretical_error_variance": 4.101946254286873,
+    "sample_error_variance": 4.178662962491481,
+    "sample_to_theory_variance_ratio": 1.0187025142331967,
+    "bias_in_standard_errors": 0.5221999948385766,
+    "holds": {
+      "rho=1.0,H=200": {
+        "inverse_adjoint_max_abs_diff": 3.9968028886505635e-15,
+        "state_unwarp_max_abs_diff": 5.329070518200751e-15,
+        "propagated_gls_max_abs_diff": 6.217248937900877e-15,
+        "common_scale": 1.0
+      },
+      "rho=1.0,H=700": {
+        "inverse_adjoint_max_abs_diff": 3.219646771412954e-15,
+        "state_unwarp_max_abs_diff": 4.440892098500626e-15,
+        "propagated_gls_max_abs_diff": 3.9968028886505635e-15,
+        "common_scale": 1.0
+      },
+      "rho=0.9,H=200": {
+        "inverse_adjoint_max_abs_diff": 3.552713678800501e-15,
+        "state_unwarp_max_abs_diff": 5.329070518200751e-15,
+        "propagated_gls_max_abs_diff": 5.995204332975845e-15,
+        "common_scale": 7.055079108655367e-10
+      },
+      "rho=0.9,H=700": {
+        "inverse_adjoint_max_abs_diff": 3.552713678800501e-15,
+        "state_unwarp_max_abs_diff": 4.440892098500626e-15,
+        "propagated_gls_max_abs_diff": 4.884981308350689e-15,
+        "common_scale": 9.327314218682035e-33
+      }
+    },
+    "draw": 4
+  },
+  {
+    "J0": 0.18885177620044002,
+    "theoretical_error_variance": 5.295158034090388,
+    "sample_error_variance": 5.311507905356485,
+    "sample_to_theory_variance_ratio": 1.0030877022292508,
+    "bias_in_standard_errors": -1.1814724332158513,
+    "holds": {
+      "rho=1.0,H=200": {
+        "inverse_adjoint_max_abs_diff": 7.105427357601002e-15,
+        "state_unwarp_max_abs_diff": 5.329070518200751e-15,
+        "propagated_gls_max_abs_diff": 6.217248937900877e-15,
+        "common_scale": 1.0
+      },
+      "rho=1.0,H=700": {
+        "inverse_adjoint_max_abs_diff": 4.218847493575595e-15,
+        "state_unwarp_max_abs_diff": 7.993605777301127e-15,
+        "propagated_gls_max_abs_diff": 5.329070518200751e-15,
+        "common_scale": 1.0
+      },
+      "rho=0.9,H=200": {
+        "inverse_adjoint_max_abs_diff": 4.440892098500626e-15,
+        "state_unwarp_max_abs_diff": 4.440892098500626e-15,
+        "propagated_gls_max_abs_diff": 7.105427357601002e-15,
+        "common_scale": 7.055079108655367e-10
+      },
+      "rho=0.9,H=700": {
+        "inverse_adjoint_max_abs_diff": 4.107825191113079e-15,
+        "state_unwarp_max_abs_diff": 5.662137425588298e-15,
+        "propagated_gls_max_abs_diff": 6.217248937900877e-15,
+        "common_scale": 9.327314218682035e-33
+      }
+    },
+    "draw": 5
+  },
+  {
+    "J0": 0.1816331145663838,
+    "theoretical_error_variance": 5.5056039884980175,
+    "sample_error_variance": 5.333882699161407,
+    "sample_to_theory_variance_ratio": 0.9688097273804364,
+    "bias_in_standard_errors": 0.27086820192999317,
+    "holds": {
+      "rho=1.0,H=200": {
+        "inverse_adjoint_max_abs_diff": 4.884981308350689e-15,
+        "state_unwarp_max_abs_diff": 4.6629367034256575e-15,
+        "propagated_gls_max_abs_diff": 7.105427357601002e-15,
+        "common_scale": 1.0
+      },
+      "rho=1.0,H=700": {
+        "inverse_adjoint_max_abs_diff": 4.884981308350689e-15,
+        "state_unwarp_max_abs_diff": 6.217248937900877e-15,
+        "propagated_gls_max_abs_diff": 5.329070518200751e-15,
+        "common_scale": 1.0
+      },
+      "rho=0.9,H=200": {
+        "inverse_adjoint_max_abs_diff": 7.105427357601002e-15,
+        "state_unwarp_max_abs_diff": 4.884981308350689e-15,
+        "propagated_gls_max_abs_diff": 5.329070518200751e-15,
+        "common_scale": 7.055079108655367e-10
+      },
+      "rho=0.9,H=700": {
+        "inverse_adjoint_max_abs_diff": 4.440892098500626e-15,
+        "state_unwarp_max_abs_diff": 7.105427357601002e-15,
+        "propagated_gls_max_abs_diff": 5.773159728050814e-15,
+        "common_scale": 9.327314218682035e-33
+      }
+    },
+    "draw": 6
+  },
+  {
+    "J0": 0.2689235837778637,
+    "theoretical_error_variance": 3.718528460583138,
+    "sample_error_variance": 3.6139435152135366,
+    "sample_to_theory_variance_ratio": 0.9718746416819947,
+    "bias_in_standard_errors": 0.485418869826499,
+    "holds": {
+      "rho=1.0,H=200": {
+        "inverse_adjoint_max_abs_diff": 3.552713678800501e-15,
+        "state_unwarp_max_abs_diff": 4.884981308350689e-15,
+        "propagated_gls_max_abs_diff": 5.329070518200751e-15,
+        "common_scale": 1.0
+      },
+      "rho=1.0,H=700": {
+        "inverse_adjoint_max_abs_diff": 3.1086244689504383e-15,
+        "state_unwarp_max_abs_diff": 5.329070518200751e-15,
+        "propagated_gls_max_abs_diff": 3.552713678800501e-15,
+        "common_scale": 1.0
+      },
+      "rho=0.9,H=200": {
+        "inverse_adjoint_max_abs_diff": 5.329070518200751e-15,
+        "state_unwarp_max_abs_diff": 4.440892098500626e-15,
+        "propagated_gls_max_abs_diff": 5.551115123125783e-15,
+        "common_scale": 7.055079108655367e-10
+      },
+      "rho=0.9,H=700": {
+        "inverse_adjoint_max_abs_diff": 3.552713678800501e-15,
+        "state_unwarp_max_abs_diff": 4.440892098500626e-15,
+        "propagated_gls_max_abs_diff": 5.329070518200751e-15,
+        "common_scale": 9.327314218682035e-33
+      }
+    },
+    "draw": 7
+  }
+]

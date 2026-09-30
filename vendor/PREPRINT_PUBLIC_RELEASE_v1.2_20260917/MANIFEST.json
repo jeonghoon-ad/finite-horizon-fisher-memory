@@ -1,0 +1,304 @@
+{
+  "package": "PREPRINT_PUBLIC_RELEASE_v1.2_20260917",
+  "file_count": 49,
+  "files": [
+    {
+      "path": "CHANGELOG_v1.2.md",
+      "bytes": 1448,
+      "sha256": "8bd1edb78f7d2ab6c411e921a1a3bf94a2824c6a73a802e6bd9ae9cf91a83fa3",
+      "original_sha256": "8bd1edb78f7d2ab6c411e921a1a3bf94a2824c6a73a802e6bd9ae9cf91a83fa3"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 377,
+      "sha256": "216172f571b5f87581c5c4c053f96fde94cc0b6745dfdf096b23810d143e7ea9",
+      "original_sha256": "216172f571b5f87581c5c4c053f96fde94cc0b6745dfdf096b23810d143e7ea9"
+    },
+    {
+      "path": "PREPRINT_PUBLIC_BUILD_v1.2_20260917_EN.md",
+      "bytes": 56164,
+      "sha256": "f6e663a3628a2e204ac250d1658703373dfeb0b6fe67f8753816ccc19982b032",
+      "original_sha256": "f6e663a3628a2e204ac250d1658703373dfeb0b6fe67f8753816ccc19982b032"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2400,
+      "sha256": "a651ec5bcff8058045b9539d7f9c49dbd0400df1c8f43fa9904179d7b45589e9",
+      "original_sha256": "a651ec5bcff8058045b9539d7f9c49dbd0400df1c8f43fa9904179d7b45589e9"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "bytes": 1725,
+      "sha256": "fa07666093e07ad5895552d91d6c1f3a02ecd6067e8598460c4c1562a0b5b007",
+      "original_sha256": "fa07666093e07ad5895552d91d6c1f3a02ecd6067e8598460c4c1562a0b5b007"
+    },
+    {
+      "path": "figures/fig1_concept.png",
+      "bytes": 100177,
+      "sha256": "9d3e869ef12b4932c7e341d7cecb8737590ac0ba1dd063efedf750f172914133",
+      "original_sha256": "9d3e869ef12b4932c7e341d7cecb8737590ac0ba1dd063efedf750f172914133"
+    },
+    {
+      "path": "figures/fig1_concept.svg",
+      "bytes": 68210,
+      "sha256": "35f61c64ed48f7a64693c551d4fba645f2d221cecf31aadd5ca6dc49adddc235",
+      "original_sha256": "35f61c64ed48f7a64693c551d4fba645f2d221cecf31aadd5ca6dc49adddc235"
+    },
+    {
+      "path": "figures/fig2_elliptic.png",
+      "bytes": 169516,
+      "sha256": "1b8e0e2e3cc5347503d7822cba9ca2410bff73f4c7d38ad2f0769efd48496136",
+      "original_sha256": "1b8e0e2e3cc5347503d7822cba9ca2410bff73f4c7d38ad2f0769efd48496136"
+    },
+    {
+      "path": "figures/fig2_elliptic.svg",
+      "bytes": 83184,
+      "sha256": "8af2e61079349ceecc30b827e6ae0bad34a1054a0130f40c12e19477b60ff064",
+      "original_sha256": "8af2e61079349ceecc30b827e6ae0bad34a1054a0130f40c12e19477b60ff064"
+    },
+    {
+      "path": "figures/fig3_census.png",
+      "bytes": 116500,
+      "sha256": "b8432eb20c1b3dd50d3fac4113dc2f4dea14127e22f06d26aaa632fbe614fc7b",
+      "original_sha256": "b8432eb20c1b3dd50d3fac4113dc2f4dea14127e22f06d26aaa632fbe614fc7b"
+    },
+    {
+      "path": "figures/fig3_census.svg",
+      "bytes": 95576,
+      "sha256": "ae15001b46cc5c8d7dd9f8948f09db6c06428fcfb936569bf3ab21a9fa9ebf38",
+      "original_sha256": "ae15001b46cc5c8d7dd9f8948f09db6c06428fcfb936569bf3ab21a9fa9ebf38"
+    },
+    {
+      "path": "figures/fig4_factorial.png",
+      "bytes": 138092,
+      "sha256": "5de99efa2b3f69862dd979019aa7ac52ae5805ecc49af8ebe3d7708a4af9782a",
+      "original_sha256": "5de99efa2b3f69862dd979019aa7ac52ae5805ecc49af8ebe3d7708a4af9782a"
+    },
+    {
+      "path": "figures/fig4_factorial.svg",
+      "bytes": 63534,
+      "sha256": "dbaf86ce0854080156cdc33ab6a8d4ca3ad9fa9e1233424b1c12ffea13cc8267",
+      "original_sha256": "dbaf86ce0854080156cdc33ab6a8d4ca3ad9fa9e1233424b1c12ffea13cc8267"
+    },
+    {
+      "path": "prior_art/REVIEW_ISOLATION_FACTORIAL_V2_BOUNDED_20260903.md",
+      "bytes": 8966,
+      "sha256": "89f217c3e2cc2241d51ebfefe383acf62d5a15d5e0cc7e173deb69fa23714d47",
+      "original_sha256": "98e69eba0316107ac96a4b14161f17766e08d2c938bfdcd0c9deffd322c68465"
+    },
+    {
+      "path": "prior_art/REVIEW_PREPRINT_REPLICATION_AND_ISOLATION_FACTORIAL_20260903.md",
+      "bytes": 7149,
+      "sha256": "2d61d34d02502d4f0a1e0c10400bc108f9186967b5ab6f0e5d932c2d923c862e",
+      "original_sha256": "a12583d31f42e83979503a7c13f6225dd88d2505b2eb9c2f2ba0527e593fb9b3"
+    },
+    {
+      "path": "prior_art/REVIEW_PREPRINT_RERUNS_ANGLE_AND_F5SF_20260903.md",
+      "bytes": 5275,
+      "sha256": "b6f2a54c81862b606d6fc7e630cafb7aca093a04e5515c4e0e184702f7fd7c93",
+      "original_sha256": "a38b8f22cbbaad60b1c759ac2ad86fb29a3fde7e6dfa20dbe741ea87ab0e28c2"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 46,
+      "sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197",
+      "original_sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197"
+    },
+    {
+      "path": "results/isolation_factorial_v2_bounded_20260903/CELL_READOUTS.csv",
+      "bytes": 30591,
+      "sha256": "407f7028b629782f5f8dfcd7577cf8c4a5332e23f9960e201578071b170f0fa5",
+      "original_sha256": "407f7028b629782f5f8dfcd7577cf8c4a5332e23f9960e201578071b170f0fa5"
+    },
+    {
+      "path": "results/isolation_factorial_v2_bounded_20260903/POSITIVE_CONTROLS.json",
+      "bytes": 73126,
+      "sha256": "68ca318bf7e084bb6d99746b2ecd35dac0f41e9b23cfbbf79520527996df5529",
+      "original_sha256": "9f337088f07a0370d15ac014fa087c8f11bb73e406721e5d96f82323b1bfcee4"
+    },
+    {
+      "path": "results/isolation_factorial_v2_bounded_20260903/PREREGISTERED_READINGS.json",
+      "bytes": 4169,
+      "sha256": "0dfe2444bca04f7f66b9fa26603e027de6df21dd1072fb30a559143dfcfc5d59",
+      "original_sha256": "6760eef05bdc35244936ae1016f497459bd37572bc85478147bd169eb310bf01"
+    },
+    {
+      "path": "results/isolation_factorial_v2_bounded_20260903/RUN_RECEIPT.json",
+      "bytes": 1442,
+      "sha256": "91affa9a393dfad8ba06718ed6d3b9ec49bbcde242d0c6a6a56fb0c4d6df3cfc",
+      "original_sha256": "8adfecf1854d0fcf8be4d6b787ef43a7450bd5fa114d9198ca28b29457b41d42"
+    },
+    {
+      "path": "results/preprint_replication_and_factorial_20260903/DIRECTIONAL_CENSUS_SUMMARY.csv",
+      "bytes": 11051,
+      "sha256": "083c0a68b9daaaa626583975431f4091588d6c749c8fbf8501acf9b421c4a6ac",
+      "original_sha256": "083c0a68b9daaaa626583975431f4091588d6c749c8fbf8501acf9b421c4a6ac"
+    },
+    {
+      "path": "results/preprint_replication_and_factorial_20260903/DIRECTIONAL_NJ_TABLE.csv",
+      "bytes": 10581,
+      "sha256": "b7dbb17008c8b9e04085b731fe5b29f5e72f1c0536b2a82bf180e1c7f23613bc",
+      "original_sha256": "b7dbb17008c8b9e04085b731fe5b29f5e72f1c0536b2a82bf180e1c7f23613bc"
+    },
+    {
+      "path": "results/preprint_replication_and_factorial_20260903/ISOLATION_FACTORIAL.json",
+      "bytes": 6641,
+      "sha256": "8bf56007aa39b89009708e7309dc0d3bb0110799f2261b1bd5e1f60b5b2caa2c",
+      "original_sha256": "9ca2b6ebd3ae7df6ab3fe10871484726f430a777220dd9a0148e3bd8e9176df4"
+    },
+    {
+      "path": "results/preprint_replication_and_factorial_20260903/RUN_RECEIPT.json",
+      "bytes": 1874,
+      "sha256": "ac634636a58159265c9acbd3bbffdeb056fc61d0546f4e2981f80cea3be677e6",
+      "original_sha256": "c49070aef36d347680d222609565ad96b00bf3808adf30738864ad321cb9cc98"
+    },
+    {
+      "path": "results/preprint_reruns_angle_and_f5sf_20260903/ANGLE_C4_THETA_1P1.json",
+      "bytes": 52368,
+      "sha256": "b2cc6ffa6cebb2f54548f6e1c1f5cd24d0a67ddaf0d4420f5d6eb857ddf961e4",
+      "original_sha256": "456581be415579945d1ff372391675b2829722b9eb061c8b0d1cebe5f1c7c0d4"
+    },
+    {
+      "path": "results/preprint_reruns_angle_and_f5sf_20260903/ANGLE_C4_THETA_1P1_NJ.csv",
+      "bytes": 753,
+      "sha256": "d91bc9100ec83d196b6717a2a3f9657e75d54cf31fdcefdc1dd0035cdc89137f",
+      "original_sha256": "d91bc9100ec83d196b6717a2a3f9657e75d54cf31fdcefdc1dd0035cdc89137f"
+    },
+    {
+      "path": "results/preprint_reruns_angle_and_f5sf_20260903/ANGLE_C4_THETA_1P1_SUMMARY.csv",
+      "bytes": 753,
+      "sha256": "cb895e74e9653a1a635e68b081522a831316c28924265f6beb6a1249e5964d35",
+      "original_sha256": "cb895e74e9653a1a635e68b081522a831316c28924265f6beb6a1249e5964d35"
+    },
+    {
+      "path": "results/preprint_reruns_angle_and_f5sf_20260903/F5_SCALE_FACTORED.json",
+      "bytes": 3203,
+      "sha256": "a460a46bab3aa614dfa9f45b201879e9fac2e954173a145bf71128da522f4745",
+      "original_sha256": "55622034dbc7460cf883185dc34fbc048074d5352ff8dfd51b5339f41e1b058a"
+    },
+    {
+      "path": "results/preprint_reruns_angle_and_f5sf_20260903/POSITIVE_CONTROLS.json",
+      "bytes": 12834,
+      "sha256": "843d9792739c10d0035862aa5597f2bbbfe2a21832d5e535117f7279209e60f7",
+      "original_sha256": "2666a1ddfed5ad9db18b502eeb5cad2f625554c81e3fe72fe2b2717e724e3b32"
+    },
+    {
+      "path": "results/preprint_reruns_angle_and_f5sf_20260903/RUN_RECEIPT.json",
+      "bytes": 1744,
+      "sha256": "0e78bca5fb0143a4984210c388d22df400eaa16a53ef7fd48014486f4a7dd9a0",
+      "original_sha256": "690ac73af5f3810ea98faeef92f0a87ef99019df7ab653a09257de773c7a7cfb"
+    },
+    {
+      "path": "results/preprint_v1_2_strengthening_20260917/APPROXIMATE_ISOLATION.csv",
+      "bytes": 5143,
+      "sha256": "b6c5d7d57d588352998ac48facd8149271179ea6874d448d9c6da45c9503ef5e",
+      "original_sha256": "b6c5d7d57d588352998ac48facd8149271179ea6874d448d9c6da45c9503ef5e"
+    },
+    {
+      "path": "results/preprint_v1_2_strengthening_20260917/APPROXIMATE_ISOLATION.json",
+      "bytes": 12267,
+      "sha256": "056268d0592ca9d473377c383679850d5628a0712f5b440790b2b6e9e3546a80",
+      "original_sha256": "056268d0592ca9d473377c383679850d5628a0712f5b440790b2b6e9e3546a80"
+    },
+    {
+      "path": "results/preprint_v1_2_strengthening_20260917/FINITE_HORIZON_CERTIFICATES.json",
+      "bytes": 3261,
+      "sha256": "9a40a2d8ef3476fa6b0880658f3006466f640433d6e0083101ebdde10737225c",
+      "original_sha256": "9a40a2d8ef3476fa6b0880658f3006466f640433d6e0083101ebdde10737225c"
+    },
+    {
+      "path": "results/preprint_v1_2_strengthening_20260917/NEAR_DEGENERATE_CONTROL.json",
+      "bytes": 308,
+      "sha256": "c91882053b74a69ad6cc0fecf5da999a3d48b47dfd90a5a9ab0ee73f11afd292",
+      "original_sha256": "c91882053b74a69ad6cc0fecf5da999a3d48b47dfd90a5a9ab0ee73f11afd292"
+    },
+    {
+      "path": "results/preprint_v1_2_strengthening_20260917/SAMPLED_DECODER.json",
+      "bytes": 10496,
+      "sha256": "c04afb66f576c1f0c3754d276151757c04283a9334368220ac7235dc234a4889",
+      "original_sha256": "c04afb66f576c1f0c3754d276151757c04283a9334368220ac7235dc234a4889"
+    },
+    {
+      "path": "results/preprint_v1_2_strengthening_20260917/STORE_OPERATOR_SELECTION.csv",
+      "bytes": 2905,
+      "sha256": "f55ea8e749841a50a49ee7a019c64731614146e709aab43be9d7e47cf0646254",
+      "original_sha256": "f55ea8e749841a50a49ee7a019c64731614146e709aab43be9d7e47cf0646254"
+    },
+    {
+      "path": "results/preprint_v1_2_strengthening_20260917/STORE_OPERATOR_SELECTION.json",
+      "bytes": 7395,
+      "sha256": "37a24baacaf5bed5d06a81e3cdeb672b10fb4fca6b4be6ea0d47d80f48240d65",
+      "original_sha256": "37a24baacaf5bed5d06a81e3cdeb672b10fb4fca6b4be6ea0d47d80f48240d65"
+    },
+    {
+      "path": "results/preprint_v1_2_strengthening_20260917/V1_2_STRENGTHENING_RECEIPT.json",
+      "bytes": 2537,
+      "sha256": "e39ecbb52ff1d26828442dfc9141ff914ab6f5758f44ca8f2569baf97baa516b",
+      "original_sha256": "e39ecbb52ff1d26828442dfc9141ff914ab6f5758f44ca8f2569baf97baa516b"
+    },
+    {
+      "path": "scripts/fourth_cell_capacity_20260902.py",
+      "bytes": 19998,
+      "sha256": "8f2bb0a0bed1597e142114920ea9d655e0b3892651df87854c4caeefcec5fc0e",
+      "original_sha256": "32d65f64bdeabf9f689b504c080e3e6e69246ed57b7891463acf90541b9c464f"
+    },
+    {
+      "path": "scripts/fourth_cell_cond_sweep_20260902.py",
+      "bytes": 27906,
+      "sha256": "c6c4d8d4be53df512f60d0d62a2180969d5767dd6e721b278f9e364fff6f04e9",
+      "original_sha256": "6c0abe5ee99a683e4e099616116329117c400f4dde08d192491fa25abee3814e"
+    },
+    {
+      "path": "scripts/isolation_factorial_v2_bounded_20260903.py",
+      "bytes": 35637,
+      "sha256": "5aa11fa435d85883f9b9f16521abc1ec58fc2514e8022ffbc6d3294c435a2ccb",
+      "original_sha256": "69acea303c4c14e1ce094a3b5c0acbf78fdab62d06cefcca5f1f2cbb07a7887e"
+    },
+    {
+      "path": "scripts/make_preprint_figures_20260903.py",
+      "bytes": 8966,
+      "sha256": "142249c68d5df40c8e222bab8cb32c3bab3f16c3215e095c3d8b4236f3dc8793",
+      "original_sha256": "142249c68d5df40c8e222bab8cb32c3bab3f16c3215e095c3d8b4236f3dc8793"
+    },
+    {
+      "path": "scripts/preprint_replication_and_factorial_20260903.py",
+      "bytes": 41836,
+      "sha256": "f8c0884d41cf7a112468013dee6ad70702a7a7be4b6ee700d2100d128aaa2ad4",
+      "original_sha256": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be"
+    },
+    {
+      "path": "scripts/preprint_reruns_angle_and_f5sf_20260903.py",
+      "bytes": 15824,
+      "sha256": "b634bf2ef7fa47eb5fa8262c0ae560a84ecf30e219805f65d55984b12938a364",
+      "original_sha256": "76fab286d9defe93ce718e0e18151efb589d02146b880e4065247603619f4ce3"
+    },
+    {
+      "path": "scripts/preprint_v1_2_strengthening_20260917.py",
+      "bytes": 17504,
+      "sha256": "c1fd328db9cea8677f74611d96d1cce9a09b673a096da7098aaba249ab7fa7bc",
+      "original_sha256": "c1fd328db9cea8677f74611d96d1cce9a09b673a096da7098aaba249ab7fa7bc"
+    },
+    {
+      "path": "scripts/reproduce_public.py",
+      "bytes": 2627,
+      "sha256": "8fd9fee796ef249570e4bfb79856793fa56ee3285eff08d7de53e0d59e60f092",
+      "original_sha256": "54e03431e561c692167db81f0f018800c0ce27a4cdf9e891f629d28439e7b2a1"
+    },
+    {
+      "path": "scripts/validate_release.py",
+      "bytes": 2524,
+      "sha256": "4712c0d389e056185e74402cd13b8e5a75e52894fd69fef3f091503307bc2865",
+      "original_sha256": "4712c0d389e056185e74402cd13b8e5a75e52894fd69fef3f091503307bc2865"
+    },
+    {
+      "path": "scripts/verify_ganguli_pocket_capacity_20260823.py",
+      "bytes": 18660,
+      "sha256": "34ff3513574f28a887b1f915d2eee9f4be1a9065bd5c4cbc357db9a892068903",
+      "original_sha256": "34ff3513574f28a887b1f915d2eee9f4be1a9065bd5c4cbc357db9a892068903"
+    }
+  ],
+  "public_metadata_revision": {
+    "version": "2.7",
+    "scope": "Public wording corrections and dependent hash pins. Numerical function ASTs, scientific numeric constants and measurement rules preserved; originals retained outside the ZIP."
+  }
+}

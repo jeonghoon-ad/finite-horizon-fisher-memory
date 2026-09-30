@@ -1,0 +1,89 @@
+{
+  "entries": {
+    "nc1.J_range.all_rows_orders": {
+      "claim_id": "nc1.J_range.all_rows_orders",
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "raw_field": "J",
+      "formula": "log10(max J / min J)",
+      "subset": "ALL 44160 direction rows including v_bottom",
+      "aggregation": "pooled min and max",
+      "units": "orders of magnitude",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "NOT FOR USE"
+      ],
+      "note": "MEANINGLESS as a range: it pools the null-direction rows with the rest. Those rows are round-off residuals under isolation and small leaked values under open coupling (see nc1.v_bottom.J.*). Recorded so the number cannot be quoted innocently."
+    },
+    "nc1.v_bottom.J": {
+      "claim_id": "nc1.v_bottom.J",
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "raw_field": "J",
+      "formula": "median J of the null-direction control",
+      "subset": "direction=v_bottom, all conditions and horizons",
+      "aggregation": "pooled median",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "NOT FOR USE"
+      ],
+      "note": "NOT FOR USE, corrected 2026-09-23: a median pooled over the isolated and open populations, which do not overlap, so it falls between them and describes neither. v2.0 and v2.1 described the null direction as J = 0 in every row; that holds only under isolation. Use nc1.v_bottom.J.isolated.* and nc1.v_bottom.J.open.*."
+    },
+    "nc1.v_bottom.J.isolated.median": {
+      "claim_id": "nc1.v_bottom.J.isolated.median",
+      "formula": "median J",
+      "subset": "direction=v_bottom, condition=isolated, all horizons, 160 rows",
+      "aggregation": "median over rows",
+      "note": "round-off residual in the exact kernel; reported as analytically zero",
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "raw_field": "J",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3 null control"
+      ]
+    },
+    "nc1.v_bottom.J.isolated.max": {
+      "claim_id": "nc1.v_bottom.J.isolated.max",
+      "formula": "max J",
+      "subset": "direction=v_bottom, condition=isolated, all horizons, 160 rows",
+      "aggregation": "maximum over rows",
+      "note": "round-off residual in the exact kernel",
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "raw_field": "J",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3 null control"
+      ]
+    },
+    "nc1.v_bottom.J.open.min": {
+      "claim_id": "nc1.v_bottom.J.open.min",
+      "formula": "min J",
+      "subset": "direction=v_bottom, condition=open, all horizons, 160 rows",
+      "aggregation": "minimum over rows",
+      "note": "leaked information under open coupling, not kernel information of the isolated operator",
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "raw_field": "J",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3 null control"
+      ]
+    },
+    "nc1.v_bottom.J.open.max": {
+      "claim_id": "nc1.v_bottom.J.open.max",
+      "formula": "max J",
+      "subset": "direction=v_bottom, condition=open, all horizons, 160 rows",
+      "aggregation": "maximum over rows",
+      "note": "leaked information under open coupling",
+      "source_path": "results/confirmatory/DIRECTION_ROWS.csv",
+      "raw_field": "J",
+      "units": "Fisher information",
+      "experiment_phase": "NC-1/NC-2 confirmatory",
+      "manuscript_locations": [
+        "Results 7.3 null control"
+      ]
+    }
+  },
+  "correction_20260923": "nc1.v_bottom.J marked NOT FOR USE and four per-population entries added; nc1.J_range.all_rows_orders note corrected. Recomputed from the frozen CSV; no other entry changed."
+}

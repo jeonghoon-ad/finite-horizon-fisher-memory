@@ -1,0 +1,188 @@
+{
+  "arms": {
+    "F1": {
+      "definition": "normal direct write; sink/noise/write stay open",
+      "readouts": {
+        "1024": {
+          "j_oldest": 0.0009765624999999772,
+          "j_total": 0.9999999999999944,
+          "n_times_j_oldest": 0.9999999999999767,
+          "nonzero_j_count": 1024
+        },
+        "256": {
+          "j_oldest": 0.003906249999999974,
+          "j_total": 0.9999999999999984,
+          "n_times_j_oldest": 0.9999999999999933,
+          "nonzero_j_count": 256
+        },
+        "4096": {
+          "j_oldest": 0.0002441406249999823,
+          "j_total": 0.9999999999999806,
+          "n_times_j_oldest": 0.9999999999999275,
+          "nonzero_j_count": 4096
+        },
+        "64": {
+          "j_oldest": 0.015624999999999984,
+          "j_total": 0.9999999999999996,
+          "n_times_j_oldest": 0.999999999999999,
+          "nonzero_j_count": 64
+        }
+      }
+    },
+    "F2": {
+      "definition": "normal direct write; write and sink noise both close after 24 steps; isometric storage",
+      "readouts": {
+        "1024": {
+          "j_oldest": 0.04166666666666667,
+          "j_total": 1.0000000000000004,
+          "n_times_j_oldest": 42.66666666666667,
+          "nonzero_j_count": 24
+        },
+        "256": {
+          "j_oldest": 0.04166666666666666,
+          "j_total": 1.0000000000000004,
+          "n_times_j_oldest": 10.666666666666664,
+          "nonzero_j_count": 24
+        },
+        "4096": {
+          "j_oldest": 0.04166666666666663,
+          "j_total": 1.0,
+          "n_times_j_oldest": 170.66666666666652,
+          "nonzero_j_count": 24
+        },
+        "64": {
+          "j_oldest": 0.04166666666666666,
+          "j_total": 1.0,
+          "n_times_j_oldest": 2.666666666666666,
+          "nonzero_j_count": 24
+        }
+      }
+    },
+    "F3": {
+      "definition": "2026-08-23 non-normal chain; write/noise path stays open; isometric sink",
+      "readouts": {
+        "1024": {
+          "j_oldest": 0.004763850829566483,
+          "j_total": 10.735837163388616,
+          "n_times_j_oldest": 4.878183249476079,
+          "nonzero_j_count": 1024
+        },
+        "256": {
+          "j_oldest": 0.019741713775965154,
+          "j_total": 10.712709915366927,
+          "n_times_j_oldest": 5.0538787266470795,
+          "nonzero_j_count": 256
+        },
+        "4096": {
+          "j_oldest": 0.0011848652403966733,
+          "j_total": 10.741385925362444,
+          "n_times_j_oldest": 4.853208024664774,
+          "nonzero_j_count": 4096
+        },
+        "64": {
+          "j_oldest": 0.09088060263547652,
+          "j_total": 10.607109625121435,
+          "n_times_j_oldest": 5.8163585686704975,
+          "nonzero_j_count": 64
+        }
+      }
+    },
+    "F4": {
+      "definition": "2026-08-23 non-normal chain; coupling closes after 24 steps; isolated isometric sink",
+      "readouts": {
+        "1024": {
+          "j_oldest": 0.30270697036899596,
+          "j_total": 8.815305384551351,
+          "n_times_j_oldest": 309.97193765785187,
+          "nonzero_j_count": 39
+        },
+        "256": {
+          "j_oldest": 0.30270697036900157,
+          "j_total": 8.81530538455135,
+          "n_times_j_oldest": 77.4929844144644,
+          "nonzero_j_count": 39
+        },
+        "4096": {
+          "j_oldest": 0.30270697036900646,
+          "j_total": 8.815305384551252,
+          "n_times_j_oldest": 1239.8877506314504,
+          "nonzero_j_count": 39
+        },
+        "64": {
+          "j_oldest": 0.3027069703690194,
+          "j_total": 8.81530538455138,
+          "n_times_j_oldest": 19.37324610361724,
+          "nonzero_j_count": 39
+        }
+      }
+    },
+    "F5": {
+      "definition": "2026-08-23 non-normal chain; coupling closes after 24 steps; isolated 0.9-contracting sink",
+      "readouts": {
+        "1024": {
+          "j_oldest": 0.0,
+          "j_total": 5.898106994535585,
+          "n_times_j_oldest": 0.0,
+          "nonzero_j_count": 16
+        },
+        "256": {
+          "j_oldest": 0.0,
+          "j_total": 5.898106994535585,
+          "n_times_j_oldest": 0.0,
+          "nonzero_j_count": 16
+        },
+        "4096": {
+          "j_oldest": 0.0,
+          "j_total": 5.898106994535585,
+          "n_times_j_oldest": 0.0,
+          "nonzero_j_count": 16
+        },
+        "64": {
+          "j_oldest": 0.3026766783633771,
+          "j_total": 9.091822739186345,
+          "n_times_j_oldest": 19.371307415256133,
+          "nonzero_j_count": 39
+        }
+      }
+    }
+  },
+  "f2_constant_rule": {
+    "max_abs_jtot_minus_1": 5e-07,
+    "max_minus_min_j_oldest": 5e-07,
+    "requires_positive_oldest": true
+  },
+  "horizons": [
+    64,
+    256,
+    1024,
+    4096
+  ],
+  "model": "x_(t+1)=W_t x_t+B_t s_t+G_t z_t",
+  "positive_controls_reference": "POSITIVE_CONTROLS.json",
+  "pre_registered_f2_reading": "F2_CONSTANT_AT_JTOT_1_RETENTION_INDEPENDENT_OF_WRITE_PATH_NORMALITY",
+  "provenance": {
+    "cond_sweep_source_path": "<repo>/projects/NMH-RNN/scripts/fourth_cell_cond_sweep_20260902.py",
+    "cond_sweep_source_sha256_expected": "6c0abe5ee99a683e4e099616116329117c400f4dde08d192491fa25abee3814e",
+    "cond_sweep_source_sha256_observed": "6c0abe5ee99a683e4e099616116329117c400f4dde08d192491fa25abee3814e",
+    "elapsed_seconds": 43.25915533298394,
+    "float_dtype": "float64",
+    "ganguli_source_path": "<repo>/projects/NMH-RNN/scripts/verify_ganguli_pocket_capacity_20260823.py",
+    "ganguli_source_sha256_expected": "34ff3513574f28a887b1f915d2eee9f4be1a9065bd5c4cbc357db9a892068903",
+    "ganguli_source_sha256_observed": "34ff3513574f28a887b1f915d2eee9f4be1a9065bd5c4cbc357db9a892068903",
+    "l065_review_file": "<repo>/projects/NMH-RNN/prior_art/REVIEW_PREPRINT_REPLICATION_AND_ISOLATION_FACTORIAL_20260903.md",
+    "master_seed": 20260903,
+    "numpy_version": "2.5.2",
+    "resource_scope": "local CPU only; no GPU, checkpoint, trained weight, network, controller, queue, or roadmap",
+    "script_path": "<repo>/projects/NMH-RNN/scripts/preprint_replication_and_factorial_20260903.py",
+    "script_sha256": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be"
+  },
+  "run_status": "VALID_MEASUREMENT",
+  "schema": "preprint_write_path_storage_factorial_v1",
+  "seed_replay": {
+    "draw_order": "Q, v1, three G1b Haar draws (m=1,4,8), then build_hybrid",
+    "seed": 20260823
+  },
+  "sink_dimension": 16,
+  "timing_contract": "Open arms F1/F3 remain open for the full horizon. Isolated arms F2/F4/F5 accept writes/noise through t=0..23 and close the sink path after step 24. F4/F5 retain chain noise after closure, but it cannot enter the sink.",
+  "write_window_steps": 24
+}

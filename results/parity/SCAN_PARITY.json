@@ -1,0 +1,354 @@
+{
+  "artifact": "blelloch_scan_parity",
+  "cells": [
+    {
+      "draw_index": 0,
+      "max_relative_covariance_error": 3.8785907107218456e-16,
+      "max_relative_transfer_error": 1.0411180498521042e-15,
+      "pass": true,
+      "steps": 24,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 0,
+      "max_relative_covariance_error": 3.970503374890447e-15,
+      "max_relative_transfer_error": 5.162236832397409e-15,
+      "pass": true,
+      "steps": 256,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 0,
+      "max_relative_covariance_error": 1.842806152183545e-14,
+      "max_relative_transfer_error": 1.5712737866537946e-14,
+      "pass": true,
+      "steps": 1024,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 0,
+      "max_relative_covariance_error": 5.2954673481247904e-14,
+      "max_relative_transfer_error": 5.177706341502408e-14,
+      "pass": true,
+      "steps": 4096,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 0,
+      "max_relative_covariance_error": 1.865439369252859e-15,
+      "max_relative_transfer_error": 4.2840279518072084e-15,
+      "pass": true,
+      "steps": 24,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 0,
+      "max_relative_covariance_error": 5.202768053237874e-15,
+      "max_relative_transfer_error": 2.2593270392469884e-14,
+      "pass": true,
+      "steps": 256,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 0,
+      "max_relative_covariance_error": 2.506215983763425e-15,
+      "max_relative_transfer_error": 4.220733185428248e-14,
+      "pass": true,
+      "steps": 1024,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 0,
+      "max_relative_covariance_error": 6.240488421833004e-15,
+      "max_relative_transfer_error": 9.66146062953846e-14,
+      "pass": true,
+      "steps": 4096,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 1,
+      "max_relative_covariance_error": 2.9109718471789876e-16,
+      "max_relative_transfer_error": 1.035146978660721e-15,
+      "pass": true,
+      "steps": 24,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 1,
+      "max_relative_covariance_error": 1.5924463310410131e-15,
+      "max_relative_transfer_error": 3.601794943419967e-15,
+      "pass": true,
+      "steps": 256,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 1,
+      "max_relative_covariance_error": 5.7137052157053564e-15,
+      "max_relative_transfer_error": 9.374728652147015e-15,
+      "pass": true,
+      "steps": 1024,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 1,
+      "max_relative_covariance_error": 2.17938830236362e-14,
+      "max_relative_transfer_error": 3.478296805317459e-14,
+      "pass": true,
+      "steps": 4096,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 1,
+      "max_relative_covariance_error": 1.771750831841755e-15,
+      "max_relative_transfer_error": 4.084000574102474e-15,
+      "pass": true,
+      "steps": 24,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 1,
+      "max_relative_covariance_error": 1.6959360631288896e-14,
+      "max_relative_transfer_error": 1.7563294922245448e-14,
+      "pass": true,
+      "steps": 256,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 1,
+      "max_relative_covariance_error": 2.749430896500561e-14,
+      "max_relative_transfer_error": 5.409856748329281e-14,
+      "pass": true,
+      "steps": 1024,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 1,
+      "max_relative_covariance_error": 7.062385222470437e-14,
+      "max_relative_transfer_error": 1.6064060958925953e-13,
+      "pass": true,
+      "steps": 4096,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 2,
+      "max_relative_covariance_error": 5.446482771965376e-16,
+      "max_relative_transfer_error": 1.058239207938241e-15,
+      "pass": true,
+      "steps": 24,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 2,
+      "max_relative_covariance_error": 1.8443909792864617e-15,
+      "max_relative_transfer_error": 4.050428214008518e-15,
+      "pass": true,
+      "steps": 256,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 2,
+      "max_relative_covariance_error": 6.164725040057744e-15,
+      "max_relative_transfer_error": 1.3900616933528757e-14,
+      "pass": true,
+      "steps": 1024,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 2,
+      "max_relative_covariance_error": 2.7280104970783904e-14,
+      "max_relative_transfer_error": 4.75337227128827e-14,
+      "pass": true,
+      "steps": 4096,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 2,
+      "max_relative_covariance_error": 2.2994709900579656e-15,
+      "max_relative_transfer_error": 4.97893459960627e-15,
+      "pass": true,
+      "steps": 24,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 2,
+      "max_relative_covariance_error": 3.817194608351925e-14,
+      "max_relative_transfer_error": 3.993451000154884e-14,
+      "pass": true,
+      "steps": 256,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 2,
+      "max_relative_covariance_error": 7.817030505462278e-14,
+      "max_relative_transfer_error": 1.4054011159515664e-13,
+      "pass": true,
+      "steps": 1024,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 2,
+      "max_relative_covariance_error": 3.5663422077819837e-13,
+      "max_relative_transfer_error": 4.570413139611107e-13,
+      "pass": true,
+      "steps": 4096,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 3,
+      "max_relative_covariance_error": 2.9185002869172294e-16,
+      "max_relative_transfer_error": 8.656273983501039e-16,
+      "pass": true,
+      "steps": 24,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 3,
+      "max_relative_covariance_error": 7.021242916831574e-16,
+      "max_relative_transfer_error": 3.558906505386574e-15,
+      "pass": true,
+      "steps": 256,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 3,
+      "max_relative_covariance_error": 2.2441282953423766e-15,
+      "max_relative_transfer_error": 1.1308350795750602e-14,
+      "pass": true,
+      "steps": 1024,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 3,
+      "max_relative_covariance_error": 8.728015164619702e-15,
+      "max_relative_transfer_error": 3.515644545745099e-14,
+      "pass": true,
+      "steps": 4096,
+      "tolerance": 1e-11,
+      "writer_type": "normal"
+    },
+    {
+      "draw_index": 3,
+      "max_relative_covariance_error": 2.0488013874727045e-15,
+      "max_relative_transfer_error": 5.186103887381096e-15,
+      "pass": true,
+      "steps": 24,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 3,
+      "max_relative_covariance_error": 4.276716639644229e-15,
+      "max_relative_transfer_error": 2.8515191380237875e-14,
+      "pass": true,
+      "steps": 256,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 3,
+      "max_relative_covariance_error": 3.984119311229188e-14,
+      "max_relative_transfer_error": 8.700002303263782e-14,
+      "pass": true,
+      "steps": 1024,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    },
+    {
+      "draw_index": 3,
+      "max_relative_covariance_error": 1.8031358866583488e-13,
+      "max_relative_transfer_error": 3.0417030645235606e-13,
+      "pass": true,
+      "steps": 4096,
+      "tolerance": 1e-11,
+      "writer_type": "nonnormal"
+    }
+  ],
+  "cells_checked": 32,
+  "code_manifest": {
+    "finalize.py": "5418ab55f007c136fbfa32cdb20f9a38ddd2dceb66e5255bcc61dcec2f4b71d8",
+    "make_nc_figures.py": "a4fdb6b4319729ff4adb29ccea4193e5667df3a21b737e2445f7c2ddc090c745",
+    "make_parity_artifacts.py": "d6d2ea462fe339b2ea29747e60e049971bce7eed353f2233747f7c68efcdde09",
+    "nc3c_experiment.py": "a6d6f3909d315a25dcc7a82e9302098fc15ad0085ee5e0c93e55adb7508d9e9f",
+    "nc3c_verdict.py": "b9f31bdf5e093c974d411fc24bb366e5aaaf9c7264d807f8c436badde35aeb9a",
+    "nc_experiment.py": "51bd64ef6bccb76a85675b413f0c3a0832ecebd70c91db0a576f7bbe5755e00b",
+    "nc_geometry.py": "7971ad842b0917d3419b1bbd69d137a2cb68e584ce6ce8d75cba4c81eff14175",
+    "nc_model.py": "c5667bf0586b0ddb5963776cba83b028a4f89c1fd676bd86821f1a38f6ed23fd",
+    "nc_scan.py": "322757baf4e3e18399259b4532d8c46add985470f59a33fdae1e1da5486aa6a3",
+    "nc_stats.py": "112219d55bb756cb10b415ba38676402e9088c9d778a159c20a164ded4074a84",
+    "nc_validity.py": "191ed8aefaa1d6a2e2e7fbe97db972d6878ff166c112fb831cfcf3fdf804cc55",
+    "nc_verdict.py": "af553b56804635057e7a9ac9d3977ceb7a22c3b13185f40bb152585c7b0e21be",
+    "run_exploratory.py": "e8980412963fd0a2afbae9f54618584c02dfc9cf75240279c1e694b6e8f27684",
+    "run_nc3c.py": "8efea3b14997453a0c87c81fd3e8b5bb573aac7e14b7a775e590c34a500c78a0",
+    "run_stage.py": "7eac4adce75a5ed4d7292f85ca659941644b88e63fbea1ab3463e3bc76359dff"
+  },
+  "elapsed_seconds": 1.1859049797058105,
+  "environment": {
+    "blas": {
+      "available": true,
+      "blas": {
+        "detection method": "system",
+        "found": true,
+        "include directory": "unknown",
+        "lib directory": "unknown",
+        "name": "accelerate",
+        "openblas configuration": "unknown",
+        "pc file directory": "unknown",
+        "version": "unknown"
+      },
+      "lapack": {
+        "detection method": "system",
+        "found": true,
+        "include directory": "unknown",
+        "lib directory": "unknown",
+        "name": "accelerate",
+        "openblas configuration": "unknown",
+        "pc file directory": "unknown",
+        "version": "unknown"
+      }
+    },
+    "cpu_count": 15,
+    "machine": "arm64",
+    "numpy": "2.5.1",
+    "numpy_threads": {
+      "MKL_NUM_THREADS": null,
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": null
+    },
+    "platform": "macOS-27.2-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.12.13 (main, Jun 23 2026, 15:44:24) [Clang 22.1.3 ]"
+  },
+  "note": "the canonical sequential implementation remains the reference; the scan is a third independent implementation kept for correctness, not speed",
+  "tolerance": 1e-11,
+  "verdict": "PASS",
+  "what": "every prefix of the closure recurrence computed by a work-efficient parallel scan, against the frozen release's sequential implementation",
+  "worst_relative_covariance_error": 3.5663422077819837e-13,
+  "worst_relative_transfer_error": 4.570413139611107e-13
+}

@@ -1,0 +1,32 @@
+{
+  "census_configuration_count_including_heldout": 16,
+  "census_draw_count_total": 128,
+  "execution_gate": "named review, exact script SHA-256, and RUN decision bound",
+  "factorial_arms": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5"
+  ],
+  "factorial_model": "x_(t+1)=W_t x_t+B_t s_t+G_t z_t",
+  "factorial_timing_contract": "Open arms F1/F3 remain open for the full horizon. Isolated arms F2/F4/F5 accept writes/noise through t=0..23 and close the sink path after step 24. F4/F5 retain chain noise after closure, but it cannot enter the sink.",
+  "provenance": {
+    "cond_sweep_source_path": "<repo>/projects/NMH-RNN/scripts/fourth_cell_cond_sweep_20260902.py",
+    "cond_sweep_source_sha256_expected": "6c0abe5ee99a683e4e099616116329117c400f4dde08d192491fa25abee3814e",
+    "cond_sweep_source_sha256_observed": "6c0abe5ee99a683e4e099616116329117c400f4dde08d192491fa25abee3814e",
+    "elapsed_seconds": 43.25924649997614,
+    "float_dtype": "float64",
+    "ganguli_source_path": "<repo>/projects/NMH-RNN/scripts/verify_ganguli_pocket_capacity_20260823.py",
+    "ganguli_source_sha256_expected": "34ff3513574f28a887b1f915d2eee9f4be1a9065bd5c4cbc357db9a892068903",
+    "ganguli_source_sha256_observed": "34ff3513574f28a887b1f915d2eee9f4be1a9065bd5c4cbc357db9a892068903",
+    "l065_review_file": "<repo>/projects/NMH-RNN/prior_art/REVIEW_PREPRINT_REPLICATION_AND_ISOLATION_FACTORIAL_20260903.md",
+    "master_seed": 20260903,
+    "numpy_version": "2.5.2",
+    "resource_scope": "local CPU only; no GPU, checkpoint, trained weight, network, controller, queue, or roadmap",
+    "script_path": "<repo>/projects/NMH-RNN/scripts/preprint_replication_and_factorial_20260903.py",
+    "script_sha256": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be"
+  },
+  "run_status": "VALID_MEASUREMENT",
+  "schema": "preprint_replication_and_factorial_receipt_v1"
+}

@@ -1,0 +1,165 @@
+{
+  "budget_is_frozen": true,
+  "carrier_draws": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "cells": 32,
+  "code_manifest": {
+    "._finalize.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._make_nc_figures.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._make_parity_artifacts.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc3c_experiment.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc3c_verdict.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_experiment.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_geometry.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_model.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_scan.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_stats.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_validity.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_verdict.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._run_exploratory.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._run_nc3c.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._run_stage.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "finalize.py": "5418ab55f007c136fbfa32cdb20f9a38ddd2dceb66e5255bcc61dcec2f4b71d8",
+    "make_nc_figures.py": "a4fdb6b4319729ff4adb29ccea4193e5667df3a21b737e2445f7c2ddc090c745",
+    "make_parity_artifacts.py": "d6d2ea462fe339b2ea29747e60e049971bce7eed353f2233747f7c68efcdde09",
+    "nc3c_experiment.py": "3ac0fca68c980f33addf375fc79656f3b454f71876f839f50319631bb7bfe7a9",
+    "nc3c_verdict.py": "b86ee71f5e8f5b6ec6edd3cef4d378a2a80958109ac9a12fea7a30d0211b1067",
+    "nc_experiment.py": "51bd64ef6bccb76a85675b413f0c3a0832ecebd70c91db0a576f7bbe5755e00b",
+    "nc_geometry.py": "7971ad842b0917d3419b1bbd69d137a2cb68e584ce6ce8d75cba4c81eff14175",
+    "nc_model.py": "c5667bf0586b0ddb5963776cba83b028a4f89c1fd676bd86821f1a38f6ed23fd",
+    "nc_scan.py": "322757baf4e3e18399259b4532d8c46add985470f59a33fdae1e1da5486aa6a3",
+    "nc_stats.py": "112219d55bb756cb10b415ba38676402e9088c9d778a159c20a164ded4074a84",
+    "nc_validity.py": "70d611f786c2661f09b3c0a0fbe422816de6ce5c9ea920a863f99b3efaa3d9aa",
+    "nc_verdict.py": "af553b56804635057e7a9ac9d3977ceb7a22c3b13185f40bb152585c7b0e21be",
+    "run_exploratory.py": "e8980412963fd0a2afbae9f54618584c02dfc9cf75240279c1e694b6e8f27684",
+    "run_nc3c.py": "61ae4b99df252860df1093b37d287694d13786300281bd39c65478a9e44cd856",
+    "run_stage.py": "7eac4adce75a5ed4d7292f85ca659941644b88e63fbea1ab3463e3bc76359dff"
+  },
+  "config": {
+    "amplitude": 1.5,
+    "batch_size": 512,
+    "calibration_episodes": 50000,
+    "gradient_clip": 1.0,
+    "learning_rate": 0.003,
+    "loss_every": 50,
+    "negligible_separation_threshold": 0.02,
+    "objectives": [
+      0,
+      12
+    ],
+    "optimizer": "Adam",
+    "optimizer_seeds": 5,
+    "test_episodes": 50000,
+    "train_horizon": 128,
+    "training_steps": 12000,
+    "weight_decay": 0.0
+  },
+  "cross_evaluation_rows": 640,
+  "elapsed_seconds": 47.71608519554138,
+  "environment": {
+    "blas": {
+      "available": true,
+      "blas": {
+        "detection method": "pkgconfig",
+        "found": true,
+        "include directory": "/opt/conda/include",
+        "lib directory": "/opt/conda/lib",
+        "name": "blas",
+        "openblas configuration": "unknown",
+        "pc file directory": "/opt/conda/lib/pkgconfig",
+        "version": "3.9.0"
+      },
+      "lapack": {
+        "detection method": "pkgconfig",
+        "found": true,
+        "include directory": "/opt/conda/include",
+        "lib directory": "/opt/conda/lib",
+        "name": "lapack",
+        "openblas configuration": "unknown",
+        "pc file directory": "/opt/conda/lib/pkgconfig",
+        "version": "3.9.0"
+      }
+    },
+    "cpu_count": 128,
+    "machine": "x86_64",
+    "numpy": "2.3.4",
+    "numpy_threads": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "platform": "Linux-6.8.0-139-generic-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]"
+  },
+  "freshness_audit": {
+    "carrier_digest_collisions": [],
+    "completed_lane_namespace": "NC-TM-V1",
+    "completed_lane_seeds": 910,
+    "fresh": true,
+    "nc3c_carrier_digests": {
+      "0": "c8d9f34d3e2fdc484cd4656fa092af039342096afdae57b6e09976710a78c2c5",
+      "1": "802076ce166c68c0197773a803cbb1e846fd6bd1779c162d6ded5bba43d3f8f3",
+      "2": "6f0f7c1b1b04ae2649ee6ecdbb9b662b145298795304a3e46cd982139b2c6d98",
+      "3": "192386b39b09d78a54c7caf553d9a8d4801a5fbd47d7d82a95c18f5ce400d0ae",
+      "4": "fcb2efaffc1c75c41c710b2157049b0759e5b2642944282f76c4074de542ae50",
+      "5": "c88dd6f1e680f95fb01951859fe3ee53490706d77ce8d9be74f710f7052ace82",
+      "6": "1bb6e5cf244c706196923434e50df43dc4ad29e00b7987bce5a864bbc987bf78",
+      "7": "848d799eded7329b65fe64ed909d91f4176db498a471a761d287c3c69f33af27",
+      "8": "55e8920ed53209b287bb67c3d463c4637c067dd34c575879ce89249070189fbe",
+      "9": "1433a243c53c4f1480b0ad7c06b322a1cdf358cd8bc2003c498bde33403e5c2b",
+      "10": "40b3cc4162beae9a3998e2050b07ebe39f449564f5cd945122a46c01227c1117",
+      "11": "7fd895173afde5bef5f3faeff24c15fc232224b9b945f1a2e0f586330d8f1b67",
+      "12": "65cc1e8393cef1888a4c3303965bee62a534abefb8f2d10c4c9edb1bd7acf827",
+      "13": "2eb5bf13c1f7f1d3b392db44a4563e9b5f31b1ded15990c19cab682fd9339b64",
+      "14": "22487eacd06d65afe62babbf19bd8f13b81a17e40cda203ffd941ae0e74fe169",
+      "15": "1e4127eefbca68a598fb8c58d1eb7ea32d3bd802bd8fe44dc9e8a02d2512e4f7"
+    },
+    "nc3c_namespace": "NC-3C-V1",
+    "nc3c_seeds": 560,
+    "seed_collisions": [],
+    "streams_enumerated": 35
+  },
+  "invalid_runs": [],
+  "objectives": [
+    0,
+    12
+  ],
+  "overrides_passed": {
+    "draws": 0,
+    "episodes": 0,
+    "steps": 0
+  },
+  "peak_rss_bytes": 43057152,
+  "reference_rows": 8384,
+  "run_valid": true,
+  "stage": "nc3c_confirmatory",
+  "trained_models": 320,
+  "valid_cells": 32,
+  "validity_controls_per_cell": 33,
+  "vendor_digests": {
+    "isolation_factorial_v2_bounded_20260903.py": "69acea303c4c14e1ce094a3b5c0acbf78fdab62d06cefcca5f1f2cbb07a7887e",
+    "preprint_replication_and_factorial_20260903.py": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "preprint_v1_2_strengthening_20260917.py": "c1fd328db9cea8677f74611d96d1cce9a09b673a096da7098aaba249ab7fa7bc"
+  },
+  "writer_types": [
+    "normal",
+    "nonnormal"
+  ]
+}

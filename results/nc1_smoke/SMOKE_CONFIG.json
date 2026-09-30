@@ -1,0 +1,93 @@
+{
+  "carrier_draw": 900,
+  "code_manifest": {
+    "._finalize.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._make_nc_figures.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_experiment.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_geometry.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_model.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_scan.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_stats.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_validity.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._nc_verdict.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._run_exploratory.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "._run_stage.py": "227fa2f9ca85b4f6dfd51b1d34f2cde2257f941d60a6cb2ddd90e7d4f5606267",
+    "finalize.py": "5418ab55f007c136fbfa32cdb20f9a38ddd2dceb66e5255bcc61dcec2f4b71d8",
+    "make_nc_figures.py": "a4fdb6b4319729ff4adb29ccea4193e5667df3a21b737e2445f7c2ddc090c745",
+    "nc_experiment.py": "51bd64ef6bccb76a85675b413f0c3a0832ecebd70c91db0a576f7bbe5755e00b",
+    "nc_geometry.py": "7971ad842b0917d3419b1bbd69d137a2cb68e584ce6ce8d75cba4c81eff14175",
+    "nc_model.py": "c5667bf0586b0ddb5963776cba83b028a4f89c1fd676bd86821f1a38f6ed23fd",
+    "nc_scan.py": "322757baf4e3e18399259b4532d8c46add985470f59a33fdae1e1da5486aa6a3",
+    "nc_stats.py": "112219d55bb756cb10b415ba38676402e9088c9d778a159c20a164ded4074a84",
+    "nc_validity.py": "191ed8aefaa1d6a2e2e7fbe97db972d6878ff166c112fb831cfcf3fdf804cc55",
+    "nc_verdict.py": "af553b56804635057e7a9ac9d3977ceb7a22c3b13185f40bb152585c7b0e21be",
+    "run_exploratory.py": "e8980412963fd0a2afbae9f54618584c02dfc9cf75240279c1e694b6e8f27684",
+    "run_stage.py": "7eac4adce75a5ed4d7292f85ca659941644b88e63fbea1ab3463e3bc76359dff"
+  },
+  "config": {
+    "amplitude": 2.0,
+    "batch_size": 512,
+    "calibration_episodes": 20000,
+    "gradient_clip": 1.0,
+    "learning_rate": 0.003,
+    "loss_every": 50,
+    "optimizer": "Adam",
+    "optimizer_seeds": 1,
+    "random_direction_count": 128,
+    "test_episodes": 20000,
+    "test_horizons": [
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "train_horizon": 128,
+    "training_steps": 1500,
+    "validate_every": 375,
+    "validation_episodes": 10000,
+    "weight_decay": 0.0
+  },
+  "environment": {
+    "blas": {
+      "available": true,
+      "blas": {
+        "detection method": "pkgconfig",
+        "found": true,
+        "include directory": "/opt/conda/include",
+        "lib directory": "/opt/conda/lib",
+        "name": "blas",
+        "openblas configuration": "unknown",
+        "pc file directory": "/opt/conda/lib/pkgconfig",
+        "version": "3.9.0"
+      },
+      "lapack": {
+        "detection method": "pkgconfig",
+        "found": true,
+        "include directory": "/opt/conda/include",
+        "lib directory": "/opt/conda/lib",
+        "name": "lapack",
+        "openblas configuration": "unknown",
+        "pc file directory": "/opt/conda/lib/pkgconfig",
+        "version": "3.9.0"
+      }
+    },
+    "cpu_count": 128,
+    "machine": "x86_64",
+    "numpy": "2.3.4",
+    "numpy_threads": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "platform": "Linux-6.8.0-139-generic-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:46:25) [GCC 14.3.0]"
+  },
+  "stage": "smoke",
+  "vendor_digests": {
+    "isolation_factorial_v2_bounded_20260903.py": "69acea303c4c14e1ce094a3b5c0acbf78fdab62d06cefcca5f1f2cbb07a7887e",
+    "preprint_replication_and_factorial_20260903.py": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "preprint_v1_2_strengthening_20260917.py": "c1fd328db9cea8677f74611d96d1cce9a09b673a096da7098aaba249ab7fa7bc"
+  },
+  "writer_type": "nonnormal"
+}

@@ -1,0 +1,66 @@
+{
+  "device": "cuda",
+  "torch": "2.9.1+cu128",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "cells": [
+    {
+      "draw": 900,
+      "writer_type": "normal",
+      "max_abs_direction_difference": 4.3378540204308536e-09,
+      "R_J_numpy_cpu_float64": 0.9982732510608774,
+      "R_J_torch_cuda_float64": 0.9982732509680049,
+      "cosine_between_implementations": 0.9999999999999998,
+      "cpu_seconds": 0.63,
+      "torch_seconds": 4.85
+    },
+    {
+      "draw": 900,
+      "writer_type": "nonnormal",
+      "max_abs_direction_difference": 4.277928816742715e-09,
+      "R_J_numpy_cpu_float64": 0.999189697105714,
+      "R_J_torch_cuda_float64": 0.9991896970258666,
+      "cosine_between_implementations": 0.9999999999999999,
+      "cpu_seconds": 0.61,
+      "torch_seconds": 3.6
+    },
+    {
+      "draw": 901,
+      "writer_type": "normal",
+      "max_abs_direction_difference": 6.967898730225741e-09,
+      "R_J_numpy_cpu_float64": 0.9974103572648041,
+      "R_J_torch_cuda_float64": 0.9974103579610398,
+      "cosine_between_implementations": 0.9999999999999999,
+      "cpu_seconds": 0.62,
+      "torch_seconds": 3.99
+    },
+    {
+      "draw": 901,
+      "writer_type": "nonnormal",
+      "max_abs_direction_difference": 4.070144471457482e-09,
+      "R_J_numpy_cpu_float64": 0.9975667172931004,
+      "R_J_torch_cuda_float64": 0.9975667177449186,
+      "cosine_between_implementations": 1.0,
+      "cpu_seconds": 0.62,
+      "torch_seconds": 4.83
+    }
+  ],
+  "endpoint_criterion": {
+    "quantity": "R_J, the decision-bearing endpoint E1",
+    "worst_absolute_difference": 6.962357357309656e-10,
+    "worst_cosine_between_implementations": 0.9999999999999998,
+    "tolerance": 1e-06,
+    "pass": true
+  },
+  "note_on_the_first_criterion": "The criterion first written into this script, 1e-9 on the raw parameter vector, was on the wrong quantity and this run reports it as failed at 6.968e-09. Two float64 implementations on different devices accumulate in different orders and Adam's 1e-8 epsilon amplifies that over 2000 steps, so a few parts in 1e9 of divergence in the raw direction is expected and carries no scientific content. What enters a decision is R_J, which agrees to 7.0e-10 against a gate of 0.90. Both numbers are kept rather than the failing one being deleted.",
+  "throughput_note": "This script's per-model loop is superseded for throughput by the batched measurement in PARALLELISATION_NOTE_20260918_EN.md, where the same GPU runs 160 models in 38.9 s against 588.2 s serial on one CPU core.",
+  "status": "INSTRUMENT_CONTROL_NOT_DECISION_BEARING",
+  "regenerated": "2026-09-18 13:38 KST. The original receipt was destroyed locally by an rm -rf of results/ before the box backup was untarred; it existed only on the Mac and so was not covered by the byte-for-byte backup check. The instance was restarted to regenerate it before destruction.",
+  "raw_parameter_vector_criterion": {
+    "quantity": "max abs difference in the raw unit direction, NOT a decision-bearing quantity",
+    "observed": 6.967898730225741e-09,
+    "tolerance_first_written": 1e-09,
+    "pass": false,
+    "why_it_is_not_the_verdict": "this criterion was written against the wrong quantity; see note_on_the_first_criterion. The verdict of this receipt is endpoint_criterion."
+  },
+  "verdict": "PASS"
+}

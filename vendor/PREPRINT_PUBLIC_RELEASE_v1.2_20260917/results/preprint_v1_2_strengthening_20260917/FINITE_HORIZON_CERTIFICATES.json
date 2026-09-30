@@ -1,0 +1,90 @@
+[
+  {
+    "eigenvalue_group_gap_delta": 0.02842076949386769,
+    "A_cesaro_error_2": 0.0012100540789374353,
+    "A_cesaro_error_bound": 0.05147756939287031,
+    "certificate_eta": 0.28626121541442434,
+    "M_error_2": 9.507000881429434e-05,
+    "M_error_bound": 2.2303226356527683,
+    "M_relative_frobenius_error": 1.7921452468422098e-05,
+    "commutator_residual": 4.508491550711701e-15,
+    "draw": 0
+  },
+  {
+    "eigenvalue_group_gap_delta": 0.06262588101905037,
+    "A_cesaro_error_2": 0.0008173623057115647,
+    "A_cesaro_error_bound": 0.023203991209826875,
+    "certificate_eta": 0.13810821558898562,
+    "M_error_2": 6.616197017190906e-05,
+    "M_error_bound": 0.953725939599914,
+    "M_relative_frobenius_error": 1.2262357889388502e-05,
+    "commutator_residual": 4.694855630418317e-15,
+    "draw": 1
+  },
+  {
+    "eigenvalue_group_gap_delta": 0.10043625673293188,
+    "A_cesaro_error_2": 0.0006788398306866371,
+    "A_cesaro_error_bound": 0.014340086937690465,
+    "certificate_eta": 0.10005859584618743,
+    "M_error_2": 2.314495755004776e-05,
+    "M_error_bound": 0.7757875230643831,
+    "M_relative_frobenius_error": 4.001692481653111e-06,
+    "commutator_residual": 3.803066776898035e-15,
+    "draw": 2
+  },
+  {
+    "eigenvalue_group_gap_delta": 0.05430392596857619,
+    "A_cesaro_error_2": 0.0006457974694354921,
+    "A_cesaro_error_bound": 0.026759165207371403,
+    "certificate_eta": 0.16700252390378034,
+    "M_error_2": 3.146422345897107e-05,
+    "M_error_bound": 1.2512088944229938,
+    "M_relative_frobenius_error": 6.38167567970731e-06,
+    "commutator_residual": 4.3740296620496214e-15,
+    "draw": 3
+  },
+  {
+    "eigenvalue_group_gap_delta": 0.09165324850241931,
+    "A_cesaro_error_2": 0.0006296163681786509,
+    "A_cesaro_error_bound": 0.015980437708417467,
+    "certificate_eta": 0.09848554102063639,
+    "M_error_2": 1.7432534524719275e-05,
+    "M_error_bound": 0.6732611938608709,
+    "M_relative_frobenius_error": 3.5582682065460275e-06,
+    "commutator_residual": 4.181640215580075e-15,
+    "draw": 4
+  },
+  {
+    "eigenvalue_group_gap_delta": 0.03684918305243596,
+    "A_cesaro_error_2": 0.0009669902557260413,
+    "A_cesaro_error_bound": 0.03924617360579716,
+    "certificate_eta": 0.22817930144075524,
+    "M_error_2": 5.6411330773600634e-05,
+    "M_error_bound": 1.7188530558895416,
+    "M_relative_frobenius_error": 9.572846041975195e-06,
+    "commutator_residual": 4.015627309077367e-15,
+    "draw": 5
+  },
+  {
+    "eigenvalue_group_gap_delta": 0.03638564784648827,
+    "A_cesaro_error_2": 0.0006588850341489535,
+    "A_cesaro_error_bound": 0.040195943875153066,
+    "certificate_eta": 0.23214798451199858,
+    "M_error_2": 3.3530102461030585e-05,
+    "M_error_bound": 1.7461038716665667,
+    "M_relative_frobenius_error": 7.315047347701818e-06,
+    "commutator_residual": 3.700951868481129e-15,
+    "draw": 6
+  },
+  {
+    "eigenvalue_group_gap_delta": 0.06877307599354299,
+    "A_cesaro_error_2": 0.0011806392199294555,
+    "A_cesaro_error_bound": 0.02119562194200985,
+    "certificate_eta": 0.13283932854699684,
+    "M_error_2": 6.505550633287314e-05,
+    "M_error_bound": 0.9600804049586085,
+    "M_relative_frobenius_error": 1.3184687856814831e-05,
+    "commutator_residual": 4.087399811307227e-15,
+    "draw": 7
+  }
+]

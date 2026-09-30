@@ -1,0 +1,217 @@
+{
+  "record": "NC-3C second confirmation, freeze before exposure",
+  "authority": "AGENT_HANDOFF_APPROVED_FINAL_RUN_AND_AD023_FILING_20260920_EN.md, sections 4.1 to 4.4",
+  "frozen_utc": "2026-09-19T22:56:39Z",
+  "run_id": "nc3c_block2_20260920",
+  "output_directory": "results/nc3c_block2_20260920",
+  "carrier_block": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "namespace": "NC-3C-V1",
+  "matrix": {
+    "carrier_draws": 16,
+    "writer_types": 2,
+    "optimizer_seeds": 5,
+    "objectives": [
+      0,
+      12
+    ],
+    "optimization_runs": 320,
+    "cells": 32
+  },
+  "frozen_config": {
+    "amplitude": 1.5,
+    "train_horizon": 128,
+    "training_steps": 12000,
+    "batch_size": 512,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0,
+    "gradient_clip": 1.0,
+    "optimizer": "Adam",
+    "optimizer_seeds": 5,
+    "test_episodes": 50000,
+    "calibration_episodes": 50000,
+    "loss_every": 50,
+    "objectives": [
+      0,
+      12
+    ],
+    "negligible_separation_threshold": 0.02
+  },
+  "use_history_preflight": {
+    "requested_draws_already_exercised": [],
+    "prior_nc3c_draws_on_record": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      9900
+    ],
+    "nc3c_seeds": 560,
+    "completed_lane_seeds": 910,
+    "prior_nc3c_seeds": 595,
+    "seed_collisions": [],
+    "seed_collisions_with_prior_nc3c": [],
+    "carrier_digest_collisions": [],
+    "carrier_digest_collisions_with_prior_nc3c": [],
+    "fresh": true
+  },
+  "seed_streams": {
+    "streams_per_draw": 35,
+    "total_seeds": 560,
+    "distinct_seeds": 560,
+    "frozen_seed_list_sha256": "4dc6f6573d505438f911aec56b46cda2db9f77ab66801fe54494c2b5447f9257",
+    "freshness_audit_sha256": "2054f8b74b0612754e037dd6859705b44d9c49c2e67c7bd91b2c0bde2136009e"
+  },
+  "scientific_modules_unchanged": true,
+  "scientific_modules": {
+    "authority/nc3c/NC3C_TASK_SPECIFIC_GEOMETRY_PREREG_v1_20260918.yaml": {
+      "sha256": "e8c39c707a9a6dedd0bb40237ae18349f537fe2680595ba99492fc68a99b442e",
+      "matches_freeze": true,
+      "frozen_sha256": "e8c39c707a9a6dedd0bb40237ae18349f537fe2680595ba99492fc68a99b442e"
+    },
+    "authority/nc3c/NC3C_TASK_SPECIFIC_GEOMETRY_PROTOCOL_v1_20260918_EN.md": {
+      "sha256": "97cbd4a129675eccb6417b8446bc4ca187a8ee5d793d663d2b12e18dbe68da53",
+      "matches_freeze": true,
+      "frozen_sha256": "97cbd4a129675eccb6417b8446bc4ca187a8ee5d793d663d2b12e18dbe68da53"
+    },
+    "finalize.py": {
+      "sha256": "5418ab55f007c136fbfa32cdb20f9a38ddd2dceb66e5255bcc61dcec2f4b71d8",
+      "matches_freeze": true,
+      "frozen_sha256": "5418ab55f007c136fbfa32cdb20f9a38ddd2dceb66e5255bcc61dcec2f4b71d8"
+    },
+    "make_nc_figures.py": {
+      "sha256": "a4fdb6b4319729ff4adb29ccea4193e5667df3a21b737e2445f7c2ddc090c745",
+      "matches_freeze": true,
+      "frozen_sha256": "a4fdb6b4319729ff4adb29ccea4193e5667df3a21b737e2445f7c2ddc090c745"
+    },
+    "make_parity_artifacts.py": {
+      "sha256": "d6d2ea462fe339b2ea29747e60e049971bce7eed353f2233747f7c68efcdde09",
+      "matches_freeze": true,
+      "frozen_sha256": "d6d2ea462fe339b2ea29747e60e049971bce7eed353f2233747f7c68efcdde09"
+    },
+    "nc3c_experiment.py": {
+      "sha256": "3ac0fca68c980f33addf375fc79656f3b454f71876f839f50319631bb7bfe7a9",
+      "matches_freeze": true,
+      "frozen_sha256": "3ac0fca68c980f33addf375fc79656f3b454f71876f839f50319631bb7bfe7a9"
+    },
+    "nc3c_verdict.py": {
+      "sha256": "b86ee71f5e8f5b6ec6edd3cef4d378a2a80958109ac9a12fea7a30d0211b1067",
+      "matches_freeze": true,
+      "frozen_sha256": "b86ee71f5e8f5b6ec6edd3cef4d378a2a80958109ac9a12fea7a30d0211b1067"
+    },
+    "nc_experiment.py": {
+      "sha256": "51bd64ef6bccb76a85675b413f0c3a0832ecebd70c91db0a576f7bbe5755e00b",
+      "matches_freeze": true,
+      "frozen_sha256": "51bd64ef6bccb76a85675b413f0c3a0832ecebd70c91db0a576f7bbe5755e00b"
+    },
+    "nc_geometry.py": {
+      "sha256": "7971ad842b0917d3419b1bbd69d137a2cb68e584ce6ce8d75cba4c81eff14175",
+      "matches_freeze": true,
+      "frozen_sha256": "7971ad842b0917d3419b1bbd69d137a2cb68e584ce6ce8d75cba4c81eff14175"
+    },
+    "nc_model.py": {
+      "sha256": "c5667bf0586b0ddb5963776cba83b028a4f89c1fd676bd86821f1a38f6ed23fd",
+      "matches_freeze": true,
+      "frozen_sha256": "c5667bf0586b0ddb5963776cba83b028a4f89c1fd676bd86821f1a38f6ed23fd"
+    },
+    "nc_scan.py": {
+      "sha256": "322757baf4e3e18399259b4532d8c46add985470f59a33fdae1e1da5486aa6a3",
+      "matches_freeze": true,
+      "frozen_sha256": "322757baf4e3e18399259b4532d8c46add985470f59a33fdae1e1da5486aa6a3"
+    },
+    "nc_stats.py": {
+      "sha256": "112219d55bb756cb10b415ba38676402e9088c9d778a159c20a164ded4074a84",
+      "matches_freeze": true,
+      "frozen_sha256": "112219d55bb756cb10b415ba38676402e9088c9d778a159c20a164ded4074a84"
+    },
+    "nc_validity.py": {
+      "sha256": "70d611f786c2661f09b3c0a0fbe422816de6ce5c9ea920a863f99b3efaa3d9aa",
+      "matches_freeze": true,
+      "frozen_sha256": "70d611f786c2661f09b3c0a0fbe422816de6ce5c9ea920a863f99b3efaa3d9aa"
+    },
+    "nc_verdict.py": {
+      "sha256": "af553b56804635057e7a9ac9d3977ceb7a22c3b13185f40bb152585c7b0e21be",
+      "matches_freeze": true,
+      "frozen_sha256": "af553b56804635057e7a9ac9d3977ceb7a22c3b13185f40bb152585c7b0e21be"
+    },
+    "run_all.sh": {
+      "sha256": "299635671f657bbccb7ae309a74f760a58bb8b2854fc7f413a9bb6d2c929fbd9",
+      "matches_freeze": true,
+      "frozen_sha256": "299635671f657bbccb7ae309a74f760a58bb8b2854fc7f413a9bb6d2c929fbd9"
+    },
+    "run_exploratory.py": {
+      "sha256": "e8980412963fd0a2afbae9f54618584c02dfc9cf75240279c1e694b6e8f27684",
+      "matches_freeze": true,
+      "frozen_sha256": "e8980412963fd0a2afbae9f54618584c02dfc9cf75240279c1e694b6e8f27684"
+    },
+    "run_stage.py": {
+      "sha256": "7eac4adce75a5ed4d7292f85ca659941644b88e63fbea1ab3463e3bc76359dff",
+      "matches_freeze": true,
+      "frozen_sha256": "7eac4adce75a5ed4d7292f85ca659941644b88e63fbea1ab3463e3bc76359dff"
+    },
+    "run_with_review.sh": {
+      "sha256": "a3c5fa847060615824c32cc280ebce1c9028e655046ab199c40c7e231c58ca61",
+      "matches_freeze": true,
+      "frozen_sha256": "a3c5fa847060615824c32cc280ebce1c9028e655046ab199c40c7e231c58ca61"
+    }
+  },
+  "declaration_files": {
+    "MIRROR_OF.json": {
+      "sha256": "a5cc2a213b56d589256abb24bb6a620ad9c6cae42cf3cddad7f9f66bb304d856",
+      "matches_freeze": false,
+      "frozen_sha256": "4f6f85d62b6aed2d221f219da4a6bcb1e30af883cc1842810af031898b22edde"
+    }
+  },
+  "declaration_note": "MIRROR_OF.json is a mirror declaration, not executable science. It changed on 2026-09-19 when make_section7_figures.py was registered under Hard Rule #4; no numerical path reads it. Recorded here as a known, explained difference from the 2026-09-18 freeze rather than silently folded into the unchanged count.",
+  "launcher": {
+    "run_nc3c.py": {
+      "sha256": "0ce30d04069d0ef0dfa3b144650caf3b4230a92c4040ab7d662e50513bd3709b",
+      "matches_freeze": false,
+      "frozen_sha256": "61ae4b99df252860df1093b37d287694d13786300281bd39c65478a9e44cd856"
+    }
+  },
+  "authorized_delta": "carrier block, the seeds derived from it, the run identity and the output directory. No scientific method, threshold, budget or decision rule is changed. The launcher diff is recorded at docs/nc3c_block2/LAUNCHER_AMENDMENT_20260920.diff and reviewed at prior_art/REVIEW_RUN_NC3C_BLOCK_AMENDMENT_20260920.md.",
+  "launcher_diff_sha256": "5a47f49eaa3bb6da1e15327ffceae5f46cecdf2e8009bf1cbcd634b23dcfe9a8",
+  "launcher_review_sha256": "97d19d7869ec0defa1423bfd1d01aed36be7528d2cd2a886e0d870de2de0cbd7",
+  "execution_platform": {
+    "required": "designated Linux scientific execution lane",
+    "macos_exception": false,
+    "reference_environment_from_prior_run": {
+      "python": "3.11.14",
+      "numpy": "2.3.4",
+      "scipy": "1.17.1",
+      "platform": "Linux x86_64",
+      "blas": "conda BLAS/LAPACK 3.9.0"
+    },
+    "actual_binding": "NOT YET RESOLVED at freeze time"
+  },
+  "posting_hold": "ACTIVE"
+}

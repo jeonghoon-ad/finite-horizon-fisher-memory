@@ -1,0 +1,124 @@
+{
+  "relationship": "IMPORT_AND_REBIND",
+  "explanation": "This lane does not copy the numerical implementation. nc_geometry.py imports the release modules by path, verifies their SHA-256 against the release MANIFEST before use, and calls their functions directly. The single extension is a seed-namespace rebinding of make_similarity, performed with the same FunctionType(code_object, rebound_globals) technique the release itself uses in isolation_factorial_v2_bounded_20260903.paired_write_carriers, so the code object and every numerical helper remain identical and only the seed namespace changes.",
+  "locked_sources": [
+    {
+      "path": "vendor/PREPRINT_PUBLIC_RELEASE_v1.2_20260917/scripts/fourth_cell_capacity_20260902.py",
+      "sha256": "8f2bb0a0bed1597e142114920ea9d655e0b3892651df87854c4caeefcec5fc0e",
+      "manifest_sha256_matches": true,
+      "original_sha256": "32d65f64bdeabf9f689b504c080e3e6e69246ed57b7891463acf90541b9c464f"
+    },
+    {
+      "path": "vendor/PREPRINT_PUBLIC_RELEASE_v1.2_20260917/scripts/fourth_cell_cond_sweep_20260902.py",
+      "sha256": "c6c4d8d4be53df512f60d0d62a2180969d5767dd6e721b278f9e364fff6f04e9",
+      "manifest_sha256_matches": true,
+      "original_sha256": "6c0abe5ee99a683e4e099616116329117c400f4dde08d192491fa25abee3814e"
+    },
+    {
+      "path": "vendor/PREPRINT_PUBLIC_RELEASE_v1.2_20260917/scripts/isolation_factorial_v2_bounded_20260903.py",
+      "sha256": "5aa11fa435d85883f9b9f16521abc1ec58fc2514e8022ffbc6d3294c435a2ccb",
+      "manifest_sha256_matches": true,
+      "original_sha256": "69acea303c4c14e1ce094a3b5c0acbf78fdab62d06cefcca5f1f2cbb07a7887e"
+    },
+    {
+      "path": "vendor/PREPRINT_PUBLIC_RELEASE_v1.2_20260917/scripts/make_preprint_figures_20260903.py",
+      "sha256": "142249c68d5df40c8e222bab8cb32c3bab3f16c3215e095c3d8b4236f3dc8793",
+      "manifest_sha256_matches": true
+    },
+    {
+      "path": "vendor/PREPRINT_PUBLIC_RELEASE_v1.2_20260917/scripts/preprint_replication_and_factorial_20260903.py",
+      "sha256": "f8c0884d41cf7a112468013dee6ad70702a7a7be4b6ee700d2100d128aaa2ad4",
+      "manifest_sha256_matches": true,
+      "original_sha256": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be"
+    },
+    {
+      "path": "vendor/PREPRINT_PUBLIC_RELEASE_v1.2_20260917/scripts/preprint_reruns_angle_and_f5sf_20260903.py",
+      "sha256": "b634bf2ef7fa47eb5fa8262c0ae560a84ecf30e219805f65d55984b12938a364",
+      "manifest_sha256_matches": true,
+      "original_sha256": "76fab286d9defe93ce718e0e18151efb589d02146b880e4065247603619f4ce3"
+    },
+    {
+      "path": "vendor/PREPRINT_PUBLIC_RELEASE_v1.2_20260917/scripts/preprint_v1_2_strengthening_20260917.py",
+      "sha256": "c1fd328db9cea8677f74611d96d1cce9a09b673a096da7098aaba249ab7fa7bc",
+      "manifest_sha256_matches": true
+    },
+    {
+      "path": "vendor/PREPRINT_PUBLIC_RELEASE_v1.2_20260917/scripts/reproduce_public.py",
+      "sha256": "8fd9fee796ef249570e4bfb79856793fa56ee3285eff08d7de53e0d59e60f092",
+      "manifest_sha256_matches": true,
+      "original_sha256": "54e03431e561c692167db81f0f018800c0ce27a4cdf9e891f629d28439e7b2a1"
+    },
+    {
+      "path": "vendor/PREPRINT_PUBLIC_RELEASE_v1.2_20260917/scripts/validate_release.py",
+      "sha256": "4712c0d389e056185e74402cd13b8e5a75e52894fd69fef3f091503307bc2865",
+      "manifest_sha256_matches": true
+    },
+    {
+      "path": "vendor/PREPRINT_PUBLIC_RELEASE_v1.2_20260917/scripts/verify_ganguli_pocket_capacity_20260823.py",
+      "sha256": "34ff3513574f28a887b1f915d2eee9f4be1a9065bd5c4cbc357db9a892068903",
+      "manifest_sha256_matches": true
+    }
+  ],
+  "symbols_consumed": {
+    "preprint_replication_and_factorial_20260903.py": [
+      "seed_for",
+      "haar_orthogonal",
+      "make_similarity",
+      "fisher_memory_matrix",
+      "canonicalize_eigenvector_signs"
+    ],
+    "preprint_v1_2_strengthening_20260917.py": [
+      "closure_transfers",
+      "store_operator",
+      "sqrt_psd"
+    ],
+    "isolation_factorial_v2_bounded_20260903.py": [
+      "(loaded for integrity verification and as the documented precedent for the seed-namespace rebinding technique; no symbol is called)"
+    ]
+  },
+  "extensions_made": [
+    {
+      "what": "seed namespace",
+      "from": "SQS-c10 / ISO-V2",
+      "to": "NC-TM-V1",
+      "why": "the NC carrier draws must be disjoint from every published preprint draw",
+      "how": "seed_for is rebound in a copy of make_similarity's globals; the code object is asserted identical"
+    },
+    {
+      "what": "coupling K and store map U",
+      "from": "isolation_factorial_v2 paired_draw_objects",
+      "to": "nc_geometry.build_carrier_draw",
+      "why": "the release's helper is bound to the ISO-V2 namespace",
+      "how": "same construction verbatim (first STORE_DIM rows of a Haar orthogonal WRITE_DIM matrix, rescaled to top singular value 1; Haar orthogonal store map), drawn from NC-TM-V1 seeds"
+    },
+    {
+      "what": "figure style",
+      "from": "make_preprint_figures_20260903.py",
+      "to": "make_nc_figures.py, make_section7_figures.py",
+      "why": "new figures 5 to 8 must be visually indistinguishable in style from published figures 1 to 4; make_section7_figures.py (added 2026-09-19) renders the section 7 figures S7a to S7c of the v2.0 manuscript under the same rule",
+      "how": "the rcParams block and the three palette literals CREAM #F2EDE4, NAVY #1A2744, MUTED #9C8F7A are copied as text, not imported, because the reference script executes plotting at import. This is a STYLE mirror, not a numerical one: no quantity crosses over. Deliberate divergences from the reference are listed in the module docstring of each mirroring script. make_section7_figures.py is plot-only: it reads J, the efficiencies, the objectives, the accuracies, the retained fractions and the guaranteed floors from the frozen CSVs and computes no Fisher quantity, gate, statistic or verdict, so it is not decision-bearing under reproduction review."
+    },
+    {
+      "what": "parallel scan for the closure recurrence",
+      "from": "preprint_v1_2_strengthening_20260917.closure_transfers",
+      "to": "nc_scan.blelloch_transfers / nc_scan.torch_blelloch_transfers",
+      "why": "author instruction to parallelise properly when the 3090 is used. The recurrence is first order and linear, so a Blelloch exclusive scan returns every prefix in O(n) work and O(log n) depth.",
+      "how": "an INDEPENDENT reimplementation, not a copy: the affine-map monoid (A1,C1).(A2,C2) = (A1 A2, C1 A2 + C2) is scanned over a binary tree. The canonical sequential implementation remains the reference and is NOT replaced; nc_scan.parity_check asserts agreement (max relative error 9.7e-14 on transfers, 6.2e-15 on the covariance at n=4096). Nothing in the measurement path imports nc_scan."
+    },
+    {
+      "what": "batched multi-model trainer",
+      "from": "nc_model.train_direction",
+      "to": "nc_scan.train_batched",
+      "why": "to use the GPU across the 160 independent models instead of one at a time",
+      "how": "an independent torch autograd implementation of the same loss, verified to reproduce four serial nc_model.train_direction runs to 1.7e-16 on every parameter with identical clip counts. Used as a cross-implementation control, not as the primary measurement path."
+    }
+  ],
+  "what_is_NOT_mirrored": [
+    "No release result, receipt, figure or CSV is read, written or overwritten by this lane.",
+    "No release threshold, decision rule or published number is restated as a new measurement."
+  ],
+  "integrity_gate": "nc_geometry.load_vendor() raises if a pinned public dependency byte changes; the pin update maps the original source to the public derivative.",
+  "created": "2026-09-18",
+  "lane": "nc_trained_memory_validation_20260918",
+  "public_derivative_note": "Original numerical implementations are preserved. Metadata and dependency pins in public source derivatives change file identities; original and current hashes are recorded here and in MANIFEST.json. Historical experiment receipts retain their original identities."
+}

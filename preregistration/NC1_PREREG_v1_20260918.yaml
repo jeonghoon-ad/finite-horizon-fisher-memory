@@ -1,0 +1,100 @@
+title: Neural Computation trained-memory validation
+version: 1
+date: '2026-09-18'
+status: PREREGISTRATION_DRAFT_NO_RUN_AUTHORITY
+primary_question: Can behavioral training without Fisher supervision recover the direction
+  predicted by the task-specific end-to-end Fisher operator, and does Fisher information
+  predict delayed behavior?
+system:
+  writer_dim: 32
+  store_dim: 16
+  write_interval: 24
+  target_time: 0
+  writer_types:
+  - normal_Q
+  - conditioned_SQS_inv_cond10
+  storage_conditions:
+  - isolated
+  - open
+  store_map: orthogonal_frozen
+  store_direct_noise: 0
+pilot:
+  carrier_draws: 2
+  optimizer_seeds: 2
+  excluded_from_confirmation: true
+  amplitudes:
+  - 1.0
+  - 1.5
+  - 2.0
+  - 2.5
+  train_horizons:
+  - 128
+  - 256
+  selection_window:
+    oracle_accuracy:
+    - 0.7
+    - 0.85
+    random_accuracy:
+    - 0.55
+    - 0.75
+confirmatory:
+  carrier_draws: 16
+  optimizer_seeds_per_draw: 5
+  training_steps: 12000
+  batch_size: 512
+  optimizer: Adam
+  learning_rate: 0.003
+  weight_decay: 0.0
+  gradient_clip: 1.0
+  primary_checkpoint: final
+  test_horizons:
+  - 64
+  - 256
+  - 1024
+  - 4096
+  test_episodes_per_condition: 50000
+trainable_parameters:
+- unit_write_direction
+- linear_logistic_readout
+frozen_parameters:
+- writer
+- coupling
+- store_map
+- gate_schedule
+direction_controls:
+- oldest_input_oracle
+- store_total_oracle
+- write_block_oracle
+- bottom_oldest_input_direction
+- 128_isotropic_random_directions
+- learned_direction
+primary_endpoints:
+  rayleigh_efficiency: v_learned^T M_old v_learned / lambda_max(M_old)
+  leading_subspace_alignment: '||P_E0.99 v_learned||^2'
+  behavioral_efficiency: (Acc_learned-Acc_random)/(Acc_oracle-Acc_random)
+  behavior_calibration: MAE(empirical_accuracy, Phi(a*sqrt(J)))
+decision_rules:
+  alignment_pass:
+    median_rayleigh_efficiency_min: 0.9
+    bootstrap_lower_bound_min: 0.8
+    carrier_draws_at_or_above_0.80_min: 14
+    median_behavioral_efficiency_min: 0.8
+    accuracy_calibration_mae_max: 0.02
+  causal_geometry_pass:
+    spearman_J_accuracy_min: 0.95
+    ordered_pair_agreement_min: 0.9
+    bottom_below_random_draws_min: 14
+  retention_pass:
+    isolated_accuracy_range_max: 0.01
+    accuracy_calibration_mae_max: 0.02
+    open_isolated_order_agreement_draws_min: 15
+  kill:
+    rayleigh_efficiency_below: 0.75
+    behavioral_efficiency_below: 0.6
+analysis:
+  independent_unit: carrier_draw
+  seed_aggregation: median_within_carrier
+  bootstrap_resamples: 10000
+  confidence_level: 0.95
+  multiple_testing: Holm_over_alignment_and_behavior_families
+run_authority: false

@@ -1,0 +1,242 @@
+[
+  {
+    "draw": 0,
+    "direction": "write_oracle",
+    "write_allocation": 4.393844167801883,
+    "store_total": 2.568281831356101,
+    "oldest_input_information": 0.18776727448578034,
+    "oldest_transfer_gain": 18.74652710134972,
+    "store_trace": 15.999999999999998,
+    "store_lambda_max": 3.081141072032389
+  },
+  {
+    "draw": 0,
+    "direction": "store_oracle",
+    "write_allocation": 3.8209290440814287,
+    "store_total": 3.081141072032388,
+    "oldest_input_information": 0.2491012772477277,
+    "oldest_transfer_gain": 20.923399274078573,
+    "store_trace": 15.999999999999998,
+    "store_lambda_max": 3.081141072032389
+  },
+  {
+    "draw": 0,
+    "direction": "random",
+    "write_allocation": 0.4388382858327361,
+    "store_total": 0.20819130657712254,
+    "oldest_input_information": 0.011675968387834006,
+    "oldest_transfer_gain": 5.409501481541025,
+    "store_trace": 15.999999999999998,
+    "store_lambda_max": 3.081141072032389
+  },
+  {
+    "draw": 1,
+    "direction": "write_oracle",
+    "write_allocation": 4.487366203623689,
+    "store_total": 2.0521717674040123,
+    "oldest_input_information": 0.17103146335591507,
+    "oldest_transfer_gain": 18.23144776628335,
+    "store_trace": 16.0,
+    "store_lambda_max": 2.9774416046447283
+  },
+  {
+    "draw": 1,
+    "direction": "store_oracle",
+    "write_allocation": 3.2139850914175105,
+    "store_total": 2.977441604644727,
+    "oldest_input_information": 0.2553521473817006,
+    "oldest_transfer_gain": 25.108040876784738,
+    "store_trace": 16.0,
+    "store_lambda_max": 2.9774416046447283
+  },
+  {
+    "draw": 1,
+    "direction": "random",
+    "write_allocation": 1.0907924778345075,
+    "store_total": 0.40621368235990596,
+    "oldest_input_information": 0.031499096258602824,
+    "oldest_transfer_gain": 8.846463711757227,
+    "store_trace": 16.0,
+    "store_lambda_max": 2.9774416046447283
+  },
+  {
+    "draw": 2,
+    "direction": "write_oracle",
+    "write_allocation": 4.579905314505439,
+    "store_total": 3.0145207614467964,
+    "oldest_input_information": 0.27998166968608157,
+    "oldest_transfer_gain": 23.195059554521475,
+    "store_trace": 16.0,
+    "store_lambda_max": 3.352196397327998
+  },
+  {
+    "draw": 2,
+    "direction": "store_oracle",
+    "write_allocation": 4.287174530808605,
+    "store_total": 3.352196397327992,
+    "oldest_input_information": 0.2978012073706988,
+    "oldest_transfer_gain": 24.000742367111425,
+    "store_trace": 16.0,
+    "store_lambda_max": 3.352196397327998
+  },
+  {
+    "draw": 2,
+    "direction": "random",
+    "write_allocation": 0.7627948488864131,
+    "store_total": 0.29225130604978405,
+    "oldest_input_information": 0.02952105335133941,
+    "oldest_transfer_gain": 5.420390404497367,
+    "store_trace": 16.0,
+    "store_lambda_max": 3.352196397327998
+  },
+  {
+    "draw": 3,
+    "direction": "write_oracle",
+    "write_allocation": 4.444486856279068,
+    "store_total": 2.605874102791584,
+    "oldest_input_information": 0.18869252540518155,
+    "oldest_transfer_gain": 18.453176823703593,
+    "store_trace": 16.0,
+    "store_lambda_max": 3.2531999315680915
+  },
+  {
+    "draw": 3,
+    "direction": "store_oracle",
+    "write_allocation": 3.787952739928164,
+    "store_total": 3.2531999315680924,
+    "oldest_input_information": 0.2241652911056702,
+    "oldest_transfer_gain": 19.85737305829274,
+    "store_trace": 16.0,
+    "store_lambda_max": 3.2531999315680915
+  },
+  {
+    "draw": 3,
+    "direction": "random",
+    "write_allocation": 0.7712098680532264,
+    "store_total": 0.4250357411390624,
+    "oldest_input_information": 0.02653996965485884,
+    "oldest_transfer_gain": 5.752480366539471,
+    "store_trace": 16.0,
+    "store_lambda_max": 3.2531999315680915
+  },
+  {
+    "draw": 4,
+    "direction": "write_oracle",
+    "write_allocation": 4.543630516138268,
+    "store_total": 2.530278780839744,
+    "oldest_input_information": 0.21645970588222013,
+    "oldest_transfer_gain": 16.870317160588748,
+    "store_trace": 15.999999999999998,
+    "store_lambda_max": 2.8733402928794134
+  },
+  {
+    "draw": 4,
+    "direction": "store_oracle",
+    "write_allocation": 4.13448207166924,
+    "store_total": 2.8733402928794174,
+    "oldest_input_information": 0.24378671440536728,
+    "oldest_transfer_gain": 18.988585903212886,
+    "store_trace": 15.999999999999998,
+    "store_lambda_max": 2.8733402928794134
+  },
+  {
+    "draw": 4,
+    "direction": "random",
+    "write_allocation": 1.552130477971878,
+    "store_total": 0.882313924734309,
+    "oldest_input_information": 0.08009866724845258,
+    "oldest_transfer_gain": 8.9944284767694,
+    "store_trace": 15.999999999999998,
+    "store_lambda_max": 2.8733402928794134
+  },
+  {
+    "draw": 5,
+    "direction": "write_oracle",
+    "write_allocation": 4.021191204902234,
+    "store_total": 2.4884375894719595,
+    "oldest_input_information": 0.20475772250783286,
+    "oldest_transfer_gain": 18.38167587681953,
+    "store_trace": 16.0,
+    "store_lambda_max": 2.8266893666703243
+  },
+  {
+    "draw": 5,
+    "direction": "store_oracle",
+    "write_allocation": 3.615697177066238,
+    "store_total": 2.8266893666703234,
+    "oldest_input_information": 0.18885177620044002,
+    "oldest_transfer_gain": 17.578549000775485,
+    "store_trace": 16.0,
+    "store_lambda_max": 2.8266893666703243
+  },
+  {
+    "draw": 5,
+    "direction": "random",
+    "write_allocation": 1.313020039670249,
+    "store_total": 0.4576289470799213,
+    "oldest_input_information": 0.0497591640918552,
+    "oldest_transfer_gain": 8.533395666791975,
+    "store_trace": 16.0,
+    "store_lambda_max": 2.8266893666703243
+  },
+  {
+    "draw": 6,
+    "direction": "write_oracle",
+    "write_allocation": 4.362188782998196,
+    "store_total": 1.5722059672165876,
+    "oldest_input_information": 0.10697631777198217,
+    "oldest_transfer_gain": 9.523946386679146,
+    "store_trace": 16.0,
+    "store_lambda_max": 2.486795410985474
+  },
+  {
+    "draw": 6,
+    "direction": "store_oracle",
+    "write_allocation": 3.1051059638988296,
+    "store_total": 2.4867954109854713,
+    "oldest_input_information": 0.1816331145663838,
+    "oldest_transfer_gain": 14.903359089415394,
+    "store_trace": 16.0,
+    "store_lambda_max": 2.486795410985474
+  },
+  {
+    "draw": 6,
+    "direction": "random",
+    "write_allocation": 1.1982380692733146,
+    "store_total": 0.6151168083978626,
+    "oldest_input_information": 0.05277424626991008,
+    "oldest_transfer_gain": 7.7866853681055055,
+    "store_trace": 16.0,
+    "store_lambda_max": 2.486795410985474
+  },
+  {
+    "draw": 7,
+    "direction": "write_oracle",
+    "write_allocation": 4.24739378042619,
+    "store_total": 2.011751927413327,
+    "oldest_input_information": 0.15262708185517423,
+    "oldest_transfer_gain": 13.5653447894428,
+    "store_trace": 16.0,
+    "store_lambda_max": 3.15574763231414
+  },
+  {
+    "draw": 7,
+    "direction": "store_oracle",
+    "write_allocation": 3.552006711904925,
+    "store_total": 3.1557476323141405,
+    "oldest_input_information": 0.2689235837778637,
+    "oldest_transfer_gain": 18.956833126145238,
+    "store_trace": 16.0,
+    "store_lambda_max": 3.15574763231414
+  },
+  {
+    "draw": 7,
+    "direction": "random",
+    "write_allocation": 0.9372946015624164,
+    "store_total": 0.453667813052928,
+    "oldest_input_information": 0.03453488784067165,
+    "oldest_transfer_gain": 7.357572171921245,
+    "store_trace": 16.0,
+    "store_lambda_max": 3.15574763231414
+  }
+]

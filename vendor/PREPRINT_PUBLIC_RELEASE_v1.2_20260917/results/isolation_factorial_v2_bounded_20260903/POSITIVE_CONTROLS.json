@@ -1,0 +1,2789 @@
+{
+  "checks": [
+    {
+      "expected": true,
+      "name": "draw0.make_similarity_code_identity",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "draw0.coupling_operator_norm",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.coupling_rows_orthonormal",
+      "observed": 1.5543122344752192e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw0.normal.trace_identity.n64",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.normal.matrix_identity.n64",
+      "observed": 1.5543122344752192e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw0.normal.trace_identity.n256",
+      "observed": 0.9999999999999994,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.normal.matrix_identity.n256",
+      "observed": 1.9984014443252818e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw0.normal.trace_identity.n1024",
+      "observed": 0.9999999999999978,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.normal.matrix_identity.n1024",
+      "observed": 8.104628079763643e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw0.normal.trace_identity.n4096",
+      "observed": 0.9999999999999905,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.normal.matrix_identity.n4096",
+      "observed": 3.1530333899354446e-14,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw0.nonnormal.trace_identity.n64",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw0.nonnormal.trace_identity.n256",
+      "observed": 1.0000000000000004,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw0.nonnormal.trace_identity.n1024",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw0.nonnormal.trace_identity.n4096",
+      "observed": 1.0000000000000016,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.normal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.1379786002407855e-15,
+        "total_abs_error": 4.440892098500626e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.normal_open.source_route_parity.n256",
+      "observed": {
+        "curve_max_abs_error": 1.2299189444675562e-15,
+        "total_abs_error": 4.884981308350689e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.normal_open.source_route_parity.n1024",
+      "observed": {
+        "curve_max_abs_error": 2.454633718507182e-16,
+        "total_abs_error": 1.3322676295501878e-14
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.normal_open.source_route_parity.n4096",
+      "observed": {
+        "curve_max_abs_error": 8.890457814381136e-17,
+        "total_abs_error": 1.509903313490213e-14
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.normal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.5265566588595902e-16,
+        "total_abs_error": 4.440892098500626e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.normal_isolated.source_route_parity.n256",
+      "observed": {
+        "curve_max_abs_error": 1.1102230246251565e-16,
+        "total_abs_error": 4.440892098500626e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.normal_isolated.source_route_parity.n1024",
+      "observed": {
+        "curve_max_abs_error": 8.326672684688674e-17,
+        "total_abs_error": 8.881784197001252e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.normal_isolated.source_route_parity.n4096",
+      "observed": {
+        "curve_max_abs_error": 3.3306690738754696e-16,
+        "total_abs_error": 0.0
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw0.normal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 1.5841494782620202e-14,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 6.938893903907228e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.normal.identity_store_invariance.n64",
+      "observed": 1.0408340855860843e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw0.normal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.05266476619109336,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 1.5959455978986625e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.normal.identity_store_invariance.n256",
+      "observed": 1.1102230246251565e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw0.normal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.05435050853721584,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 1.1102230246251565e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.normal.identity_store_invariance.n1024",
+      "observed": 1.249000902703301e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.normal.identity_store_invariance.n4096",
+      "observed": 1.0408340855860843e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw0.normal.write_phase_contraction_must_differ",
+      "observed": 0.02369694958947181,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.nonnormal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.1857181902996672e-13,
+        "total_abs_error": 7.842615445952106e-13
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.nonnormal_open.source_route_parity.n256",
+      "observed": {
+        "curve_max_abs_error": 6.926403894880195e-14,
+        "total_abs_error": 1.6431300764452317e-13
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.nonnormal_open.source_route_parity.n1024",
+      "observed": {
+        "curve_max_abs_error": 1.5394803487556175e-14,
+        "total_abs_error": 5.018208071305708e-13
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.nonnormal_open.source_route_parity.n4096",
+      "observed": {
+        "curve_max_abs_error": 6.723788192886104e-15,
+        "total_abs_error": 1.007194327939942e-12
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.nonnormal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.5404344466674047e-15,
+        "total_abs_error": 4.440892098500626e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.nonnormal_isolated.source_route_parity.n256",
+      "observed": {
+        "curve_max_abs_error": 5.273559366969494e-16,
+        "total_abs_error": 4.440892098500626e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.nonnormal_isolated.source_route_parity.n1024",
+      "observed": {
+        "curve_max_abs_error": 3.885780586188048e-16,
+        "total_abs_error": 1.7763568394002505e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw0.nonnormal_isolated.source_route_parity.n4096",
+      "observed": {
+        "curve_max_abs_error": 8.049116928532385e-16,
+        "total_abs_error": 5.329070518200751e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw0.nonnormal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 5.412337245047638e-15,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 4.163336342344337e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.nonnormal.identity_store_invariance.n64",
+      "observed": 8.881784197001252e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw0.nonnormal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.1842904882109687,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 4.163336342344337e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.nonnormal.identity_store_invariance.n256",
+      "observed": 6.661338147750939e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw0.nonnormal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.18761594720868394,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 4.996003610813204e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.nonnormal.identity_store_invariance.n1024",
+      "observed": 1.1102230246251565e-15,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw0.nonnormal.identity_store_invariance.n4096",
+      "observed": 9.992007221626409e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw0.nonnormal.write_phase_contraction_must_differ",
+      "observed": 0.10025515867880425,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": true,
+      "name": "draw1.make_similarity_code_identity",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "draw1.coupling_operator_norm",
+      "observed": 0.9999999999999999,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.coupling_rows_orthonormal",
+      "observed": 1.5543122344752192e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw1.normal.trace_identity.n64",
+      "observed": 0.9999999999999999,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.normal.matrix_identity.n64",
+      "observed": 2.55351295663786e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw1.normal.trace_identity.n256",
+      "observed": 0.9999999999999999,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.normal.matrix_identity.n256",
+      "observed": 1.6267671612614617e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw1.normal.trace_identity.n1024",
+      "observed": 0.9999999999999998,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.normal.matrix_identity.n1024",
+      "observed": 6.328271240363392e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw1.normal.trace_identity.n4096",
+      "observed": 0.9999999999999993,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.normal.matrix_identity.n4096",
+      "observed": 2.4424906541753444e-14,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw1.nonnormal.trace_identity.n64",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw1.nonnormal.trace_identity.n256",
+      "observed": 0.9999999999999994,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw1.nonnormal.trace_identity.n1024",
+      "observed": 1.0000000000000013,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw1.nonnormal.trace_identity.n4096",
+      "observed": 0.9999999999999984,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw1.normal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.8041124150158794e-15,
+        "total_abs_error": 9.325873406851315e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw1.normal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.5265566588595902e-16,
+        "total_abs_error": 2.220446049250313e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw1.normal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 2.366162821232365e-14,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 6.591949208711867e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.normal.identity_store_invariance.n64",
+      "observed": 6.245004513516506e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw1.normal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.04504475652855139,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 9.71445146547012e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.normal.identity_store_invariance.n256",
+      "observed": 6.591949208711867e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw1.normal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.046264551858693,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 6.938893903907228e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.normal.identity_store_invariance.n1024",
+      "observed": 9.71445146547012e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.normal.identity_store_invariance.n4096",
+      "observed": 6.938893903907228e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw1.normal.write_phase_contraction_must_differ",
+      "observed": 0.01948985544715303,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw1.nonnormal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 3.502753642692369e-14,
+        "total_abs_error": 8.704148513061227e-14
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw1.nonnormal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.762479051592436e-15,
+        "total_abs_error": 3.552713678800501e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw1.nonnormal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 3.969047313034935e-15,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 4.440892098500626e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.nonnormal.identity_store_invariance.n64",
+      "observed": 6.661338147750939e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw1.nonnormal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.17671412878867693,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 3.885780586188048e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.nonnormal.identity_store_invariance.n256",
+      "observed": 4.718447854656915e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw1.nonnormal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.18658074659176885,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 2.914335439641036e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.nonnormal.identity_store_invariance.n1024",
+      "observed": 4.996003610813204e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw1.nonnormal.identity_store_invariance.n4096",
+      "observed": 4.440892098500626e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw1.nonnormal.write_phase_contraction_must_differ",
+      "observed": 0.07512917903470641,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": true,
+      "name": "draw2.make_similarity_code_identity",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "draw2.coupling_operator_norm",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.coupling_rows_orthonormal",
+      "observed": 1.1102230246251565e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw2.normal.trace_identity.n64",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.normal.matrix_identity.n64",
+      "observed": 1.7763568394002505e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw2.normal.trace_identity.n256",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.normal.matrix_identity.n256",
+      "observed": 1.52159253996712e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw2.normal.trace_identity.n1024",
+      "observed": 1.0000000000000004,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.normal.matrix_identity.n1024",
+      "observed": 3.0184610848546776e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw2.normal.trace_identity.n4096",
+      "observed": 1.0000000000000004,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.normal.matrix_identity.n4096",
+      "observed": 9.646590932178744e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw2.nonnormal.trace_identity.n64",
+      "observed": 1.0000000000000007,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw2.nonnormal.trace_identity.n256",
+      "observed": 0.9999999999999993,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw2.nonnormal.trace_identity.n1024",
+      "observed": 1.0000000000000009,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw2.nonnormal.trace_identity.n4096",
+      "observed": 0.9999999999999976,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw2.normal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 5.689893001203927e-16,
+        "total_abs_error": 4.440892098500626e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw2.normal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.249000902703301e-16,
+        "total_abs_error": 8.881784197001252e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw2.normal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 2.6895152771544417e-14,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 6.938893903907228e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.normal.identity_store_invariance.n64",
+      "observed": 1.1102230246251565e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw2.normal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.05491297659953307,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 9.020562075079397e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.normal.identity_store_invariance.n256",
+      "observed": 1.1102230246251565e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw2.normal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.056083312424202204,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 9.020562075079397e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.normal.identity_store_invariance.n1024",
+      "observed": 1.1796119636642288e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.normal.identity_store_invariance.n4096",
+      "observed": 1.1102230246251565e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw2.normal.write_phase_contraction_must_differ",
+      "observed": 0.030440440354204325,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw2.nonnormal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.0935696792557792e-14,
+        "total_abs_error": 4.796163466380676e-14
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw2.nonnormal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 4.551914400963142e-15,
+        "total_abs_error": 1.7763568394002505e-14
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw2.nonnormal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 1.6986412276764895e-14,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 3.885780586188048e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.nonnormal.identity_store_invariance.n64",
+      "observed": 6.106226635438361e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw2.nonnormal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.2700918704888042,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 6.661338147750939e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.nonnormal.identity_store_invariance.n256",
+      "observed": 7.216449660063518e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw2.nonnormal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.27957341290094034,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 3.0531133177191805e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.nonnormal.identity_store_invariance.n1024",
+      "observed": 4.996003610813204e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw2.nonnormal.identity_store_invariance.n4096",
+      "observed": 5.273559366969494e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw2.nonnormal.write_phase_contraction_must_differ",
+      "observed": 0.14632559010890903,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": true,
+      "name": "draw3.make_similarity_code_identity",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "draw3.coupling_operator_norm",
+      "observed": 0.9999999999999999,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.coupling_rows_orthonormal",
+      "observed": 1.3322676295501878e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw3.normal.trace_identity.n64",
+      "observed": 0.9999999999999999,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.normal.matrix_identity.n64",
+      "observed": 1.5543122344752192e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw3.normal.trace_identity.n256",
+      "observed": 0.9999999999999987,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.normal.matrix_identity.n256",
+      "observed": 2.220446049250313e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw3.normal.trace_identity.n1024",
+      "observed": 0.9999999999999943,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.normal.matrix_identity.n1024",
+      "observed": 9.325873406851315e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw3.normal.trace_identity.n4096",
+      "observed": 0.9999999999999762,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.normal.matrix_identity.n4096",
+      "observed": 3.697042672001771e-14,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw3.nonnormal.trace_identity.n64",
+      "observed": 1.0000000000000009,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw3.nonnormal.trace_identity.n256",
+      "observed": 0.9999999999999983,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw3.nonnormal.trace_identity.n1024",
+      "observed": 1.0000000000000007,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw3.nonnormal.trace_identity.n4096",
+      "observed": 0.9999999999999991,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw3.normal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 4.510281037539698e-16,
+        "total_abs_error": 4.884981308350689e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw3.normal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.3877787807814457e-16,
+        "total_abs_error": 8.881784197001252e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw3.normal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 1.9588497490730106e-14,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 1.0408340855860843e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.normal.identity_store_invariance.n64",
+      "observed": 8.326672684688674e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw3.normal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.04042380171090928,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 1.734723475976807e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.normal.identity_store_invariance.n256",
+      "observed": 8.326672684688674e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw3.normal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.04209845005227931,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 9.71445146547012e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.normal.identity_store_invariance.n1024",
+      "observed": 1.457167719820518e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.normal.identity_store_invariance.n4096",
+      "observed": 8.326672684688674e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw3.normal.write_phase_contraction_must_differ",
+      "observed": 0.01637953762687567,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw3.nonnormal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 7.549516567451064e-15,
+        "total_abs_error": 3.4638958368304884e-14
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw3.nonnormal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.096345236817342e-15,
+        "total_abs_error": 7.105427357601002e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw3.nonnormal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 1.4904744105592727e-14,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 5.273559366969494e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.nonnormal.identity_store_invariance.n64",
+      "observed": 5.273559366969494e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw3.nonnormal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.18319364320309287,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 5.551115123125783e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.nonnormal.identity_store_invariance.n256",
+      "observed": 5.273559366969494e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw3.nonnormal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.18728753403440201,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 4.718447854656915e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.nonnormal.identity_store_invariance.n1024",
+      "observed": 4.163336342344337e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw3.nonnormal.identity_store_invariance.n4096",
+      "observed": 6.38378239159465e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw3.nonnormal.write_phase_contraction_must_differ",
+      "observed": 0.08931309895892914,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": true,
+      "name": "draw4.make_similarity_code_identity",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "draw4.coupling_operator_norm",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.coupling_rows_orthonormal",
+      "observed": 1.6653345369377348e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw4.normal.trace_identity.n64",
+      "observed": 1.0000000000000004,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.normal.matrix_identity.n64",
+      "observed": 1.7763568394002505e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw4.normal.trace_identity.n256",
+      "observed": 1.000000000000004,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.normal.matrix_identity.n256",
+      "observed": 6.439293542825908e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw4.normal.trace_identity.n1024",
+      "observed": 1.0000000000000173,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.normal.matrix_identity.n1024",
+      "observed": 2.2426505097428162e-14,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw4.normal.trace_identity.n4096",
+      "observed": 1.000000000000071,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.normal.matrix_identity.n4096",
+      "observed": 8.903988657493755e-14,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw4.nonnormal.trace_identity.n64",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw4.nonnormal.trace_identity.n256",
+      "observed": 1.0000000000000013,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw4.nonnormal.trace_identity.n1024",
+      "observed": 1.0000000000000004,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw4.nonnormal.trace_identity.n4096",
+      "observed": 0.9999999999999996,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw4.normal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 2.914335439641036e-16,
+        "total_abs_error": 1.3322676295501878e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw4.normal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 8.326672684688674e-17,
+        "total_abs_error": 1.3322676295501878e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw4.normal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 1.740274591099933e-14,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 9.020562075079397e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.normal.identity_store_invariance.n64",
+      "observed": 9.367506770274758e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw4.normal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.036805408070947176,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 6.245004513516506e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.normal.identity_store_invariance.n256",
+      "observed": 6.938893903907228e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw4.normal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.037916812129882495,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 4.163336342344337e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.normal.identity_store_invariance.n1024",
+      "observed": 5.551115123125783e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.normal.identity_store_invariance.n4096",
+      "observed": 9.71445146547012e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw4.normal.write_phase_contraction_must_differ",
+      "observed": 0.015007026497363761,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw4.nonnormal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 3.594347042223944e-14,
+        "total_abs_error": 1.758593271006248e-13
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw4.nonnormal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.3183898417423734e-15,
+        "total_abs_error": 1.7763568394002505e-14
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw4.nonnormal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 2.020605904817785e-14,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 3.608224830031759e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.nonnormal.identity_store_invariance.n64",
+      "observed": 5.273559366969494e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw4.nonnormal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.2123882546482037,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 5.828670879282072e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.nonnormal.identity_store_invariance.n256",
+      "observed": 6.106226635438361e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw4.nonnormal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.22030248452271933,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 4.718447854656915e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.nonnormal.identity_store_invariance.n1024",
+      "observed": 4.163336342344337e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw4.nonnormal.identity_store_invariance.n4096",
+      "observed": 4.440892098500626e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw4.nonnormal.write_phase_contraction_must_differ",
+      "observed": 0.07536766055369518,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": true,
+      "name": "draw5.make_similarity_code_identity",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "draw5.coupling_operator_norm",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.coupling_rows_orthonormal",
+      "observed": 1.1102230246251565e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw5.normal.trace_identity.n64",
+      "observed": 1.0000000000000004,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.normal.matrix_identity.n64",
+      "observed": 1.1102230246251565e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw5.normal.trace_identity.n256",
+      "observed": 1.0000000000000024,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.normal.matrix_identity.n256",
+      "observed": 4.884981308350689e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw5.normal.trace_identity.n1024",
+      "observed": 1.0000000000000102,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.normal.matrix_identity.n1024",
+      "observed": 1.7541523789077473e-14,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw5.normal.trace_identity.n4096",
+      "observed": 1.0000000000000409,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.normal.matrix_identity.n4096",
+      "observed": 6.17284001691587e-14,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw5.nonnormal.trace_identity.n64",
+      "observed": 1.0000000000000009,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw5.nonnormal.trace_identity.n256",
+      "observed": 0.9999999999999996,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw5.nonnormal.trace_identity.n1024",
+      "observed": 0.9999999999999991,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw5.nonnormal.trace_identity.n4096",
+      "observed": 0.9999999999999978,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw5.normal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.27675647831893e-15,
+        "total_abs_error": 2.6645352591003757e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw5.normal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.942890293094024e-16,
+        "total_abs_error": 1.7763568394002505e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw5.normal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 9.690165336806444e-15,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 1.214306433183765e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.normal.identity_store_invariance.n64",
+      "observed": 9.020562075079397e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw5.normal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.050177068322180884,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 7.45931094670027e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.normal.identity_store_invariance.n256",
+      "observed": 9.020562075079397e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw5.normal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.05121885353510324,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 1.3183898417423734e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.normal.identity_store_invariance.n1024",
+      "observed": 9.020562075079397e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.normal.identity_store_invariance.n4096",
+      "observed": 9.71445146547012e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw5.normal.write_phase_contraction_must_differ",
+      "observed": 0.024941394448953304,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw5.nonnormal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.457167719820518e-14,
+        "total_abs_error": 3.375077994860476e-14
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw5.nonnormal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 9.020562075079397e-16,
+        "total_abs_error": 7.105427357601002e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw5.nonnormal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 5.717648576819556e-15,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 4.996003610813204e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.nonnormal.identity_store_invariance.n64",
+      "observed": 6.661338147750939e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw5.nonnormal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.19758984867041193,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 3.608224830031759e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.nonnormal.identity_store_invariance.n256",
+      "observed": 5.551115123125783e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw5.nonnormal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.2029324414122807,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 4.85722573273506e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.nonnormal.identity_store_invariance.n1024",
+      "observed": 9.71445146547012e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw5.nonnormal.identity_store_invariance.n4096",
+      "observed": 6.106226635438361e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw5.nonnormal.write_phase_contraction_must_differ",
+      "observed": 0.0831441230533621,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": true,
+      "name": "draw6.make_similarity_code_identity",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "draw6.coupling_operator_norm",
+      "observed": 1.0000000000000002,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.coupling_rows_orthonormal",
+      "observed": 1.1102230246251565e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw6.normal.trace_identity.n64",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.normal.matrix_identity.n64",
+      "observed": 9.783085462113635e-16,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw6.normal.trace_identity.n256",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.normal.matrix_identity.n256",
+      "observed": 1.62528815348559e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw6.normal.trace_identity.n1024",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.normal.matrix_identity.n1024",
+      "observed": 3.709215752754786e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw6.normal.trace_identity.n4096",
+      "observed": 1.0000000000000002,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.normal.matrix_identity.n4096",
+      "observed": 1.1324274851176597e-14,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw6.nonnormal.trace_identity.n64",
+      "observed": 0.9999999999999993,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw6.nonnormal.trace_identity.n256",
+      "observed": 1.0000000000000004,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw6.nonnormal.trace_identity.n1024",
+      "observed": 0.9999999999999986,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw6.nonnormal.trace_identity.n4096",
+      "observed": 0.9999999999999991,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw6.normal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 9.922618282587337e-16,
+        "total_abs_error": 7.993605777301127e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw6.normal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.3877787807814457e-16,
+        "total_abs_error": 0.0
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw6.normal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 1.384309333829492e-14,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 5.898059818321144e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.normal.identity_store_invariance.n64",
+      "observed": 7.632783294297951e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw6.normal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.041045120129028355,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 5.551115123125783e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.normal.identity_store_invariance.n256",
+      "observed": 6.938893903907228e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw6.normal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.0419545237098184,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 6.245004513516506e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.normal.identity_store_invariance.n1024",
+      "observed": 6.938893903907228e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.normal.identity_store_invariance.n4096",
+      "observed": 1.249000902703301e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw6.normal.write_phase_contraction_must_differ",
+      "observed": 0.015413220757521544,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw6.nonnormal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 3.091971123581061e-14,
+        "total_abs_error": 3.694822225952521e-13
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw6.nonnormal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 2.275957200481571e-15,
+        "total_abs_error": 1.4210854715202004e-14
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw6.nonnormal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 5.467848396278896e-15,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 2.7755575615628914e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.nonnormal.identity_store_invariance.n64",
+      "observed": 2.0816681711721685e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw6.nonnormal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.10509460315497213,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 6.38378239159465e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.nonnormal.identity_store_invariance.n256",
+      "observed": 4.85722573273506e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw6.nonnormal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.11013769344913787,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 4.163336342344337e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.nonnormal.identity_store_invariance.n1024",
+      "observed": 4.718447854656915e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw6.nonnormal.identity_store_invariance.n4096",
+      "observed": 3.608224830031759e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw6.nonnormal.write_phase_contraction_must_differ",
+      "observed": 0.06502013228807903,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": true,
+      "name": "draw7.make_similarity_code_identity",
+      "observed": true,
+      "pass": true,
+      "tolerance": "exact boolean"
+    },
+    {
+      "expected": 1.0,
+      "name": "draw7.coupling_operator_norm",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.coupling_rows_orthonormal",
+      "observed": 8.881784197001252e-16,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw7.normal.trace_identity.n64",
+      "observed": 1.0000000000000002,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.normal.matrix_identity.n64",
+      "observed": 1.5543122344752192e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw7.normal.trace_identity.n256",
+      "observed": 1.0000000000000027,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.normal.matrix_identity.n256",
+      "observed": 4.6629367034256575e-15,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw7.normal.trace_identity.n1024",
+      "observed": 1.000000000000011,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.normal.matrix_identity.n1024",
+      "observed": 1.8207657603852567e-14,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw7.normal.trace_identity.n4096",
+      "observed": 1.0000000000000466,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.normal.matrix_identity.n4096",
+      "observed": 7.083222897108499e-14,
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    {
+      "expected": 1.0,
+      "name": "draw7.nonnormal.trace_identity.n64",
+      "observed": 0.9999999999999997,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw7.nonnormal.trace_identity.n256",
+      "observed": 1.0,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw7.nonnormal.trace_identity.n1024",
+      "observed": 1.0000000000000002,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 1.0,
+      "name": "draw7.nonnormal.trace_identity.n4096",
+      "observed": 1.0000000000000013,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw7.normal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.3739009929736312e-15,
+        "total_abs_error": 7.105427357601002e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw7.normal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.3877787807814457e-16,
+        "total_abs_error": 4.440892098500626e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw7.normal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 1.722233466949774e-14,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 5.551115123125783e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.normal.identity_store_invariance.n64",
+      "observed": 7.28583859910259e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw7.normal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.035106477047781234,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 6.938893903907228e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.normal.identity_store_invariance.n256",
+      "observed": 8.673617379884035e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw7.normal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.03630946306522943,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 5.204170427930421e-17
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.normal.identity_store_invariance.n1024",
+      "observed": 9.367506770274758e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.normal.identity_store_invariance.n4096",
+      "observed": 9.71445146547012e-17,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw7.normal.write_phase_contraction_must_differ",
+      "observed": 0.01277132083196646,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw7.nonnormal_open.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 7.438494264988549e-15,
+        "total_abs_error": 2.042810365310288e-14
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "curve_max_abs_error": 0.0,
+        "total_abs_error": 0.0
+      },
+      "name": "draw7.nonnormal_isolated.source_route_parity.n64",
+      "observed": {
+        "curve_max_abs_error": 1.096345236817342e-15,
+        "total_abs_error": 9.769962616701378e-15
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw7.nonnormal.postclosure_contraction_invariance.n64",
+      "observed": {
+        "full_curve_max_abs_error": 2.886579864025407e-15,
+        "gated": {
+          "full_state": true,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 2.0816681711721685e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.nonnormal.identity_store_invariance.n64",
+      "observed": 4.163336342344337e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw7.nonnormal.postclosure_contraction_invariance.n256",
+      "observed": {
+        "full_curve_max_abs_error": 0.15002026874456378,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 2.7755575615628914e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.nonnormal.identity_store_invariance.n256",
+      "observed": 3.7470027081099033e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": {
+        "gated_max_abs_error": 0.0
+      },
+      "name": "draw7.nonnormal.postclosure_contraction_invariance.n1024",
+      "observed": {
+        "full_curve_max_abs_error": 0.15621329135125794,
+        "gated": {
+          "full_state": false,
+          "store_only": true
+        },
+        "store_curve_max_abs_error": 3.3306690738754696e-16
+      },
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.nonnormal.identity_store_invariance.n1024",
+      "observed": 4.440892098500626e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": 0.0,
+      "name": "draw7.nonnormal.identity_store_invariance.n4096",
+      "observed": 4.996003610813204e-16,
+      "pass": true,
+      "tolerance": 1e-09
+    },
+    {
+      "expected": "> 1e-09",
+      "name": "draw7.nonnormal.write_phase_contraction_must_differ",
+      "observed": 0.08130545471828754,
+      "pass": true,
+      "tolerance": "strict threshold"
+    },
+    {
+      "expected": 8,
+      "name": "normal_open.draw_count",
+      "observed": 8,
+      "pass": true,
+      "tolerance": "exact"
+    },
+    {
+      "expected": 8,
+      "name": "normal_isolated.draw_count",
+      "observed": 8,
+      "pass": true,
+      "tolerance": "exact"
+    },
+    {
+      "expected": 8,
+      "name": "nonnormal_open.draw_count",
+      "observed": 8,
+      "pass": true,
+      "tolerance": "exact"
+    },
+    {
+      "expected": 8,
+      "name": "nonnormal_isolated.draw_count",
+      "observed": 8,
+      "pass": true,
+      "tolerance": "exact"
+    }
+  ],
+  "failure_count": 0,
+  "invalid_run_rule": "any frozen control failure suppresses every preregistered reading",
+  "provenance": {
+    "elapsed_s": 7.781852166051976,
+    "float_dtype": "float64",
+    "l065_review_file": "<repo>/projects/NMH-RNN/prior_art/REVIEW_ISOLATION_FACTORIAL_V2_BOUNDED_20260903.md",
+    "numpy_version": "2.5.2",
+    "resource_scope": "local CPU only; no GPU, checkpoint, trained weight, network, Controller, queue, roadmap, or manuscript",
+    "reviewed_source_path": "<repo>/projects/NMH-RNN/scripts/preprint_replication_and_factorial_20260903.py",
+    "reviewed_source_sha256_expected": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "reviewed_source_sha256_observed": "03775a6ee34e241446b2e2d03587b65bde3a90cd3c6814d19a0f7cda9030f8be",
+    "script_path": "<repo>/projects/NMH-RNN/scripts/isolation_factorial_v2_bounded_20260903.py",
+    "script_sha256": "69acea303c4c14e1ce094a3b5c0acbf78fdab62d06cefcca5f1f2cbb07a7887e"
+  },
+  "rerun_rule": "one corrected repeat run maximum; a second invalid run is REDESIGN_REQUIRED",
+  "run_status": "PASS",
+  "schema": "isolation_factorial_v2_bounded_positive_controls_v1"
+}

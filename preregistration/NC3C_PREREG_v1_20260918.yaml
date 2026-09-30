@@ -1,0 +1,151 @@
+title: NC-3C task-specific geometry, fresh confirmation
+version: 1
+date: '2026-09-18'
+status: PREREGISTRATION_FROZEN_BEFORE_ANY_TRAINING_OUTCOME_INSPECTED
+parent_authority: AGENT_HANDOFF_NC_MANUSCRIPT_AND_TASK_SPECIFIC_CONFIRMATION_20260918_EN.md
+supersedes: none
+relationship_to_exploratory_X1: retained as exploratory evidence, not relabelled
+
+primary_question: Does changing the target input time change the task-specific end-to-end
+  Fisher operator, and do independently trained write directions follow the corresponding
+  geometry rather than converging to one universal memory direction?
+
+system:
+  writer_dim: 32
+  store_dim: 16
+  write_interval: 24
+  initial_writer_state: zero
+  initial_store_state: zero
+  process_noise_steps: 0..23
+  writer_types: [normal_Q, conditioned_SQS_inv_cond10]
+  storage_condition: isolated
+  store_map: orthogonal_frozen
+  store_direct_noise: 0
+
+freshness:
+  seed_namespace: NC-3C-V1
+  namespace_never_used_before: true
+  carrier_draws: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  disjointness_asserted_against:
+  - NC-TM-V1 confirmatory draws 0..15
+  - NC-TM-V1 pilot draws 900, 901
+  - NC-TM-V1 exploratory draws 800..807
+  - every seed recorded in the completed lane receipts
+  seed_list_frozen_before_outcome_inspection: true
+
+objectives:
+  O_0:
+    target_time: 0
+    operator: L_0^T C_ss^-1 L_0
+  O_12:
+    target_time: 12
+    operator: L_12^T C_ss^-1 L_12
+  shared_between_objectives: [carrier, coupling, store_map, closure_covariance]
+
+frozen_training:
+  optimizer: Adam
+  learning_rate: 0.003
+  weight_decay: 0.0
+  gradient_clip: 1.0
+  batch_size: 512
+  training_steps: 12000
+  amplitude: 1.5
+  train_horizon: 128
+  primary_checkpoint: final
+  optimizer_sees_fisher_object: false
+  carried_over_unchanged_from: NC-TM-V1 confirmatory run
+
+run_matrix:
+  carrier_draws: 16
+  optimizer_seeds_per_draw: 5
+  writer_types: 2
+  objectives: 2
+  trained_models: 320
+  rescue_grid_after_results: forbidden
+
+evaluation:
+  test_episodes_per_condition: 50000
+  calibration_episodes: 50000
+  readout: pooled_within_class_discriminant_fit_on_independent_calibration_sample
+  fixed_readout: recorded_as_deployment_diagnostic_excluded_from_calibration_gate
+  cross_evaluation: every trained direction evaluated on both objectives with the carrier
+    and storage system held fixed
+
+primary_endpoints:
+  own_objective_efficiency: v_learn_i^T M_i v_learn_i / lambda_max(M_i)
+  cross_objective_efficiency: v_learn_i^T M_j v_learn_i / lambda_max(M_j)
+  oracle_separation: 1 - (v_other_oracle^T M_j v_other_oracle) / lambda_max(M_j)
+  learned_contrast: R_own_own - R_own_other
+  contrast_recovery: learned_contrast / oracle_separation
+
+decision_rules:
+  evaluated_separately_per_writer_type: true
+  overall_requires_both_writer_types: true
+  own_objective_efficiency:
+    median_min: 0.90
+    bootstrap_one_sided_lower_bound_min: 0.80
+    carrier_draws_at_or_above_0.80_min: 14
+    applies_to: [O_0, O_12]
+  diagonal_dominance:
+    carrier_draws_with_both_strict_inequalities_min: 14
+    paired_bootstrap_interval_excludes_zero: true
+  contrast_recovery:
+    median_min: 0.75
+    bootstrap_one_sided_lower_bound_min: 0.50
+    applies_to: [O_0, O_12]
+    negligible_separation_threshold: 0.02
+    negligible_label: OBJECTIVES_GEOMETRICALLY_INDISTINGUISHABLE
+    negligible_cells_retained_in: [own_objective_efficiency, calibration]
+  behavioral_calibration:
+    accuracy_calibration_mae_max: 0.02
+    calibration_slope_interval: [0.95, 1.05]
+    ordered_pair_agreement_min: 0.90
+    ordered_pair_relative_gap: 0.05
+    applies_to: [O_0, O_12]
+
+kill:
+  own_objective_median_below: 0.75
+  diagonal_dominance_failure: no_objective_specific_geometry_claim
+  calibration_failure: no_fisher_to_behaviour_extension
+  operators_nearly_identical: objectives_not_discriminating
+  target_times_changed_after_seeing_outcomes: forbidden
+
+analysis:
+  independent_unit: carrier_draw
+  seed_aggregation: median_within_carrier
+  bootstrap_resamples: 10000
+  confidence_level: 0.95
+  bootstrap_lower_bound: one_sided_5th_percentile_of_the_median
+  permutation_statistic: mean_of_paired_differences
+  multiple_testing: Holm_over_own_objective_and_contrast_families
+
+validity:
+  battery: the 29-control NC-TM-V1 battery, per cell, each control clean and corrupted
+  invalid_cell_contributes_no_row: true
+  verdict_refuses_while_ledger_nonempty: true
+  added_controls:
+    '30': objective distinctness, M_0 and M_12 must differ, negative control sets both
+      target times to 0 and must fail
+    '31': seed freshness, the NC-3C seed set must be disjoint from every seed recorded in
+      the completed lane
+
+declared_before_run:
+  O_12_is_harder_at_the_frozen_amplitude: measured on exploratory draws, lambda_max(M_12)
+    is about half lambda_max(M_0); amplitude is NOT changed because every gate is a
+    normalised quantity
+  separation_is_not_degenerate: on exploratory draws G*_0 median 0.4113 and G*_12 median
+    0.3478, 0 of 16 cells below the 0.02 threshold
+  a_pass_licenses: changing the target memory time changed the task-specific end-to-end
+    Fisher operator and independently trained write directions followed the corresponding
+    geometry rather than converging to a universal memory direction
+  a_pass_does_not_license: [nonlinear systems, language models, continual learning,
+    catastrophic forgetting, architecture superiority, product readiness]
+
+execution_authority:
+  drafting: granted
+  implementation: granted
+  independent_review: required
+  freezing: required_before_execution
+  full_matrix_execution: only_if_independent_review_returns_CLEAR_TO_RUN
+  on_scientific_contradiction: REQUIRES_PROTOCOL_AMENDMENT
+run_authority: false

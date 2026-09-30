@@ -1,0 +1,22 @@
+\usepackage{longtable,booktabs,array}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\footnotesize\RaggedRight}
+\setlength{\emergencystretch}{3em}
+\sloppy
+% Long file paths and identifiers must be allowed to break anywhere, so that a
+% reader-facing page never loses text off the right margin (review item R5).
+\usepackage[htt]{hyphenat}
+\renewcommand{\texttt}[1]{\begingroup\ttfamily\hyphenchar\font=`\-\relax\spaceskip=0pt\hskip0pt\allowbreak#1\endgroup}
+\makeatletter
+\def\UrlBreaks{\do\/\do\_\do\-\do\.\do\=\do\:\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9}
+\makeatother
+
+% Abstract body: an additional 9 mm inset on each side, with ordinary page breaks.
+\newenvironment{preprintabstract}{%
+  \begin{list}{}{\setlength{\leftmargin}{9mm}\setlength{\rightmargin}{9mm}%
+    \setlength{\labelwidth}{0pt}\setlength{\labelsep}{0pt}%
+    \setlength{\itemindent}{0pt}\setlength{\listparindent}{0pt}%
+    \setlength{\topsep}{3pt}\setlength{\parsep}{\parskip}}%
+  \item\relax
+}{\end{list}}

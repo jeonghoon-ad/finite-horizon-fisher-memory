@@ -1,0 +1,35 @@
+--- /private/tmp/independent reviewer-501/-Users-jeonghoon-Documents-<repo-name>/eed541e4-be9a-40ed-8087-dab1ad277af8/scratchpad/nc3c_verdict.py.orig	2026-09-20 08:14:10
++++ code/nc3c_verdict.py	2026-09-20 08:14:10
+@@ -280,6 +280,13 @@
+         raise RuntimeError(
+             f"the run used {len(receipt['carrier_draws'])} carrier draws; the "
+             f"preregistration fixes {expected}")
++    # Amendment 2026-09-20. The draw identity was compared against the hard-coded first
++    # block, so this tool could not certify the author-approved second block 16..31 at
++    # all. It is now compared against the block THIS run's receipt records, which keeps
++    # the guard's purpose (rows must not come from some other block) and strengthens it:
++    # the CSVs must agree with their own receipt, whichever approved block was run. The
++    # denominator is still pinned to the preregistered count checked immediately above.
++    block = sorted(int(d) for d in receipt["carrier_draws"])
+ 
+     cell_rows = read_csv(root / "CELL_LEVEL.csv")
+     cross_rows = read_csv(root / "CROSS_EVALUATION_ROWS.csv")
+@@ -292,14 +299,15 @@
+                        ("REFERENCE", reference_rows)):
+         for writer in writers:
+             found = {int(r["draw_index"]) for r in rows if r["writer_type"] == writer}
+-            if found != set(X.CARRIER_DRAWS):
++            if found != set(block):
+                 raise RuntimeError(
+-                    f"{name} carries draws {sorted(found)} for {writer}; expected exactly "
+-                    f"{sorted(X.CARRIER_DRAWS)}")
++                    f"{name} carries draws {sorted(found)} for {writer}; the run receipt "
++                    f"records exactly {block}")
+ 
+     verdict: dict[str, Any] = {
+         "protocol": "NC3C_TASK_SPECIFIC_GEOMETRY_PROTOCOL_v1_20260918_EN.md",
+         "seed_namespace": X.SEED_NAMESPACE,
++        "carrier_block": block,
+         "objectives": list(X.OBJECTIVES),
+         "gates": GATES,
+         "amplitude": receipt["config"]["amplitude"],

@@ -1,0 +1,25 @@
+Historical execution source-freeze record. These hashes identify the original source bytes; current public derivatives and dependency-pin updates are mapped in MANIFEST.json.
+
+5418ab55f007c136fbfa32cdb20f9a38ddd2dceb66e5255bcc61dcec2f4b71d8  finalize.py
+a4fdb6b4319729ff4adb29ccea4193e5667df3a21b737e2445f7c2ddc090c745  make_nc_figures.py
+51bd64ef6bccb76a85675b413f0c3a0832ecebd70c91db0a576f7bbe5755e00b  nc_experiment.py
+7971ad842b0917d3419b1bbd69d137a2cb68e584ce6ce8d75cba4c81eff14175  nc_geometry.py
+c5667bf0586b0ddb5963776cba83b028a4f89c1fd676bd86821f1a38f6ed23fd  nc_model.py
+322757baf4e3e18399259b4532d8c46add985470f59a33fdae1e1da5486aa6a3  nc_scan.py
+112219d55bb756cb10b415ba38676402e9088c9d778a159c20a164ded4074a84  nc_stats.py
+191ed8aefaa1d6a2e2e7fbe97db972d6878ff166c112fb831cfcf3fdf804cc55  nc_validity.py
+af553b56804635057e7a9ac9d3977ceb7a22c3b13185f40bb152585c7b0e21be  nc_verdict.py
+e8980412963fd0a2afbae9f54618584c02dfc9cf75240279c1e694b6e8f27684  run_exploratory.py
+7eac4adce75a5ed4d7292f85ca659941644b88e63fbea1ab3463e3bc76359dff  run_stage.py
+4f6f85d62b6aed2d221f219da4a6bcb1e30af883cc1842810af031898b22edde  MIRROR_OF.json
+299635671f657bbccb7ae309a74f760a58bb8b2854fc7f413a9bb6d2c929fbd9  run_all.sh
+a3c5fa847060615824c32cc280ebce1c9028e655046ab199c40c7e231c58ca61  run_with_review.sh
+# --- SUCCESSION NOTE, 2026-09-18 14:45 KST ---
+# nc_validity.py was edited AFTER the completed confirmatory run, to let run_battery
+# certify the carrier a caller actually measures and to parameterise the injection time.
+# The completed run used digest 191ed8aefaa1d6a2e2e7fbe97db972d6878ff166c112fb831cfcf3fdf804cc55,
+# which is recorded inside results/confirmatory/RUN_RECEIPT.json code_manifest and is the
+# provenance of every number in RESULTS_20260918_EN.md. The successor digest below applies
+# from NC-3C onward. The change is additive: both new parameters default to the previous
+# behaviour exactly.
+# successor nc_validity.py 70d611f786c2661f09b3c0a0fbe422816de6ce5c9ea920a863f99b3efaa3d9aa

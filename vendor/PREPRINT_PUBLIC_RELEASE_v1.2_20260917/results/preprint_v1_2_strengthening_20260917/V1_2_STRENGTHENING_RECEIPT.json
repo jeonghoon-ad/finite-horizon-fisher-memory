@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "script": "preprint_v1_2_strengthening_20260917.py",
+  "script_sha256": "c1fd328db9cea8677f74611d96d1cce9a09b673a096da7098aaba249ab7fa7bc",
+  "draw_count": 8,
+  "trials_per_draw": 5000,
+  "finite_horizon_certificate": {
+    "relative_M_error": {
+      "median": 8.443946694838506e-06,
+      "min": 3.5582682065460275e-06,
+      "max": 1.7921452468422098e-05,
+      "q1": 5.78667988019376e-06,
+      "q3": 1.2492940381245084e-05
+    },
+    "all_actual_errors_below_reported_bound": true,
+    "near_degenerate_control": {
+      "rotation_gap": 0.0001,
+      "spectral_group_gap_delta": 9.999999995840002e-05,
+      "m": 1000,
+      "error_to_exact_projection_fro": 1.59933360758972,
+      "two_scale_difference_fro": 0.07993434545356734,
+      "commutator_residual_fro": 0.0010178244524955045,
+      "coefficient_bound_2_over_m_delta": 20.000000008319997
+    }
+  },
+  "store_operator_selection": {
+    "store_trace": {
+      "median": 16.0,
+      "min": 15.999999999999998,
+      "max": 16.0,
+      "q1": 16.0,
+      "q3": 16.0
+    },
+    "store_oracle_vs_write_oracle_total_ratio": {
+      "median": 1.2240499368060689,
+      "min": 1.1120163576910085,
+      "max": 1.5817236817820128,
+      "q1": 1.1358426584822499,
+      "q3": 1.4803192259389157
+    },
+    "store_oracle_vs_write_oracle_oldest_ratio": {
+      "median": 1.2573207406926423,
+      "min": 0.9223182104558505,
+      "max": 1.761965049119144,
+      "q1": 1.1105952766244016,
+      "q3": 1.5442299107638802
+    },
+    "individual_oldest_ratio_below_one_count": 1,
+    "store_oracle_write_allocation": {
+      "median": 3.701824958497201,
+      "min": 3.1051059638988296,
+      "max": 4.287174530808605,
+      "q1": 3.4675013067830713,
+      "q3": 3.8993173009783817
+    },
+    "all_store_oracles_above_write_average_1p05": true,
+    "all_oldest_transfer_gains_above_1e_6": true
+  },
+  "sampled_decoder": {
+    "variance_ratio": {
+      "median": 1.0167250108203385,
+      "min": 0.9688097273804364,
+      "max": 1.0322091822241504,
+      "q1": 0.9952844370924367,
+      "q3": 1.0190146156959106
+    },
+    "bias_in_standard_errors": {
+      "median": 0.22213718855205428,
+      "min": -1.1814724332158513,
+      "max": 1.044675728990439,
+      "q1": -0.4058882925675422,
+      "q3": 0.4946141510795184
+    },
+    "maximum_hold_readout_difference": 7.993605777301127e-15
+  },
+  "approximate_isolation": {
+    "minimum_bound_margin": -4.440892098500626e-16,
+    "all_bounds_pass": true,
+    "aligned_equality_max_abs_error": 4.440892098500626e-16
+  }
+}

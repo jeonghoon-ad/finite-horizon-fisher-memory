@@ -1,0 +1,51 @@
+✓ Review check passed: /root/lane/prior_art/REVIEW_RUN_NC3C_BLOCK_AMENDMENT_20260920.md
+  Script: /root/lane/code/run_nc3c.py
+  Review root: /root/lane (prior_art sibling match)
+
+  ⚠  MTIME-ONLY PASS.  No REVIEW_*.md in /root/lane/prior_art names this
+     script's SHA-256, so this pass proves only that a review file
+     is newer than the script.  It does NOT establish that anyone
+     read these bytes.  To make the binding real, record
+     0ce30d04069d0ef0dfa3b144650caf3b4230a92c4040ab7d662e50513bd3709b
+     inside the review that covers this script.
+
+▶ Running: /opt/conda/bin/python /root/lane/code/run_nc3c.py --block 16-31 --results-dir /root/lane/results/nc3c_block2_20260920
+{
+  "nc3c_namespace": "NC-3C-V1",
+  "audited_draws": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "requested_draws_already_exercised": [],
+  "nc3c_seeds": 560,
+  "completed_lane_seeds": 910,
+  "prior_nc3c_seeds": 595,
+  "seed_collisions": [],
+  "seed_collisions_with_prior_nc3c": [],
+  "carrier_digest_collisions": [],
+  "carrier_digest_collisions_with_prior_nc3c": [],
+  "fresh": true
+}
+{
+  "cells": 32,
+  "valid_cells": 0,
+  "invalid_runs": 32,
+  "trained_models": 320,
+  "cross_rows": 0,
+  "elapsed_seconds": 182.0,
+  "peak_rss_mb": 44.4
+}
