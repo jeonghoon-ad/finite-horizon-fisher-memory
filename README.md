@@ -1,6 +1,6 @@
 # Finite-Horizon Fisher Memory in Two-Sided Power-Bounded Recurrent Systems
 
-Reproduction materials for the preprint by Jeonghoon Lee (Attractor Dynamics Inc.).
+Reproduction materials for the preprint by Jeonghoon Lee (Attractor Dynamics Inc.), [arXiv:2609.39800](https://arxiv.org/abs/2609.39800).
 
 We study how noisy linear-Gaussian recurrent systems allocate Fisher information during writing, transfer it to a downstream store, and preserve it after writing ends. The training checks keep the recurrent carriers fixed. The results concern this model class; they do not establish performance gains in a language model.
 
@@ -8,6 +8,7 @@ The repository contains the manuscript, code, result tables, run records and pre
 
 ## Read the paper
 
+- [arXiv:2609.39800](https://arxiv.org/abs/2609.39800)
 - [PDF](manuscript/PREPRINT_PUBLIC_BUILD_v2.2_20260923_EN.pdf)
 - [Markdown](manuscript/PREPRINT_PUBLIC_BUILD_v2.2_20260923_EN.md)
 - [LaTeX](manuscript/PREPRINT_PUBLIC_BUILD_v2.2_20260923_EN.tex)

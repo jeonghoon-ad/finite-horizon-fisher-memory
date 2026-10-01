@@ -2,7 +2,7 @@
   "package": "PUBLIC_RELEASE_CANDIDATE_v2.15_20260930",
   "built_utc": "2026-09-30T07:45:46.429861+00:00",
   "files": 267,
-  "bytes": 26121804,
+  "bytes": 26121913,
   "entries": [
     {
       "path": "LICENSE_SCOPE.md",
@@ -15,12 +15,12 @@
     },
     {
       "path": "README.md",
-      "bytes": 2279,
+      "bytes": 2388,
       "original_sha256": "711a2c4ee53a7ff58a95250c4092cf1d7cf47463c6f0eb50a37088525b6b163e",
-      "sha256": "64db70a0ae87af6742ad51a7f09d4acfbb39375d26125300c139a5cc050f27da",
+      "sha256": "58a0f6434c9182f3d293c342e1d80e98d58872a0dc7748898e510d0515db6b27",
       "change": "modified",
-      "revision_note": "v2.15 public documentation prose",
-      "previous_sha256": "711a2c4ee53a7ff58a95250c4092cf1d7cf47463c6f0eb50a37088525b6b163e"
+      "revision_note": "v2.15 public documentation prose; arXiv identifier added after posting",
+      "previous_sha256": "64db70a0ae87af6742ad51a7f09d4acfbb39375d26125300c139a5cc050f27da"
     },
     {
       "path": "REPRODUCE.md",
